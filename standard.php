@@ -229,7 +229,7 @@ function strptime ($date, $format) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Flush the output buffer
+ * 刷新输出缓冲
  * @link http://php.net/manual/zh/function.flush.php
  * @return void No value is returned.
  */
@@ -237,25 +237,21 @@ function flush () {}
 
 /**
  * (PHP 4 &gt;= 4.0.2, PHP 5)<br/>
- * Wraps a string to a given number of characters
+ * 打断字符串为指定数量的字串
  * @link http://php.net/manual/zh/function.wordwrap.php
  * @param string $str <p>
- * The input string.
+ * 输入字符串
  * </p>
  * @param int $width [optional] <p>
- * The number of characters at which the string will be wrapped.
+ * 列宽度
  * </p>
  * @param string $break [optional] <p>
- * The line is broken using the optional
- * <i>break</i> parameter.
+ * 使用可选的<i>break</i>参数打断字符串
  * </p>
  * @param bool $cut [optional] <p>
- * If the <i>cut</i> is set to <b>TRUE</b>, the string is
- * always wrapped at or before the specified width. So if you have
- * a word that is larger than the given width, it is broken apart.
- * (See second example).
+ * 如果cut设置为TRUE，字符串总是在指定的宽度或者之前位置被打断。因此，如果有的单词宽度超过了给定的宽度，它将被分隔开来。
  * </p>
- * @return string the given string wrapped at the specified length.
+ * @return string 返回打断后的字符串
  */
 function wordwrap ($str, $width = 75, $break = "\n", $cut = false) {}
 
@@ -2676,16 +2672,15 @@ function ord ($string) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Parses the string into variables
+ * 将字符串解析成多个变量
  * @link http://php.net/manual/zh/function.parse-str.php
  * @param string $str <p>
- * The input string.
+ * 输入的字符串
  * </p>
  * @param array $arr [optional] <p>
- * If the second parameter <i>arr</i> is present,
- * variables are stored in this variable as array elements instead.
+ * 如果设置了第二个变量arr，变量将会以数组元素的形式存入到这个数组，作为替代。
  * </p>
- * @return void No value is returned.
+ * @return void 没有返回值
  */
 function parse_str ($str, array &$arr = null) {}
 
@@ -3132,10 +3127,10 @@ function unlink ($filename, $context = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Execute an external program
+ * 执行外部程序
  * @link http://php.net/manual/zh/function.exec.php
  * @param string $command <p>
- * The command that will be executed.
+ * 将被执行的命令
  * </p>
  * @param array $output [optional] <p>
  * If the <i>output</i> argument is present, then the
@@ -3153,13 +3148,10 @@ function unlink ($filename, $context = null) {}
  * return status of the executed command will be written to this
  * variable.
  * </p>
- * @return string The last line from the result of the command. If you need to execute a
- * command and have all the data from the command passed directly back without
- * any interference, use the <b>passthru</b> function.
+ * @return string 命令执行结果的最后一行。如不需任何干涉就输出一行命令的所有结果，请使用<b>passthru</b>()。
  * </p>
  * <p>
- * To get the output of the executed command, be sure to set and use the
- * <i>output</i> parameter.
+ * 必须赋予<i>output</i>参数才能获取命令的执行结果
  */
 function exec ($command, array &$output = null, &$return_var = null) {}
 
@@ -3204,25 +3196,25 @@ function escapeshellarg ($arg) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Execute an external program and display raw output
+ * 执行外部程序并格式化输出结果
  * @link http://php.net/manual/zh/function.passthru.php
  * @param string $command <p>
- * The command that will be executed.
+ * 将被执行的命令
  * </p>
  * @param int $return_var [optional] <p>
  * If the <i>return_var</i> argument is present, the
  * return status of the Unix command will be placed here.
  * </p>
- * @return void No value is returned.
+ * @return void 没有返回值
  */
 function passthru ($command, &$return_var = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Execute command via shell and return the complete output as a string
+ * 执行shell命令并返回包含所有输出结果的字符串
  * @link http://php.net/manual/zh/function.shell-exec.php
  * @param string $cmd <p>
- * The command that will be executed.
+ * 将被执行的命令
  * </p>
  * @return string The output from the executed command or <b>NULL</b> if an error occurred or the
  * command produces no output.
@@ -8263,19 +8255,14 @@ function unpack ($format, $data) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Tells what the user's browser is capable of
+ * 获取浏览器具有的功能
  * @link http://php.net/manual/zh/function.get-browser.php
  * @param string $user_agent [optional] <p>
- * The User Agent to be analyzed. By default, the value of HTTP
- * User-Agent header is used; however, you can alter this (i.e., look up
- * another browser's info) by passing this parameter.
- * </p>
- * <p>
- * You can bypass this parameter with a <b>NULL</b> value.
+ * 要分析的用户代理。默认使用HTTP头中User-Agent的值，不过，你可以通过传递该参数改变User-Agent。(比如查找另一个浏览器的信息) 
+ * 你可以传递一个NULL来忽略该参数。
  * </p>
  * @param bool $return_array [optional] <p>
- * If set to <b>TRUE</b>, this function will return an array
- * instead of an object.
+ * 如果设置为TRUE，该函数会返回一个array，而不是object。
  * </p>
  * @return mixed The information is returned in an object or an array which will contain
  * various data elements representing, for instance, the browser's major and
@@ -8317,40 +8304,29 @@ function crypt ($str, $salt = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Open directory handle
+ * 打开目录句柄
  * @link http://php.net/manual/zh/function.opendir.php
  * @param string $path <p>
- * The directory path that is to be opened
+ * 要打开的目录路径
  * </p>
  * @param resource $context [optional] <p>
  * For a description of the <i>context</i> parameter,
  * refer to the streams section of
  * the manual.
  * </p>
- * @return resource a directory handle resource on success, or
- * <b>FALSE</b> on failure.
+ * @return resource 如果成功则返回目录句柄的resource，失败则返回FALSE。
  * </p>
  * <p>
- * If <i>path</i> is not a valid directory or the
- * directory can not be opened due to permission restrictions or
- * filesystem errors, <b>opendir</b> returns <b>FALSE</b> and
- * generates a PHP error of level
- * E_WARNING. You can suppress the error output of
- * <b>opendir</b> by prepending
- * '@' to the
- * front of the function name.
+ * 如果path不是一个合法的目录或者因为权限限制或文件系统错误而不能打开目录，opendir()返回FALSE并产生一个E_WARNING级别的PHP错误信息。可以在opendir()前面加上“@”符号来抑制错误信息的输出。
  */
 function opendir ($path, $context = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Close directory handle
+ * 关闭目录句柄
  * @link http://php.net/manual/zh/function.closedir.php
  * @param resource $dir_handle [optional] <p>
- * The directory handle resource previously opened
- * with <b>opendir</b>. If the directory handle is
- * not specified, the last link opened by <b>opendir</b>
- * is assumed.
+ * 目录句柄的resource
  * </p>
  * @return void
  */
@@ -8358,45 +8334,40 @@ function closedir ($dir_handle = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Change directory
+ * 改变目录
  * @link http://php.net/manual/zh/function.chdir.php
  * @param string $directory <p>
- * The new current directory
+ * 新的当前目录
  * </p>
- * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
+ * @return bool 成功时返回TRUE，或者在失败时返回FALSE。
  */
 function chdir ($directory) {}
 
 /**
  * (PHP 4 &gt;= 4.0.5, PHP 5)<br/>
- * Change the root directory
+ * 改变根目录
  * @link http://php.net/manual/zh/function.chroot.php
  * @param string $directory <p>
- * The path to change the root directory to.
+ * 新目录路径
  * </p>
- * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
+ * @return bool 成功时返回TRUE，或者在失败时返回FALSE。
  */
 function chroot ($directory) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gets the current working directory
+ * 取得当前工作目录
  * @link http://php.net/manual/zh/function.getcwd.php
- * @return string the current working directory on success, or <b>FALSE</b> on
- * failure.
+ * @return string 成功则返回当前工作目录，失败返回FALSE。
  * </p>
  * <p>
- * On some Unix variants, <b>getcwd</b> will return
- * <b>FALSE</b> if any one of the parent directories does not have the
- * readable or search mode set, even if the current directory
- * does. See <b>chmod</b> for more information on
- * modes and permissions.
+ * 在某些Unix的变种下，如果任何父目录没有设定可读或搜索模式，即使当前目录设定了，getcwd()还是会返回FALSE。
  */
 function getcwd () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Rewind directory handle
+ * 倒回目录句柄
  * @link http://php.net/manual/zh/function.rewinddir.php
  * @param resource $dir_handle [optional] <p>
  * The directory handle resource previously opened
@@ -8410,24 +8381,21 @@ function rewinddir ($dir_handle = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Read entry from directory handle
+ * 从目录句柄中读取条目
  * @link http://php.net/manual/zh/function.readdir.php
  * @param resource $dir_handle [optional] <p>
- * The directory handle resource previously opened
- * with <b>opendir</b>. If the directory handle is
- * not specified, the last link opened by <b>opendir</b>
- * is assumed.
+ * 目录句柄的resource
  * </p>
- * @return string the entry name on success or <b>FALSE</b> on failure.
+ * @return string 成功则返回文件名，在失败时返回FALSE
  */
 function readdir ($dir_handle = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return an instance of the Directory class
+ * 返回一个Directory类实例
  * @link http://php.net/manual/zh/function.dir.php
  * @param string $directory <p>
- * Directory to open
+ * 被打开的目录
  * </p>
  * @param resource $context [optional] <p>
  * Context support was added
@@ -8441,42 +8409,40 @@ function dir ($directory, $context = null) {}
 
 /**
  * (PHP 5)<br/>
- * List files and directories inside the specified path
+ * 列出指定路径中的文件和目录
  * @link http://php.net/manual/zh/function.scandir.php
  * @param string $directory <p>
- * The directory that will be scanned.
+ * 要被浏览的目录 
  * </p>
  * @param int $sorting_order [optional] <p>
- * By default, the sorted order is alphabetical in ascending order. If
- * the optional <i>sorting_order</i> is set to
- * <b>SCANDIR_SORT_DESCENDING</b>, then the sort order is
- * alphabetical in descending order. If it is set to
- * <b>SCANDIR_SORT_NONE</b> then the result is unsorted.
+ * 默认的排序顺序是按字母升序排列。如果使用了可选参数sorting_order（设为1），则排序顺序是按字母降序排列。
  * </p>
  * @param resource $context [optional] <p>
  * For a description of the <i>context</i> parameter,
  * refer to the streams section of
  * the manual.
  * </p>
- * @return array an array of filenames on success, or <b>FALSE</b> on
- * failure. If <i>directory</i> is not a directory, then
- * boolean <b>FALSE</b> is returned, and an error of level
- * <b>E_WARNING</b> is generated.
+ * @return array 成功则返回包含有文件名的array，如果失败则返回FALSE。如果directory不是个目录，则返回布尔值FALSE并生成一条E_WARNING级的错误。
  */
 function scandir ($directory, $sorting_order = 'SCANDIR_SORT_ASCENDING', $context = null) {}
 
 /**
  * (PHP 4 &gt;= 4.3.0, PHP 5)<br/>
- * Find pathnames matching a pattern
+ * 寻找与模式匹配的文件路径
  * @link http://php.net/manual/zh/function.glob.php
  * @param string $pattern <p>
  * The pattern. No tilde expansion or parameter substitution is done.
  * </p>
  * @param int $flags [optional] <p>
- * Valid flags:
- * <b>GLOB_MARK</b> - Adds a slash to each directory returned
- * @return array an array containing the matched files/directories, an empty array
- * if no file matched or <b>FALSE</b> on error.
+ * 有效标记：
+ * GLOB_MARK  - 在每个返回的项目中加一个斜线  
+ * GLOB_NOSORT  - 按照文件在目录中出现的原始顺序返回（不排序）  
+ * GLOB_NOCHECK  - 如果没有文件匹配则返回用于搜索的模式  
+ * GLOB_NOESCAPE  - 反斜线不转义元字符  
+ * GLOB_BRACE  - 扩充 {a,b,c} 来匹配 'a'，'b' 或 'c'  
+ * GLOB_ONLYDIR  - 仅返回与模式匹配的目录项  
+ * GLOB_ERR  - 停止并读取错误信息（比如说不可读的目录），默认的情况下忽略所有错误 
+ * @return array 返回一个包含有匹配文件/目录的数组。如果出错返回FALSE。
  * </p>
  * <p>
  * On some systems it is impossible to distinguish between empty match and an
@@ -8486,13 +8452,12 @@ function glob ($pattern, $flags = 0) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gets last access time of file
+ * 取得文件的上次访问时间
  * @link http://php.net/manual/zh/function.fileatime.php
  * @param string $filename <p>
- * Path to the file.
+ * 文件路径
  * </p>
- * @return int the time the file was last accessed, or <b>FALSE</b> on failure.
- * The time is returned as a Unix timestamp.
+ * @return int 返回文件上次被访问的时间，或者在失败时返回FALSE。时间以Unix时间戳的方式返回。
  */
 function fileatime ($filename) {}
 
@@ -8535,7 +8500,7 @@ function fileinode ($filename) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gets file modification time
+ * 取得文件修改时间
  * @link http://php.net/manual/zh/function.filemtime.php
  * @param string $filename <p>
  * Path to the file.
@@ -8585,13 +8550,12 @@ function fileperms ($filename) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gets file size
+ * 取得文件大小
  * @link http://php.net/manual/zh/function.filesize.php
  * @param string $filename <p>
  * Path to the file.
  * </p>
- * @return int the size of the file in bytes, or <b>FALSE</b> (and generates an error
- * of level <b>E_WARNING</b>) in case of an error.
+ * @return int 返回文件大小的字节数，如果出错返回FALSE并生成一条E_WARNING级的错误。
  */
 function filesize ($filename) {}
 
@@ -8600,15 +8564,10 @@ function filesize ($filename) {}
  * Gets file type
  * @link http://php.net/manual/zh/function.filetype.php
  * @param string $filename <p>
- * Path to the file.
+ * 取得文件类型
  * </p>
- * @return string the type of the file. Possible values are fifo, char,
- * dir, block, link, file, socket and unknown.
+ * @return string 返回文件的类型。可能的值有fifo，char，dir，block，link，file和unknown。
  * </p>
- * <p>
- * Returns <b>FALSE</b> if an error occurs. <b>filetype</b> will also
- * produce an <b>E_NOTICE</b> message if the stat call fails
- * or if the file type is unknown.
  */
 function filetype ($filename) {}
 
@@ -8728,83 +8687,82 @@ function is_link ($filename) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gives information about a file
+ * G给出文件的信息
  * @link http://php.net/manual/zh/function.stat.php
  * @param string $filename <p>
- * Path to the file.
+ * 文件路径
  * </p>
  * @return array <table>
- * <b>stat</b> and <b>fstat</b> result
- * format
+ * <b>stat</b> and <b>fstat</b> result format
  * <tr valign="top">
- * <td>Numeric</td>
- * <td>Associative (since PHP 4.0.6)</td>
- * <td>Description</td>
+ * <td>数字下标</td>
+ * <td>关联键名(since PHP 4.0.6)</td>
+ * <td>说明</td>
  * </tr>
  * <tr valign="top">
  * <td>0</td>
  * <td>dev</td>
- * <td>device number</td>
+ * <td>设备名</td>
  * </tr>
  * <tr valign="top">
  * <td>1</td>
  * <td>ino</td>
- * <td>inode number *</td>
+ * <td>inode号码</td>
  * </tr>
  * <tr valign="top">
  * <td>2</td>
  * <td>mode</td>
- * <td>inode protection mode</td>
+ * <td>inode保护模式</td>
  * </tr>
  * <tr valign="top">
  * <td>3</td>
  * <td>nlink</td>
- * <td>number of links</td>
+ * <td>被连接数目</td>
  * </tr>
  * <tr valign="top">
  * <td>4</td>
  * <td>uid</td>
- * <td>userid of owner *</td>
+ * <td>所有者的用户id</td>
  * </tr>
  * <tr valign="top">
  * <td>5</td>
  * <td>gid</td>
- * <td>groupid of owner *</td>
+ * <td>所有者的组id</td>
  * </tr>
  * <tr valign="top">
  * <td>6</td>
  * <td>rdev</td>
- * <td>device type, if inode device</td>
+ * <td>设备类型，如果是inode设备的话</td>
  * </tr>
  * <tr valign="top">
  * <td>7</td>
  * <td>size</td>
- * <td>size in bytes</td>
+ * <td>文件大小的字节数</td>
  * </tr>
  * <tr valign="top">
  * <td>8</td>
  * <td>atime</td>
- * <td>time of last access (Unix timestamp)</td>
+ * <td>上次访问时间（Unix 时间戳）</td>
  * </tr>
  * <tr valign="top">
  * <td>9</td>
  * <td>mtime</td>
- * <td>time of last modification (Unix timestamp)</td>
+ * <td>上次修改时间（Unix 时间戳）</td>
  * </tr>
  * <tr valign="top">
  * <td>10</td>
  * <td>ctime</td>
- * <td>time of last inode change (Unix timestamp)</td>
+ * <td>上次改变时间（Unix 时间戳）</td>
  * </tr>
  * <tr valign="top">
  * <td>11</td>
  * <td>blksize</td>
- * <td>blocksize of filesystem IO **</td>
+ * <td>文件系统 IO 的块大小</td>
  * </tr>
  * <tr valign="top">
  * <td>12</td>
  * <td>blocks</td>
- * <td>number of 512-byte blocks allocated **</td>
+ * <td>所占据块的数目</td>
  * </tr>
  * </table>
  * * On Windows this will always be 0.
@@ -8820,10 +8778,10 @@ function stat ($filename) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gives information about a file or symbolic link
+ * 给出一个文件或符号连接的信息
  * @link http://php.net/manual/zh/function.lstat.php
  * @param string $filename <p>
- * Path to a file or a symbolic link.
+ * 文件或符号连接的路径
  * </p>
  * @return array See the manual page for <b>stat</b> for information on
  * the structure of the array that <b>lstat</b> returns.
@@ -10037,17 +9995,13 @@ function in_array ($needle, array $haystack, $strict = '&false;') {}
 
 /**
  * (PHP 4 &gt;= 4.0.5, PHP 5)<br/>
- * Searches the array for a given value and returns the corresponding key if successful
+ * 在数组中搜索给定的值，如果成功则返回相应的键名
  * @link http://php.net/manual/zh/function.array-search.php
  * @param mixed $needle <p>
- * The searched value.
- * </p>
- * <p>
- * If <i>needle</i> is a string, the comparison is done
- * in a case-sensitive manner.
+ * 搜索的值
  * </p>
  * @param array $haystack <p>
- * The array.
+ * 被搜索的数组
  * </p>
  * @param bool $strict [optional] <p>
  * If the third parameter <i>strict</i> is set to <b>TRUE</b>
@@ -10058,14 +10012,9 @@ function in_array ($needle, array $haystack, $strict = '&false;') {}
  * <i>needle</i> in the <i>haystack</i>,
  * and objects must be the same instance.
  * </p>
- * @return mixed the key for <i>needle</i> if it is found in the
- * array, <b>FALSE</b> otherwise.
+ * @return mixed 如果找到了needle则返回它的键，否则返回FALSE。
+ * 如果needle在haystack中出现不止一次，则返回第一个匹配的键。要返回所有匹配值的键，应该用array_keys()加上可选参数search_value来代替。
  * </p>
- * <p>
- * If <i>needle</i> is found in <i>haystack</i>
- * more than once, the first matching key is returned. To return the keys for
- * all matching values, use <b>array_keys</b> with the optional
- * <i>search_value</i> parameter instead.
  */
 function array_search ($needle, array $haystack, $strict = false) {}
 
@@ -10406,16 +10355,16 @@ function array_replace_recursive (array $array1, array $array2, array $_ = null)
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return all the keys or a subset of the keys of an array
+ * 返回数组中所有的键名
  * @link http://php.net/manual/zh/function.array-keys.php
  * @param array $array <p>
- * An array containing keys to return.
+ * 一个数组，包含了要返回的键
  * </p>
  * @param mixed $search_value [optional] <p>
- * If specified, then only keys containing these values are returned.
+ * 如果指定了这个参数，只有包含这些值的键才会返回。
  * </p>
  * @param bool $strict [optional] <p>
- * Determines if strict comparison (===) should be used during the search.
+ * 判断在搜索的时候是否该使用严格的比较（===）。
  * </p>
  * @return array an array of all the keys in <i>array</i>.
  */
@@ -10434,7 +10383,7 @@ function array_values (array $array) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Counts all the values of an array
+ * 统计数组中所有的值出现的次数
  * @link http://php.net/manual/zh/function.array-count-values.php
  * @param array $array <p>
  * The array of values to count
@@ -10446,24 +10395,18 @@ function array_count_values (array $array) {}
 
 /**
  * (PHP 5 &gt;= 5.5.0)<br/>
- * Return the values from a single column in the input array
+ * 返回数组中指定的一列
  * @link http://php.net/manual/zh/function.array-column.php
  * @param array $array <p>
- * A multi-dimensional array (record set) from which to pull a column of
- * values.
+ * 需要取出数组列的多维数组（或结果集）
  * </p>
  * @param mixed $column_key <p>
- * The column of values to return. This value may be the integer key of the
- * column you wish to retrieve, or it may be the string key name for an
- * associative array. It may also be <b>NULL</b> to return complete arrays
- * (useful together with <i>index_key</i> to reindex the
- * array).
+ * 需要返回值的列，它可以是索引数组的列索引，或者是关联数组的列的键。也可以是NULL，此时将返回整个数组（配合index_key参数来重置数组键的时候，非常管用）
  * </p>
  * @param mixed $index_key [optional] <p>
- * The column to use as the index/keys for the returned array. This value
- * may be the integer key of the column, or it may be the string key name.
+ * 作为返回数组的索引/键的列，它可以是该列的整数索引，或者字符串键值。 
  * </p>
- * @return array an array of values representing a single column from the input array.
+ * @return array 从多维数组中返回单列数组
  */
 function array_column (array $array, $column_key, $index_key = null) {}
 
@@ -10545,7 +10488,7 @@ function array_flip (array $array) {}
 
 /**
  * (PHP 4 &gt;= 4.2.0, PHP 5)<br/>
- * Changes the case of all keys in an array
+ * 返回字符串键名全为小写或大写的数组
  * @link http://php.net/manual/zh/function.array-change-key-case.php
  * @param array $array <p>
  * The array to work on
@@ -10948,38 +10891,35 @@ function array_sum (array $array) {}
 
 /**
  * (PHP 5 &gt;= 5.1.0)<br/>
- * Calculate the product of values in an array
+ * 计算数组中所有值的乘积
  * @link http://php.net/manual/zh/function.array-product.php
  * @param array $array <p>
  * The array.
  * </p>
- * @return number the product as an integer or float.
+ * @return number 以整数或浮点数返回一个数组中所有值的乘积
  */
 function array_product (array $array) {}
 
 /**
  * (PHP 4 &gt;= 4.0.6, PHP 5)<br/>
- * Filters elements of an array using a callback function
+ * 用回调函数过滤数组中的单元
  * @link http://php.net/manual/zh/function.array-filter.php
  * @param array $array <p>
- * The array to iterate over
+ * 要循环的数组
  * </p>
  * @param callable $callback [optional] <p>
- * The callback function to use
+ * 使用的回调函数 
  * </p>
  * <p>
- * If no <i>callback</i> is supplied, all entries of
- * <i>array</i> equal to <b>FALSE</b> (see
- * converting to
- * boolean) will be removed.
+ * 如果没有提供<i>callback</i>函数， 将删除input中所有等值为<b>FALSE</b>的条目。
  * </p>
- * @return array the filtered array.
+ * @return array 返回过滤后的数组
  */
 function array_filter (array $array, callable $callback = null) {}
 
 /**
  * (PHP 4 &gt;= 4.0.6, PHP 5)<br/>
- * Applies the callback to the elements of the given arrays
+ * 将回调函数作用到给定数组的单元上
  * @link http://php.net/manual/zh/function.array-map.php
  * @param callable $callback <p>
  * Callback function to run for each element in each array.
@@ -10995,17 +10935,16 @@ function array_map (callable $callback, array $array1, array $_ = null) {}
 
 /**
  * (PHP 4 &gt;= 4.2.0, PHP 5)<br/>
- * Split an array into chunks
+ * 将一个数组分割成多个
  * @link http://php.net/manual/zh/function.array-chunk.php
  * @param array $array <p>
- * The array to work on
+ * 需要操作的数组
  * </p>
  * @param int $size <p>
- * The size of each chunk
+ * 每个数组的单元数目
  * </p>
  * @param bool $preserve_keys [optional] <p>
- * When set to <b>TRUE</b> keys will be preserved.
- * Default is <b>FALSE</b> which will reindex the chunk numerically
+ * 设为TRUE，可以使PHP保留输入数组中原来的键名。默认值是FALSE
  * </p>
  * @return array a multidimensional numerically indexed array, starting with zero,
  * with each dimension containing <i>size</i> elements.
@@ -11014,7 +10953,7 @@ function array_chunk (array $array, $size, $preserve_keys = false) {}
 
 /**
  * (PHP 5)<br/>
- * Creates an array by using one array for keys and another for its values
+ * 创建一个数组，用一个数组的值作为其键名，另一个数组的值作为其值
  * @link http://php.net/manual/zh/function.array-combine.php
  * @param array $keys <p>
  * Array of keys to be used. Illegal values for key will be
@@ -11023,8 +10962,7 @@ function array_chunk (array $array, $size, $preserve_keys = false) {}
  * @param array $values <p>
  * Array of values to be used
  * </p>
- * @return array the combined array, <b>FALSE</b> if the number of elements
- * for each array isn't equal.
+ * @return array 返回合并的array，如果两个数组的单元数不同则返回FALSE
  */
 function array_combine (array $keys, array $values) {}
 

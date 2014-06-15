@@ -44,6 +44,7 @@ PHP点点通 http://www.phpddt.com
 ECMAScript 6入门 http://es6.ruanyifeng.com/
 金步国作品集 http://works.jinbuguo.com/
 Jekyll http://jekyllcn.com/
+微学苑 http://www.weixueyuan.net/
 
 
 ==========================
@@ -97,6 +98,8 @@ Yii 1.1应用程序开发实例 http://yiibook.com/book/yii1.1_application_devel
 Git参考手册 http://gitref.org/zh/index.html
 Git Book http://git-scm.com/book/zh
 Git教程 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
+
+《The Swift Programming Language》中文版 http://www.swiftguide.cn/
 
 Node.js API 中文版 http://nodeapi.ucdok.com/#/api/
 
