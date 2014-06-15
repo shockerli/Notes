@@ -98,12 +98,8 @@ Yii 1.1应用程序开发实例 http://yiibook.com/book/yii1.1_application_devel
 Git参考手册 http://gitref.org/zh/index.html
 Git Book http://git-scm.com/book/zh
 Git教程 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
-
-<<<<<<< HEAD:Record.MD
 《The Swift Programming Language》中文版 http://www.swiftguide.cn/
-=======
 Composer中文文档 http://composer.golaravel.com/
->>>>>>> 798f86fed60caa74095a379a0dd49d23ea6813ed:Record
 
 Node.js API 中文版 http://nodeapi.ucdok.com/#/api/
 
