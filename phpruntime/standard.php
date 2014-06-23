@@ -5112,7 +5112,7 @@ function php_strip_whitespace ($filename) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gets the value of a configuration option
+ * 获取一个配置选项的值
  * @link http://php.net/manual/zh/function.ini-get.php
  * @param string $varname <p>
  * The configuration option name.
@@ -5856,7 +5856,7 @@ function dns_get_record ($hostname, $type = 'DNS_ANY', array &$authns = null, ar
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Get the integer value of a variable
+ * 获取变量的整数值
  * @link http://php.net/manual/zh/function.intval.php
  * @param mixed $var <p>
  * The scalar value being converted to an integer
@@ -5917,7 +5917,7 @@ function doubleval ($var) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Get string value of a variable
+ * 获取变量的字符串值
  * @link http://php.net/manual/zh/function.strval.php
  * @param mixed $var <p>
  * The variable that is being converted to a string.
@@ -5935,7 +5935,7 @@ function strval ($var) {}
 
 /**
  * (PHP 5 &gt;= 5.5.0)<br/>
- * Get the boolean value of a variable
+ * 获取变量的布尔值
  * @link http://php.net/manual/zh/function.boolval.php
  * @param mixed $var <p>
  * The scalar value being converted to a boolean.
@@ -6038,7 +6038,7 @@ function is_float ($var) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Find whether the type of a variable is integer
+ * 检测变量是否是整数
  * @link http://php.net/manual/zh/function.is-int.php
  * @param mixed $var <p>
  * The variable being evaluated.
@@ -6074,7 +6074,7 @@ function is_real ($var) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Finds whether a variable is a number or a numeric string
+ * 检测变量是否为数字或数字字符串
  * @link http://php.net/manual/zh/function.is-numeric.php
  * @param mixed $var <p>
  * The variable being evaluated.
@@ -6086,7 +6086,7 @@ function is_numeric ($var) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Find whether the type of a variable is string
+ * 检测变量是否是字符串
  * @link http://php.net/manual/zh/function.is-string.php
  * @param mixed $var <p>
  * The variable being evaluated.
@@ -6098,7 +6098,7 @@ function is_string ($var) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Finds whether a variable is an array
+ * 检测变量是否是数组
  * @link http://php.net/manual/zh/function.is-array.php
  * @param mixed $var <p>
  * The variable being evaluated.
@@ -6110,7 +6110,7 @@ function is_array ($var) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Finds whether a variable is an object
+ * 检测变量是否是一个对象
  * @link http://php.net/manual/zh/function.is-object.php
  * @param mixed $var <p>
  * The variable being evaluated.
@@ -6122,7 +6122,7 @@ function is_object ($var) {}
 
 /**
  * (PHP 4 &gt;= 4.0.5, PHP 5)<br/>
- * Finds whether a variable is a scalar
+ * 检测变量是否是一个标量
  * @link http://php.net/manual/zh/function.is-scalar.php
  * @param mixed $var <p>
  * The variable being evaluated.
@@ -6134,10 +6134,10 @@ function is_scalar ($var) {}
 
 /**
  * (PHP 4 &gt;= 4.0.6, PHP 5)<br/>
- * Verify that the contents of a variable can be called as a function
+ * 验证变量的内容能否作为函数调用
  * @link http://php.net/manual/zh/function.is-callable.php
  * @param callable $name <p>
- * The callback function to check
+ * 要检查的回调函数
  * </p>
  * @param bool $syntax_only [optional] <p>
  * If set to <b>TRUE</b> the function only verifies that
@@ -6795,41 +6795,27 @@ function tempnam ($dir, $prefix) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Creates a temporary file
+ * 建立一个临时文件
  * @link http://php.net/manual/zh/function.tmpfile.php
- * @return resource a file handle, similar to the one returned by
- * <b>fopen</b>, for the new file or <b>FALSE</b> on failure.
+ * @return resource 以读写（w+）模式建立一个具有唯一文件名的临时文件，返回一个文件句柄。
  */
 function tmpfile () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Reads entire file into an array
+ * 把整个文件读入一个数组中
  * @link http://php.net/manual/zh/function.file.php
  * @param string $filename <p>
- * Path to the file.
+ * 文件的路径
  * </p>
- * A URL can be used as a
- * filename with this function if the fopen wrappers have been enabled.
- * See <b>fopen</b> for more details on how to specify the
- * filename. See the for links to information
- * about what abilities the various wrappers have, notes on their usage,
- * and information on any predefined variables they may
- * provide.
+ * 如已启用fopen包装器，在此函数中，URL可作为文件名。关于如何指定文件名详见fopen()。各种wapper的不同功能请参见支持的协议和封装协议，注意其用法及其可提供的预定义变量。
  * @param int $flags [optional] <p>
  * The optional parameter <i>flags</i> can be one, or
  * more, of the following constants:
- * <b>FILE_USE_INCLUDE_PATH</b>
- * Search for the file in the include_path.
- * @param resource $context [optional] <p>
- * A context resource created with the
- * <b>stream_context_create</b> function.
- * </p>
- * <p>
- * Context support was added
- * with PHP 5.0.0. For a description of contexts, refer to
- * .
- * </p>
+ * <b>FILE_USE_INCLUDE_PATH</b> 在 include_path 中查找文件
+ * <b>FILE_IGNORE_NEW_LINES</b> 在数组每个元素的末尾不要添加换行符
+ * <b>FILE_SKIP_EMPTY_LINES</b> 跳过空行 
+ * @param resource $context [optional]
  * @return array the file in an array. Each element of the array corresponds to a
  * line in the file, with the newline still attached. Upon failure,
  * <b>file</b> returns <b>FALSE</b>.
@@ -6844,10 +6830,10 @@ function file ($filename, $flags = 0, $context = null) {}
 
 /**
  * (PHP 4 &gt;= 4.3.0, PHP 5)<br/>
- * Reads entire file into a string
+ * 将整个文件读入一个字符串
  * @link http://php.net/manual/zh/function.file-get-contents.php
  * @param string $filename <p>
- * Name of the file to read.
+ * 要读取的文件的名称
  * </p>
  * @param bool $use_include_path [optional] <p>
  * As of PHP 5 the <b>FILE_USE_INCLUDE_PATH</b> constant can be used
