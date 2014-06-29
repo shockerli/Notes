@@ -1,0 +1,155 @@
+"关闭兼容模式
+set nocompatible
+"模仿快捷键，如：CTRL+A全选、Ctrl+C复制、Ctrl+V粘贴等
+source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
+"关闭工具栏(要去掉，把等号前面的加号变成一个减号即可)
+set guioptions-=T
+"关闭右侧滚动条
+set guioptions-=r
+"关闭菜单栏
+set guioptions+=m
+
+"设置字符编码
+set encoding=utf-8
+"设置文件编码
+set fileencoding=utf-8
+"文件编码集
+set fileencodings=ASCII,utf-8,gbk,big5,gb2312,chinese,cp936,latin1,eus-bom,euc-jp,euc-kr
+"侦测文件类型
+filetype on
+
+"设置自动折叠方式
+set foldmethod=indent
+"设置自动折叠级别，数值越大折叠级别越低
+set foldlevel=999999999999999
+
+"整词换行
+"set linebreak
+"自动设置目录为正在编辑的文件所在目录
+"set autochdir
+
+"设置菜单语言
+set langmenu=zh_CN.utf-8
+"导入删除菜单脚本，删除乱码的菜单
+source $VIMRUNTIME/delmenu.vim
+"导入正常的菜单脚本
+source $VIMRUNTIME/menu.vim
+"设置提示信息语言(此句不可少，系与encoding=utf-8搭配用，否则状态栏等会出现乱码)
+language messages zh_CN.utf-8
+"状态行显示的内容（包括文件类型和解码）
+set statusline=[%n]%<%f%y%h%m%r%=[%b\ 0x%B]\ %l\ of\ %L,%c%V\ Page\ %N\ %P
+"开启状态栏信息
+set laststatus=2
+
+"命令行补全
+set wildmenu
+
+"自动补全括号，包括大括号
+":inoremap ( ()<ESC>i
+":inoremap ) <c-r>=ClosePair(‘)’)<CR>
+":inoremap { {}<ESC>i
+":inoremap } <c-r>=ClosePair(‘}’)<CR>
+":inoremap [ []<ESC>i
+":inoremap ] <c-r>=ClosePair(‘]’)<CR>
+":inoremap < <><ESC>i
+":inoremap > <c-r>=ClosePair(‘>’)<CR>
+
+
+"防止特殊符号无法正常显示
+set ambiwidth=double
+
+"配色方案
+colors desert
+"gvim字体设置
+set guifont=Consolas:h11
+"默认窗口大小
+set lines=30 columns=100
+
+"禁止生成备份文件
+set nobackup
+"禁止生成临时文件
+set noswapfile
+
+"设置语法高亮度
+syntax on
+"设置语法高亮度
+"set syn=cpp
+
+"高亮显示匹配的括号
+set showmatch
+"匹配括号高亮的时间（单位是十分之一秒）
+set matchtime=5
+"显示括号配对情况
+set showmatch
+
+"显示行号
+set number
+"高亮显示当前行
+set cursorline
+"整词换行
+set linebreak
+"自动换行
+"set wrap
+
+"搜索相关
+"输入搜索内容时就显示搜索结果
+set incsearch
+"搜索结果高亮度显示
+set hlsearch
+"搜索时忽略大小写，但在有一个或以上大写字母时仍保持对大小写敏感
+"set ignorecase smartcase
+"搜索时忽略大小写
+set ignorecase
+
+"使用space代替tab.
+set expandtab
+"缩进尺寸为4个空格
+set sw=4
+"tab宽度为四个字符
+set tabstop=4
+"使得按退格键时可以一次删掉 4 个空格（不足 4 个时删掉所有剩下的空格）
+set softtabstop=4
+
+"设置自动缩进
+set autoindent
+"智能缩进
+ set smartindent
+"设置为C语言风格的缩进模式
+"set cindent
+"设定<<和>>命令移动时的宽度
+set shiftwidth=4
+
+"PHP语法提示
+"autocmd FileType php set omnifunc=phpcomplete
+
+
+set diffexpr=MyDiff()
+function MyDiff()
+  let opt = '-a --binary '
+  if &diffopt =~ 'icase' | let opt = opt . '-i ' | endif
+  if &diffopt =~ 'iwhite' | let opt = opt . '-b ' | endif
+  let arg1 = v:fname_in
+  if arg1 =~ ' ' | let arg1 = '"' . arg1 . '"' | endif
+  let arg2 = v:fname_new
+  if arg2 =~ ' ' | let arg2 = '"' . arg2 . '"' | endif
+  let arg3 = v:fname_out
+  if arg3 =~ ' ' | let arg3 = '"' . arg3 . '"' | endif
+  let eq = ''
+  if $VIMRUNTIME =~ ' '
+    if &sh =~ '\<cmd'
+      let cmd = '""' . $VIMRUNTIME . '\diff"'
+      let eq = '"'
+    else
+      let cmd = substitute($VIMRUNTIME, ' ', '" ', '') . '\diff"'
+    endif
+  else
+    let cmd = $VIMRUNTIME . '\diff'
+  endif
+  silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
+endfunction
+
+"设置文件默认保存目录
+cd C:\Users\Administrator\Desktop

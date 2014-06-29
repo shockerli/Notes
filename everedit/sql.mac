@@ -1,0 +1,46 @@
+'*******************************************************************************
+' EverEdit Syntax File
+' Language:   MSSQL
+' Maintainer:  www.everedit.net  
+' History:
+'   2012/02/15 Create
+'*******************************************************************************
+Include( ".\const.mac" )
+
+Set sql=CreateParser()
+
+Set rLineComment=sql.CreateRegion(COLOR_COMMENT1, "+--+", "$", True )
+Set rLineComment2=sql.CreateRegion(COLOR_COMMENT1, "+#+", "$", True )
+Set rBlockComment=sql.CreateRegion(COLOR_COMMENT1, "+/*+", "*/", True )
+Set rString2=sql.CreateStringRegion( COLOR_MACRO, """", "\", False )
+Set rString1=sql.CreateStringRegion( COLOR_STRING2, "'", "", False )
+
+sql.AddRegion( rLineComment )
+sql.AddRegion( rLineComment2 )
+sql.AddRegion( rBlockComment )
+sql.AddRegion( rString2 )
+sql.AddRegion( rString1 )
+
+'num
+Set iWordNum=sql.CreateItem(COLOR_MACRO, "\b\d+\b", False)
+'$xxxx$
+Set iWordDollar=sql.CreateItem(COLOR_MACRO, "\$.+\$", False)
+
+'word
+Set wWord1=sql.CreateWord(COLOR_WORD1, "BTREE RTREE GLOBAL SESSION analyze unlock SAVEPOINT RELEASE CSV MEMORY BDB keys indexes subpartition subpartitions directory logs engines storage repair list hash less than maxvalue partition partitions range add after against algorithm all alter any as asc authorization auto_increment autocommit backup before begin between bigint binary blob bool break browse bulk by call cascade change char character charset check checkpoint close clustered collate collation column columns comment commit committed compute confirm constraint contains continue controlrow create cross current current_date current_time cursor data database databases date datetime dbcc deallocate decimal declare default delete delimiter deny desc describe disk distinct distinctrow distributed do double drop dummy dump duplicate each else elseif enclosed end engine enum errlvl errorexit escape escaped except exec execute exists exit explain fetch fields file fillfactor first float floppy for foreign freetext from full fulltext function gbk go goto grant grants group having holdlock identified identity_insert identitycol if in index infile inner InnoDB inout insert int intersect into is isolation iterate join key kill leave level like limit lineno lines load lock match mediumint merge mirrorexit modify MyISAM names national natural new nocheck nonclustered not null of off offsets old on once only open opendatasource optimize option or order out outer outfile over password percent perm permanent pipe plan precision prepare primary print privileges proc procedure process processexit public raiserror read readtext reconfigure references reload rename repeatable replication restore restrict return returns revoke rollback routine row rowcount rowguidcol rule save schema select serializable set setuser show shutdown smallint some source start statistics status sum super table tables tape temp temporary temptable terminated text textsize then time timestamp tinyint to top tran transaction trigger truncate tsequal uncommitted undefined union unique unsigned update updatetext usage use user using utf8 values varbinary varchar variables varying view waitfor warnings when where while with work writetext xor year zerofill", False)
+
+'@@function
+Set iWord2=sql.CreateItem(COLOR_WORD3, "@@(connections|cpu_busy|cursor_rows|datefirst|dbts|error|fetch_status|identity|idle|io_busy|langid|language|lock_timeout|max_connections|max_precision|nestlevel|options|pack_received|pack_sent|packet_errors|procid|remserver|rowcount|servername|servicename|spid|textsize|timeticks|total_errors|total_read|total_write|trancount|version)\b", False)
+'functions
+Set wWord3=sql.CreateWord(COLOR_WORD2, "format ceil mod pow date_format unix_timestamp from_unixtime char_length length instr lcase load_file locate lpad repeat rpad strcmp md5 concat now abs acos and app_name ascii asin atan atn2 avg case cast ceiling char charindex coalesce col_length col_name columnproperty containstable convert cos cot count current_timestamp current_user cursor_status databaseproperty datalength dateadd datediff datename datepart day db_id db_name degrees difference exp file_id file_name filegroup_id filegroup_name filegroupproperty fileproperty floor formatmessage freetexttable fulltextcatalogproperty fulltextserviceproperty getansinull getdate grouping group_concat host_id host_name ident_incr ident_seed identity index_col indexproperty is_member is_srvrolemember isdate isnull isnumeric left len log log10 lower ltrim max min month nchar newid nullif object_id object_name objectproperty openquery openrowset parsename patindex patindex permissions pi power quotename radians rand replace replicate reverse right round rtrim session_user sign sin soundex space sqrt square stats_date stdev stdevp str stuff substring sum suser_id suser_name suser_sid suser_sname system_user tan textptr textvalid typeproperty unicode upper user user_id user_name var varp year", False)
+
+
+sql.AddItem( iWordNum )
+sql.AddItem( iWordDollar )
+sql.AddWord( wWord1 )
+sql.AddItem( iWord2 )
+sql.AddWord( wWord3 )
+
+Call sql.SetPairs( "[]{}()""""''" )
+Call sql.CommentLine("--")
+Call sql.CommentBlock("/*", "*/")
