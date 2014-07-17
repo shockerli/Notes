@@ -11,6 +11,7 @@ mysqld --skip-grant-tables
 update mysql.user set password=password('root');
 
 SHOW PROCESSLIST -- 显示哪些线程正在运行
+SHOW VARIABLES -- 
 
 /* 数据库操作 */ ------------------
 -- 查看当前数据库
@@ -101,6 +102,16 @@ SHOW PROCESSLIST -- 显示哪些线程正在运行
 	CREATE TABLE 表名 LIKE 要复制的表名
 -- 复制表结构和数据
 	CREATE TABLE 表名 [AS] SELECT * FROM 要复制的表名
+-- 检查表是否有错误
+	CHECK TABLE tbl_name [, tbl_name] ... [option] ...
+-- 优化表
+	OPTIMIZE [LOCAL | NO_WRITE_TO_BINLOG] TABLE tbl_name [, tbl_name] ...
+-- 修复表
+	REPAIR [LOCAL | NO_WRITE_TO_BINLOG] TABLE tbl_name [, tbl_name] ... [QUICK] [EXTENDED] [USE_FRM]
+-- 分析表
+	ANALYZE [LOCAL | NO_WRITE_TO_BINLOG] TABLE tbl_name [, tbl_name] ...
+
+
 
 /* 数据操作 */ ------------------
 -- 增

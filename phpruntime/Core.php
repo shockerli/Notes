@@ -543,7 +543,7 @@ function func_get_args () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Get string length
+ * 获取字符串长度
  * @link http://php.net/manual/en/function.strlen.php
  * @param string $string <p>
  * The string being measured for length.
@@ -555,7 +555,7 @@ function strlen ($string) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Binary safe string comparison
+ * 二进制安全字符串比较
  * @link http://php.net/manual/en/function.strcmp.php
  * @param string $str1 <p>
  * The first string.
@@ -563,10 +563,7 @@ function strlen ($string) {}
  * @param string $str2 <p>
  * The second string.
  * </p>
- * @return int &lt; 0 if <i>str1</i> is less than
- * <i>str2</i>; &gt; 0 if <i>str1</i>
- * is greater than <i>str2</i>, and 0 if they are
- * equal.
+ * @return int 如果str1小于str2返回<0；如果str1大于str2返回>0；如果两者相等，返回0。
  */
 function strcmp ($str1, $str2) {}
 

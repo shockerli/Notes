@@ -105,7 +105,7 @@ function gd_info () {}
  * </p>
  * @param int $end <p>
  * The arc end angle, in degrees.
- * 0° is located at the three-o'clock position, and the arc is drawn
+ * 0째 is located at the three-o'clock position, and the arc is drawn
  * clockwise.
  * </p>
  * @param int $color <p>
@@ -581,7 +581,7 @@ function imagesetthickness ($image, $thickness) {}
  * </p>
  * @param int $end <p>
  * The arc end angle, in degrees.
- * 0° is located at the three-o'clock position, and the arc is drawn
+ * 0째 is located at the three-o'clock position, and the arc is drawn
  * clockwise.
  * </p>
  * @param int $color <p>

@@ -62,7 +62,7 @@ class Directory  {
 
 /**
  * (PHP 4 &gt;= 4.0.4, PHP 5)<br/>
- * Returns the value of a constant
+ * 返回一个常量的值
  * @link http://php.net/manual/zh/function.constant.php
  * @param string $name <p>
  * The constant name.
@@ -74,7 +74,7 @@ function constant ($name) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Convert binary data into hexadecimal representation
+ * 将二进制数据转换成十六进制表示
  * @link http://php.net/manual/zh/function.bin2hex.php
  * @param string $str <p>
  * A string.
@@ -1565,12 +1565,12 @@ function stripslashes ($str) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Un-quote string quoted with <b>addcslashes</b>
+ * 反引用一个使用addcslashes()转义的字符串
  * @link http://php.net/manual/zh/function.stripcslashes.php
  * @param string $str <p>
- * The string to be unescaped.
+ * 需要反转义的字符串
  * </p>
- * @return string the unescaped string.
+ * @return string 返回反转义后的字符串
  */
 function stripcslashes ($str) {}
 
@@ -1669,13 +1669,13 @@ function str_word_count ($string, $format = 0, $charlist = null) {}
 
 /**
  * (PHP 5)<br/>
- * Convert a string to an array
+ * 将字符串转换为数组
  * @link http://php.net/manual/zh/function.str-split.php
  * @param string $string <p>
- * The input string.
+ * 输入字符串
  * </p>
  * @param int $split_length [optional] <p>
- * Maximum length of the chunk.
+ * 每一段的长度
  * </p>
  * @return array If the optional <i>split_length</i> parameter is
  * specified, the returned array will be broken down into chunks with each
@@ -1970,10 +1970,10 @@ function addslashes ($str) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Quote string with slashes in a C style
+ * 以C语言风格使用反斜线转义字符串中的字符
  * @link http://php.net/manual/zh/function.addcslashes.php
  * @param string $str <p>
- * The string to be escaped.
+ * 要转义的字符串
  * </p>
  * @param string $charlist <p>
  * A list of characters to be escaped. If
@@ -2094,45 +2094,38 @@ function str_ireplace ($search, $replace, $subject, &$count = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Repeat a string
+ * 重复一个字符串
  * @link http://php.net/manual/zh/function.str-repeat.php
  * @param string $input <p>
- * The string to be repeated.
+ * 待操作的字符串
  * </p>
  * @param int $multiplier <p>
- * Number of time the <i>input</i> string should be
- * repeated.
+ * 被重复的次数
  * </p>
  * <p>
- * <i>multiplier</i> has to be greater than or equal to 0.
- * If the <i>multiplier</i> is set to 0, the function
- * will return an empty string.
+ * multiplier必须大于等于0。如果multiplier被设置为0，函数返回空字符串。
  * </p>
- * @return string the repeated string.
+ * @return string 返回重复后的字符串
  */
 function str_repeat ($input, $multiplier) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return information about characters used in a string
+ * 返回字符串所用字符的信息
  * @link http://php.net/manual/zh/function.count-chars.php
  * @param string $string <p>
- * The examined string.
+ * 需要统计的字符串
  * </p>
  * @param int $mode [optional] <p>
- * See return values.
+ * 参见返回的值
  * </p>
- * @return mixed Depending on <i>mode</i>
- * <b>count_chars</b> returns one of the following:
- * 0 - an array with the byte-value as key and the frequency of
- * every byte as value.
- * 1 - same as 0 but only byte-values with a frequency greater
- * than zero are listed.
- * 2 - same as 0 but only byte-values with a frequency equal to
- * zero are listed.
- * 3 - a string containing all unique characters is returned.
- * 4 - a string containing all not used characters is returned.
- */
+ * @return mixed 根据不同的mode，count_chars()返回下列不同的结果：
+ * 0 - 以所有的每个字节值作为键名，出现次数作为值的数组
+ * 1 - 与0相同，但只列出出现次数大于零的字节值
+ * 2 - 与0相同，但只列出出现次数等于零的字节值
+ * 3 - 返回由所有使用了的字节值组成的字符串
+ * 4 - 返回由所有未使用的字节值组成的字符串
+ */ 
 function count_chars ($string, $mode = 0) {}
 
 /**
@@ -2230,20 +2223,18 @@ function strip_tags ($str, $allowable_tags = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Calculate the similarity between two strings
+ * 计算两个字符串的相似度
  * @link http://php.net/manual/zh/function.similar-text.php
  * @param string $first <p>
- * The first string.
+ * 第一个字符串
  * </p>
  * @param string $second <p>
- * The second string.
+ * 第二个字符串
  * </p>
  * @param float $percent [optional] <p>
- * By passing a reference as third argument,
- * <b>similar_text</b> will calculate the similarity in
- * percent for you.
+ * 通过引用方式传递第三个参数，将计算相似程度百分数
  * </p>
- * @return int the number of matching chars in both strings.
+ * @return int 返回在两个字符串中匹配字符的数目
  */
 function similar_text ($first, $second, &$percent = null) {}
 
@@ -2707,29 +2698,21 @@ function str_getcsv ($input, $delimiter = ',', $enclosure = '"', $escape = '\\')
 
 /**
  * (PHP 4 &gt;= 4.0.1, PHP 5)<br/>
- * Pad a string to a certain length with another string
+ * 使用另一个字符串填充字符串为指定长度
  * @link http://php.net/manual/zh/function.str-pad.php
  * @param string $input <p>
- * The input string.
+ * 输入字符串
  * </p>
  * @param int $pad_length <p>
- * If the value of <i>pad_length</i> is negative,
- * less than, or equal to the length of the input string, no padding
- * takes place.
+ * 如果pad_length的值是负数，小于或者等于输入字符串的长度，不会发生任何填充
  * </p>
  * @param string $pad_string [optional] <p>
- * The <i>pad_string</i> may be truncated if the
- * required number of padding characters can't be evenly divided by the
- * <i>pad_string</i>'s length.
+ * 如果填充字符的长度不能被pad_string整除，那么pad_string可能会被缩短
  * </p>
  * @param int $pad_type [optional] <p>
- * Optional argument <i>pad_type</i> can be
- * <b>STR_PAD_RIGHT</b>, <b>STR_PAD_LEFT</b>,
- * or <b>STR_PAD_BOTH</b>. If
- * <i>pad_type</i> is not specified it is assumed to be
- * <b>STR_PAD_RIGHT</b>.
+ * 可选的pad_type参数的可能值为STR_PAD_RIGHT，STR_PAD_LEFT或STR_PAD_BOTH。如果没有指定pad_type，则假定它是STR_PAD_RIGHT。
  * </p>
- * @return string the padded string.
+ * @return string 返回填充后的字符串
  */
 function str_pad ($input, $pad_length, $pad_string = " ", $pad_type = 'STR_PAD_RIGHT') {}
 
@@ -5317,7 +5300,7 @@ function setrawcookie ($name, $value = null, $expire = 0, $path = null, $domain 
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Send a raw HTTP header
+ * 发送一个自定义的http报文
  * @link http://php.net/manual/zh/function.header.php
  * @param string $string <p>
  * The header string.
@@ -5506,7 +5489,7 @@ function parse_ini_string ($ini, $process_sections = false, $scanner_mode = 'INI
 
 /**
  * (PHP 4 &gt;= 4.0.3, PHP 5)<br/>
- * Tells whether the file was uploaded via HTTP POST
+ * 判断文件是否是通过HTTP POST上传的
  * @link http://php.net/manual/zh/function.is-uploaded-file.php
  * @param string $filename <p>
  * The filename being checked.
@@ -5517,13 +5500,13 @@ function is_uploaded_file ($filename) {}
 
 /**
  * (PHP 4 &gt;= 4.0.3, PHP 5)<br/>
- * Moves an uploaded file to a new location
+ * 将上传的文件移动到新位置
  * @link http://php.net/manual/zh/function.move-uploaded-file.php
  * @param string $filename <p>
- * The filename of the uploaded file.
+ * 上传的文件的文件名
  * </p>
  * @param string $destination <p>
- * The destination of the moved file.
+ * 移动文件到这个位置
  * </p>
  * @return bool <b>TRUE</b> on success.
  * </p>
@@ -7970,10 +7953,10 @@ function socket_get_status ($fp) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Returns canonicalized absolute pathname
+ * 返回规范化的绝对路径名
  * @link http://php.net/manual/zh/function.realpath.php
  * @param string $path <p>
- * The path being checked.
+ * 要检查的路径
  * <p>
  * Whilst a path must be supplied, the value can be blank or <b>NULL</b>
  * In these cases, the value is interpreted as the current directory.
@@ -9568,17 +9551,15 @@ function ksort (array &$array, $sort_flags = 'SORT_REGULAR') {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Sort an array by key in reverse order
+ * 对数组按照键名逆向排序
  * @link http://php.net/manual/zh/function.krsort.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组
  * </p>
  * @param int $sort_flags [optional] <p>
- * You may modify the behavior of the sort using the optional parameter
- * <i>sort_flags</i>, for details see
- * <b>sort</b>.
+ * 可以用可选参数sort_flags改变排序的行为，详情见sort()
  * </p>
- * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
+ * @return bool 成功时返回TRUE，或者在失败时返回FALSE
  */
 function krsort (array &$array, $sort_flags = 'SORT_REGULAR') {}
 
@@ -10035,7 +10016,7 @@ function extract (array &$array, $flags = 'EXTR_OVERWRITE', $prefix = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Create array containing variables and their values
+ * 建立一个数组，包括变量名和它们的值
  * @link http://php.net/manual/zh/function.compact.php
  * @param mixed $varname1 <p>
  * <b>compact</b> takes a variable number of parameters.
@@ -10091,7 +10072,7 @@ function array_fill_keys (array $keys, $value) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Create an array containing a range of elements
+ * 建立一个包含指定范围单元的数组
  * @link http://php.net/manual/zh/function.range.php
  * @param mixed $start <p>
  * First value of the sequence.
@@ -10158,7 +10139,7 @@ function array_push (array &$array, $value1, $_ = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Pop the element off the end of array
+ * 将数组最后一个单元弹出（出栈）
  * @link http://php.net/manual/zh/function.array-pop.php
  * @param array $array <p>
  * The array to get the value from.
@@ -10171,7 +10152,7 @@ function array_pop (array &$array) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Shift an element off the beginning of array
+ * 将数组开头的单元移出数组
  * @link http://php.net/manual/zh/function.array-shift.php
  * @param array $array <p>
  * The input array.
@@ -10183,16 +10164,16 @@ function array_shift (array &$array) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Prepend one or more elements to the beginning of an array
+ * 在数组开头插入一个或多个单元
  * @link http://php.net/manual/zh/function.array-unshift.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组
  * </p>
  * @param mixed $value1 <p>
- * First value to prepend.
+ * 开头插入的变量
  * </p>
  * @param mixed $_ [optional]
- * @return int the new number of elements in the <i>array</i>.
+ * @return int 返回array数组新的单元数目
  */
 function array_unshift (array &$array, $value1, $_ = null) {}
 
@@ -10245,34 +10226,21 @@ function array_splice (array &$input, $offset, $length = null, $replacement = 'a
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Extract a slice of the array
+ * 从数组中取出一段
  * @link http://php.net/manual/zh/function.array-slice.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组
  * </p>
  * @param int $offset <p>
- * If <i>offset</i> is non-negative, the sequence will
- * start at that offset in the <i>array</i>. If
- * <i>offset</i> is negative, the sequence will
- * start that far from the end of the <i>array</i>.
+ * 如果offset非负，则序列将从array中的此偏移量开始。如果offset为负，则序列将从array中距离末端这么远的地方开始。
  * </p>
  * @param int $length [optional] <p>
- * If <i>length</i> is given and is positive, then
- * the sequence will have up to that many elements in it. If the array
- * is shorter than the <i>length</i>, then only the
- * available array elements will be present. If
- * <i>length</i> is given and is negative then the
- * sequence will stop that many elements from the end of the
- * array. If it is omitted, then the sequence will have everything
- * from <i>offset</i> up until the end of the
- * <i>array</i>.
+ * 如果给出了length并且为正，则序列中将具有这么多的单元。如果给出了length并且为负，则序列将终止在距离数组末端这么远的地方。如果省略，则序列将从offset开始一直到array的末端。
  * </p>
  * @param bool $preserve_keys [optional] <p>
- * Note that <b>array_slice</b> will reorder and reset the
- * numeric array indices by default. You can change this behaviour by setting
- * <i>preserve_keys</i> to <b>TRUE</b>.
+ * 注意array_slice()默认会重新排序并重置数组的数字索引。你可以通过将preserve_keys设为TRUE来改变此行为。
  * </p>
- * @return array the slice.
+ * @return array 返回其中一段
  */
 function array_slice (array $array, $offset, $length = null, $preserve_keys = false) {}
 
@@ -10398,16 +10366,15 @@ function array_column (array $array, $column_key, $index_key = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return an array with elements in reverse order
+ * 返回一个单元顺序相反的数组
  * @link http://php.net/manual/zh/function.array-reverse.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组
  * </p>
  * @param bool $preserve_keys [optional] <p>
- * If set to <b>TRUE</b> numeric keys are preserved.
- * Non-numeric keys are not affected by this setting and will always be preserved.
+ * 如果设置为TRUE会保留数字的键。非数字的键则不受这个设置的影响，总是会被保留。
  * </p>
- * @return array the reversed array.
+ * @return array 返回反转后的数组
  */
 function array_reverse (array $array, $preserve_keys = false) {}
 
@@ -10490,26 +10457,21 @@ function array_change_key_case (array $array, $case = 'CASE_LOWER') {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Pick one or more random entries out of an array
+ * 从数组中随机取出一个或多个单元
  * @link http://php.net/manual/zh/function.array-rand.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组
  * </p>
  * @param int $num [optional] <p>
- * Specifies how many entries should be picked.
+ * 指明了你想取出多少个单元。如果指定的数目超过了数组里的数量将会产生一个E_WARNING级别的错误
  * </p>
- * @return mixed When picking only one entry, <b>array_rand</b> returns
- * the key for a random entry. Otherwise, an array of keys for the random
- * entries is returned. This is done so that random keys can be picked
- * from the array as well as random values. Trying to pick more elements
- * than there are in the array will result in an
- * <b>E_WARNING</b> level error, and NULL will be returned.
+ * @return mixed 如果你只取出一个，array_rand()返回一个随机单元的键名，否则就返回一个包含随机键名的数组。这样你就可以随机从数组中取出键名和值。
  */
 function array_rand (array $array, $num = 1) {}
 
 /**
  * (PHP 4 &gt;= 4.0.1, PHP 5)<br/>
- * Removes duplicate values from an array
+ * 移除数组中重复的值
  * @link http://php.net/manual/zh/function.array-unique.php
  * @param array $array <p>
  * The input array.
@@ -10690,7 +10652,7 @@ function array_uintersect_uassoc (array $array1, array $array2, array $_ = null,
 
 /**
  * (PHP 4 &gt;= 4.0.1, PHP 5)<br/>
- * Computes the difference of arrays
+ * 计算数组的差集
  * @link http://php.net/manual/zh/function.array-diff.php
  * @param array $array1 <p>
  * The array to compare from
@@ -10708,7 +10670,7 @@ function array_diff (array $array1, array $array2, array $_ = null) {}
 
 /**
  * (PHP 5 &gt;= 5.1.0)<br/>
- * Computes the difference of arrays using keys for comparison
+ * 使用键名比较计算数组的差集
  * @link http://php.net/manual/zh/function.array-diff-key.php
  * @param array $array1 <p>
  * The array to compare from
@@ -10727,7 +10689,7 @@ function array_diff_key (array $array1, array $array2, array $_ = null) {}
 
 /**
  * (PHP 5 &gt;= 5.1.0)<br/>
- * Computes the difference of arrays using a callback function on the keys for comparison
+ * 用回调函数对键名比较计算数组的差集
  * @link http://php.net/manual/zh/function.array-diff-ukey.php
  * @param array $array1 <p>
  * The array to compare from
@@ -10749,7 +10711,7 @@ function array_diff_ukey (array $array1, array $array2, array $_ = null, callabl
 
 /**
  * (PHP 5)<br/>
- * Computes the difference of arrays by using a callback function for data comparison
+ * 用回调函数比较数据来计算数组的差集
  * @link http://php.net/manual/zh/function.array-udiff.php
  * @param array $array1 <p>
  * The first array.
@@ -10772,7 +10734,7 @@ function array_udiff (array $array1, array $array2, array $_ = null, callable $v
 
 /**
  * (PHP 4 &gt;= 4.3.0, PHP 5)<br/>
- * Computes the difference of arrays with additional index check
+ * 带索引检查计算数组的差集
  * @link http://php.net/manual/zh/function.array-diff-assoc.php
  * @param array $array1 <p>
  * The array to compare from
@@ -10954,7 +10916,7 @@ function array_combine (array $keys, array $values) {}
 
 /**
  * (PHP 4 &gt;= 4.0.7, PHP 5)<br/>
- * Checks if the given key or index exists in the array
+ * 检查给定的键名或索引是否存在于数组中
  * @link http://php.net/manual/zh/function.array-key-exists.php
  * @param mixed $key <p>
  * Value to check.

@@ -1624,6 +1624,12 @@ $id = $_POST['id'];  //则可获取所有name为id[...]的值，形成管理数�
 ;iconv.input_encoding = ISO-8859-1
 ;iconv.output_encoding = ISO-8859-1
 ;iconv.internal_encoding = ISO-8859-1
+iconv_set_encoding($type, $charset);
+    $type：input_encoding，output_encoding，internal_encoding
+iconv_get_encoding([$type = "all"])
+    $type：all，input_encoding，output_encoding，internal_encoding
+
+
 
 iconv($in_charset, $out_charset, $str) //将字符串转换为目标编码
 
@@ -2008,6 +2014,7 @@ strtotime($time [,$now]) //将任何英文文本的日期时间描述解析为Un
     "last Monday"
     "next Thursday"
 gmdate($format [,$timestamp]) //格式化一个GMT/UTC 日期／时间
+mktime([$hour = date("H") [,$minute = date("i") [,$second = date("s") [,$month = date("n") [,$day = date("j") [,$year = date("Y") [,$is_dst = -1]]]]]]]) //取得一个日期的Unix时间戳
 strftime($format [,$timestamp]) //根据区域设置格式化本地时间／日期
 date_default_timezone_get($timezone) //获取默认时区
 date_default_timezone_set($timezone) //设置默认时区
