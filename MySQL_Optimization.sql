@@ -38,7 +38,7 @@
 	select * from emp where empno=555555;
 
 ③EXPLAIN
-[explain]获得关于MySQL如何执行SELECT语句的信息
+-- 获得关于MySQL如何执行SELECT语句的信息
 	EXPLAIN SELECT查询语句 \G
            id: 1 (查询序号)
   select_type: SIMPLE (查询方式)
@@ -51,18 +51,18 @@ possible_keys: name (可能用到的索引)
          rows: 1 (MYSQL认为必须检查的用来返回请求数据的行数)
         Extra: (额外信息)
 
-[type]连接使用的类型
-	system  表仅有一行(=系统表)。这是const连接类型的一个特例。
-	const  const用于用常数值比较PRIMARY KEY时。当查询的表仅有一行时，使用 System。
-	eq_ref  除 const 类型外最好的可能实现的连接类型。它用在一个索引的所有部分被连接使用并且索引是UNIQUE或PRIMARY KEY，对于每个索引键，表中只有一条记录与之匹配。
-	ref  连接不能基于关键字选择单个行，可能查找到多个符合条件的行。 叫做 ref 是因为索引要跟某个参考值相比较。这个参考值或者是一个常数，或者是来自一个表里的多表查询的结果值。
-	ref_or_null  如同 ref， 但是 MySQL 必须在初次查找的结果里找出null条目，然后进行二次查找。
-	index_merge  说明索引合并优化被使用了。
-	unique_subquery  在某些IN查询中使用此种类型，而不是常规的 ref
-	index_subquery  在某些IN查询中使用此种类型， 与unique_subquery类似，但是查询的是非唯一性索引
-	range  只检索给定范围的行，使用一个索引来选择行。key 列显示使用了哪个索引。当使用=、<>、>、>=、<、<=、IS NULL、<=>、BETWEEN或者 IN 操作符，用常量比较关键字列时，可以使用 range。
-	index  全表扫描，只是扫描表的时候按照索引次序进行而不是行。主要优点就是避免了排序，但是开销仍然非常大。
-	all  最坏的情况，从头到尾全表扫描。
+[type]连接使用的类型(由好到差)
+	system：表仅有一行(=系统表)。这是const连接类型的一个特例。
+	const：const用于用常数值比较PRIMARY KEY时。当查询的表仅有一行时，使用 System。
+	eq_ref：除const类型外最好的可能实现的连接类型。它用在一个索引的所有部分被连接使用并且索引是UNIQUE或PRIMARY KEY，对于每个索引键，表中只有一条记录与之匹配。
+	ref：连接不能基于关键字选择单个行，可能查找到多个符合条件的行。 叫做 ref 是因为索引要跟某个参考值相比较。这个参考值或者是一个常数，或者是来自一个表里的多表查询的结果值。
+	ref_or_null：如同ref，但是MySQL必须在初次查找的结果里找出null条目，然后进行二次查找。
+	index_merge：说明索引合并优化被使用了。
+	unique_subquery：在某些IN查询中使用此种类型，而不是常规的ref
+	index_subquery：在某些IN查询中使用此种类型，与unique_subquery类似，但是查询的是非唯一性索引
+	range：只检索给定范围的行，使用一个索引来选择行。key列显示使用了哪个索引。当使用=、<>、>、>=、<、<=、IS NULL、<=>、BETWEEN或者 IN 操作符，用常量比较关键字列时，可以使用 range。
+	index：全表扫描，只是扫描表的时候按照索引次序进行而不是行。主要优点就是避免了排序，但是开销仍然非常大。
+	all：最坏的情况，从头到尾全表扫描。
 
 ④SHOW STATUS
 [SHOW STATUS]提供服务器状态信息

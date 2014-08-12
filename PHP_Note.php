@@ -507,10 +507,10 @@ function out() {
         $result_arr = array_map(function ($v) {return $v3}, $arr);
 
 //闭包用法实例
-function closureCreater(){
-    $x =1;
-    return function($fun=null) use(&$x){//按引用传值
-        echo "<br />".$x++;
+function closureCreater() {
+    $x = 1;
+    return function($fun = null) use(&$x) {//按引用传值
+        echo "<br />" . $x++;
         $fun and $fun();
     };
 }

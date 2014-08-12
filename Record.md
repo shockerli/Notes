@@ -45,6 +45,11 @@ ECMAScript 6入门 http://es6.ruanyifeng.com/
 金步国作品集 http://works.jinbuguo.com/
 Jekyll http://jekyllcn.com/
 微学苑 http://www.weixueyuan.net/
+PHPPAN http://www.phppan.com/
+Er.Z http://zhangabc.com/
+Zen Space http://reeze.cn/
+天涯PHP博客 http://blog.phpha.com/
+CodeCloud http://codecloud.net/
 
 
 ==========================
@@ -83,6 +88,9 @@ http://sidigital.co/
 ==========================
 开源图书
 ==========================
+# 前端技能汇总 https://github.com/JacksonTian/fks
+# GitHub上的免费电子书 https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md
+
 Redis命令参考 http://www.redisdoc.com
 Redis设计与实现 http://www.redisbook.com
 PHP之道 http://wulijun.github.io/php-the-right-way/
