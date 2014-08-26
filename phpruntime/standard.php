@@ -1515,7 +1515,7 @@ function basename ($path, $suffix = null) {}
  * <p>
  * 在Windows中，斜线（/）和反斜线（\）都可以用作目录分隔符。在其它环境下是斜线（/）。
  * </p>
- * @return  path的父目录。如果在path中没有斜线，则返回一个点（'.'），表示当前目录。否则返回的是把path中结尾的/component（最后一个斜线以及后面部分）去掉之后的字符串。 
+ * @return  path的父目录。如果在path中没有斜线，则返回一个点（'.'），表示当前目录。否则返回的是把path中结尾的/component（最后一个斜线以及后面部分）去掉之后的字符串。
  */
 function dirname ($path) {}
 
@@ -2125,7 +2125,7 @@ function str_repeat ($input, $multiplier) {}
  * 2 - 与0相同，但只列出出现次数等于零的字节值
  * 3 - 返回由所有使用了的字节值组成的字符串
  * 4 - 返回由所有未使用的字节值组成的字符串
- */ 
+ */
 function count_chars ($string, $mode = 0) {}
 
 /**
@@ -6797,7 +6797,7 @@ function tmpfile () {}
  * more, of the following constants:
  * <b>FILE_USE_INCLUDE_PATH</b> 在 include_path 中查找文件
  * <b>FILE_IGNORE_NEW_LINES</b> 在数组每个元素的末尾不要添加换行符
- * <b>FILE_SKIP_EMPTY_LINES</b> 跳过空行 
+ * <b>FILE_SKIP_EMPTY_LINES</b> 跳过空行
  * @param resource $context [optional]
  * @return array the file in an array. Each element of the array corresponds to a
  * line in the file, with the newline still attached. Upon failure,
@@ -8227,7 +8227,7 @@ function unpack ($format, $data) {}
  * 获取浏览器具有的功能
  * @link http://php.net/manual/zh/function.get-browser.php
  * @param string $user_agent [optional] <p>
- * 要分析的用户代理。默认使用HTTP头中User-Agent的值，不过，你可以通过传递该参数改变User-Agent。(比如查找另一个浏览器的信息) 
+ * 要分析的用户代理。默认使用HTTP头中User-Agent的值，不过，你可以通过传递该参数改变User-Agent。(比如查找另一个浏览器的信息)
  * 你可以传递一个NULL来忽略该参数。
  * </p>
  * @param bool $return_array [optional] <p>
@@ -8381,7 +8381,7 @@ function dir ($directory, $context = null) {}
  * 列出指定路径中的文件和目录
  * @link http://php.net/manual/zh/function.scandir.php
  * @param string $directory <p>
- * 要被浏览的目录 
+ * 要被浏览的目录
  * </p>
  * @param int $sorting_order [optional] <p>
  * 默认的排序顺序是按字母升序排列。如果使用了可选参数sorting_order（设为1），则排序顺序是按字母降序排列。
@@ -8404,13 +8404,13 @@ function scandir ($directory, $sorting_order = 'SCANDIR_SORT_ASCENDING', $contex
  * </p>
  * @param int $flags [optional] <p>
  * 有效标记：
- * GLOB_MARK  - 在每个返回的项目中加一个斜线  
- * GLOB_NOSORT  - 按照文件在目录中出现的原始顺序返回（不排序）  
- * GLOB_NOCHECK  - 如果没有文件匹配则返回用于搜索的模式  
- * GLOB_NOESCAPE  - 反斜线不转义元字符  
- * GLOB_BRACE  - 扩充 {a,b,c} 来匹配 'a'，'b' 或 'c'  
- * GLOB_ONLYDIR  - 仅返回与模式匹配的目录项  
- * GLOB_ERR  - 停止并读取错误信息（比如说不可读的目录），默认的情况下忽略所有错误 
+ * GLOB_MARK  - 在每个返回的项目中加一个斜线
+ * GLOB_NOSORT  - 按照文件在目录中出现的原始顺序返回（不排序）
+ * GLOB_NOCHECK  - 如果没有文件匹配则返回用于搜索的模式
+ * GLOB_NOESCAPE  - 反斜线不转义元字符
+ * GLOB_BRACE  - 扩充 {a,b,c} 来匹配 'a'，'b' 或 'c'
+ * GLOB_ONLYDIR  - 仅返回与模式匹配的目录项
+ * GLOB_ERR  - 停止并读取错误信息（比如说不可读的目录），默认的情况下忽略所有错误
  * @return array 返回一个包含有匹配文件/目录的数组。如果出错返回FALSE。
  * </p>
  * <p>
@@ -9376,7 +9376,7 @@ function ob_clean () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Flush (send) the output buffer and turn off output buffering
+ * 冲刷出（送出）输出缓冲区内容并关闭缓冲
  * @link http://php.net/manual/zh/function.ob-end-flush.php
  * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure. Reasons for failure are first that you called the
  * function without an active buffer or that for some reason a buffer could
@@ -9422,16 +9422,15 @@ function ob_get_length () {}
 
 /**
  * (PHP 4 &gt;= 4.2.0, PHP 5)<br/>
- * Return the nesting level of the output buffering mechanism
+ * 返回输出缓冲机制的嵌套级别
  * @link http://php.net/manual/zh/function.ob-get-level.php
- * @return int the level of nested output buffering handlers or zero if output
- * buffering is not active.
+ * @return int 返回嵌套的输出缓冲处理程序的级别；如果输出缓冲区不起作用，返回零。
  */
 function ob_get_level () {}
 
 /**
  * (PHP 4 &gt;= 4.2.0, PHP 5)<br/>
- * Get status of output buffers
+ * 得到所有输出缓冲区的状态
  * @link http://php.net/manual/zh/function.ob-get-status.php
  * @param bool $full_status [optional] <p>
  * <b>TRUE</b> to return all active output buffer levels. If <b>FALSE</b> or not
@@ -9887,41 +9886,34 @@ function current (array &$array) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Fetch a key from an array
+ * 从关联数组中取得键名
  * @link http://php.net/manual/zh/function.key.php
  * @param array $array <p>
  * The array.
  * </p>
- * @return mixed The <b>key</b> function simply returns the
- * key of the array element that's currently being pointed to by the
- * internal pointer. It does not move the pointer in any way. If the
- * internal pointer points beyond the end of the elements list or the array is
- * empty, <b>key</b> returns <b>NULL</b>.
+ * @return mixed 返回数组中内部指针指向的当前单元的键名。但它不会移动指针。如果内部指针超过了元素列表尾部，或者数组是空的，返回NULL。
  */
 function key (array &$array) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Find lowest value
+ * 找出最小值
  * @link http://php.net/manual/zh/function.min.php
  * @param array $values <p>
- * An array containing the values.
+ * 包含值的数组
  * </p>
- * @return mixed <b>min</b> returns the numerically lowest of the
- * parameter values.
+ * @return mixed 返回参数中数值最小的
  */
 function min (array $values) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Find highest value
+ * 找出最大值
  * @link http://php.net/manual/zh/function.max.php
  * @param array $values <p>
- * An array containing the values.
+ * 包含值的数组
  * </p>
- * @return mixed <b>max</b> returns the numerically highest of the
- * parameter values. If multiple values can be considered of the same size,
- * the one that is listed first will be returned.
+ * @return mixed 返回参数中数值最大的值。如果有多个最大值，则返回第一个。
  * </p>
  * <p>
  * When <b>max</b> is given multiple arrays, the
@@ -10358,7 +10350,7 @@ function array_count_values (array $array) {}
  * 需要返回值的列，它可以是索引数组的列索引，或者是关联数组的列的键。也可以是NULL，此时将返回整个数组（配合index_key参数来重置数组键的时候，非常管用）
  * </p>
  * @param mixed $index_key [optional] <p>
- * 作为返回数组的索引/键的列，它可以是该列的整数索引，或者字符串键值。 
+ * 作为返回数组的索引/键的列，它可以是该列的整数索引，或者字符串键值。
  * </p>
  * @return array 从多维数组中返回单列数组
  */
@@ -10856,7 +10848,7 @@ function array_product (array $array) {}
  * 要循环的数组
  * </p>
  * @param callable $callback [optional] <p>
- * 使用的回调函数 
+ * 使用的回调函数
  * </p>
  * <p>
  * 如果没有提供<i>callback</i>函数， 将删除input中所有等值为<b>FALSE</b>的条目。

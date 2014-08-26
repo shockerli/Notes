@@ -195,6 +195,8 @@ SHOW STATUS LIKE 'Handler_read%';
 ⑧分区技术
 跨文件系统分配单个表的多个部分，每个部分在不同的位置被存储为单独的表。
 
+show variables like 'have_partitioning'; -- 查看是否支持分区
+
 分表				分区
 多张数据表			一张数据表
 重复数据表的风险		没有数据重复的风险

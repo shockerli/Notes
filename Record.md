@@ -50,13 +50,22 @@ Er.Z http://zhangabc.com/
 Zen Space http://reeze.cn/
 天涯PHP博客 http://blog.phpha.com/
 CodeCloud http://codecloud.net/
+微度网络 http://www.widuu.com/
 
 
 ==========================
 PHP源码
 ==========================
 PHP创建网站地图类 https://github.com/pawelantczak/php-sitemap-generator
+PHPWord http://phpword.codeplex.com/
+PHPPowerPoint http://phppowerpoint.codeplex.com/
+Array2XML http://www.lalit.org/lab/convert-php-array-to-xml-with-attributes/
 
+
+==========================
+公共接口
+==========================
+根据IP地址获取地理位置 http://ip.taobao.com/service/getIpInfo.php?ip=192.168.0.1
 
 
 ==========================
@@ -108,6 +117,8 @@ Git Book http://git-scm.com/book/zh
 Git教程 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
 《The Swift Programming Language》中文版 http://www.swiftguide.cn/
 Composer中文文档 http://composer.golaravel.com/
+Docker中文指南 http://www.widuu.com/chinese_docker/index.html
+
 
 Node.js API 中文版 http://nodeapi.ucdok.com/#/api/
 
