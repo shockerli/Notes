@@ -17,6 +17,19 @@ JavaScript中文网 http://www.itxueyuan.org/
 phpCodeBeautifier PHP格式化工具
 http://www.waterproof.fr/products/phpCodeBeautifier/
 
+==========================
+PHP规范
+==========================
+原文：https://github.com/php-fig/fig-standards/
+译文：https://github.com/hfcorriez/fig-standards/
+
+
+==========================
+Framework
+==========================
+http://www.slimframework.com
+http://framework.melonol.com
+
 
 ==========================
 优秀博客
@@ -51,15 +64,18 @@ Zen Space http://reeze.cn/
 天涯PHP博客 http://blog.phpha.com/
 CodeCloud http://codecloud.net/
 微度网络 http://www.widuu.com/
+百度Web前端研发部 http://fex.baidu.com/
+Fising's Blog http://www.fising.cn/
 
 
 ==========================
-PHP源码
+PHP源码/框架
 ==========================
 PHP创建网站地图类 https://github.com/pawelantczak/php-sitemap-generator
 PHPWord http://phpword.codeplex.com/
 PHPPowerPoint http://phppowerpoint.codeplex.com/
 Array2XML http://www.lalit.org/lab/convert-php-array-to-xml-with-attributes/
+## Workerman(PHP Socket 服务器框架) http://www.workerman.net
 
 
 ==========================
@@ -125,9 +141,22 @@ Node.js API 中文版 http://nodeapi.ucdok.com/#/api/
 Python快速教程 http://www.cnblogs.com/vamei/archive/2012/09/13/2682778.html
 协议森林 http://www.cnblogs.com/vamei/archive/2012/12/05/2802811.html
 
+Python in NetBeans IDE 8.0
+https://blogs.oracle.com/geertjan/entry/python_in_netbeans_ide_8
+Python 入门指南 — Python tutorial 2.7 documentation
+http://www.pythondoc.com/pythontutorial27/index.html
+
 
 
 wp-ueditor
 http://www.cppfans.org/1458.html
 http://www.iyou1314.com/post/16.html
 http://www.thexq.com/html/1362.htm/comment-page-1
+
+
+基于 PHP & MySQL 搭建 OAuth Server
+http://www.fising.cn/2011/06/%E5%9F%BA%E4%BA%8Ephp%E7%9A%84oauth%E8%AE%A4%E8%AF%81%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84%E6%90%AD%E5%BB%BA.shtml
+
+
+魅力工程：PUA每天一步
+http://blog.sina.com.cn/s/blog_6316f5bf0102e4w7.html
