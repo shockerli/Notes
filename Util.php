@@ -102,5 +102,25 @@ class Util {
         }
         return $val;
     }
-    
+
+
+    /**
+     * 获取变量名称
+     *
+     * @link http://www.laruence.com/2010/12/08/1716.html
+     * @param mixed &$var 要查找的变量
+     * @param array $scope 要搜寻的范围
+     * @return string 变量名称
+     */
+    public function getVariableName(&$var, $scope = null) {
+        if ($scope == null) {
+            $scope = $GLOBALS;
+        }
+        //因可能有相同值的变量，因此先将当前变量的值保存到一个临时变量中，然后再对原变量赋唯一值，以便查找出变量的名称，找到名字后，将临时变量的值重新赋值到原变量
+        $tmp = $var;
+        $var = "tmp_exists_" . mt_rand();
+        $name = array_search($var, $scope, true); //根据值查找变量名称
+        $var = $tmp;
+        return $name;
+    }
 }

@@ -2641,23 +2641,23 @@ function levenshtein ($str1, $str2) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return a specific character
+ * 返回指定的字符
  * @link http://php.net/manual/zh/function.chr.php
  * @param int $ascii <p>
- * The ascii code.
+ * ASCII码
  * </p>
- * @return string the specified character.
+ * @return string 返回规定的字符
  */
 function chr ($ascii) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return ASCII value of character
+ * 返回字符的ASCII码值
  * @link http://php.net/manual/zh/function.ord.php
  * @param string $string <p>
- * A character.
+ * 一个字符
  * </p>
- * @return int the ASCII value as an integer.
+ * @return int 返回整型的ASCII码值
  */
 function ord ($string) {}
 
@@ -2889,11 +2889,10 @@ function fscanf ($handle, $format, &$_ = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Parse a URL and return its components
+ * 解析URL，返回其组成部分
  * @link http://php.net/manual/zh/function.parse-url.php
  * @param string $url <p>
- * The URL to parse. Invalid characters are replaced by
- * _.
+ * 要解析的URL。无效字符将使用 _ 来替换
  * </p>
  * @param int $component [optional] <p>
  * Specify one of <b>PHP_URL_SCHEME</b>,
@@ -2932,7 +2931,7 @@ function parse_url ($url, $component = -1) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * URL-encodes string
+ * 编码URL字符串
  * @link http://php.net/manual/zh/function.urlencode.php
  * @param string $str <p>
  * The string to be encoded.
@@ -2951,7 +2950,7 @@ function urlencode ($str) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Decodes URL-encoded string
+ * 解码已编码的URL字符串
  * @link http://php.net/manual/zh/function.urldecode.php
  * @param string $str <p>
  * The string to be decoded.
@@ -4292,21 +4291,21 @@ function base_convert ($number, $frombase, $tobase) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Format a number with grouped thousands
+ * 以千位分隔符方式格式化一个数字
  * @link http://php.net/manual/zh/function.number-format.php
  * @param float $number <p>
- * The number being formatted.
+ * 要格式化的数字
  * </p>
- * @param int $decimals [optional] <p>
- * Sets the number of decimal points.
+ * @param int $decimals [可选] <p>
+ * 要保留的小数位数
  * </p>
- * @param string $dec_point [optional] <p>
- * Sets the separator for the decimal point.
+ * @param string $dec_point [可选] <p>
+ * 指定小数点显示的字符
  * </p>
- * @param string $thousands_sep [optional] <p>
- * Sets the thousands separator.
+ * @param string $thousands_sep [可选] <p>
+ * 指定千位分隔符显示的字符
  * </p>
- * @return string A formatted version of <i>number</i>.
+ * @return string 格式化以后的数值
  */
 function number_format ($number, $decimals = 0, $dec_point = '.', $thousands_sep = ',') {}
 
@@ -4712,7 +4711,7 @@ function error_get_last () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Call the callback given by the first parameter
+ * 把第一个参数作为回调函数调用
  * @link http://php.net/manual/zh/function.call-user-func.php
  * @param callable $callback <p>
  * The callable to be called.
@@ -5430,14 +5429,12 @@ function connection_status () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Set whether a client disconnect should abort script execution
+ * 设置客户端断开连接时是否中断脚本的执行
  * @link http://php.net/manual/zh/function.ignore-user-abort.php
  * @param string $value [optional] <p>
- * If set, this function will set the ignore_user_abort ini setting
- * to the given <i>value</i>. If not, this function will
- * only return the previous setting without changing it.
+ * 如果设置了该值，函数会把ignore_user_abort的ini值设置为value。如果未设置该值，函数不会改变设置，仅会返回之前的设置。
  * </p>
- * @return int the previous setting, as an integer.
+ * @return int 以整型返回之前的设置
  */
 function ignore_user_abort ($value = null) {}
 
@@ -6227,7 +6224,7 @@ function rmdir ($dirname, $context = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Changes the current umask
+ * 改变当前的umask
  * @link http://php.net/manual/zh/function.umask.php
  * @param int $mask [optional] <p>
  * The new umask.
@@ -6686,18 +6683,16 @@ function fputs ($fp, $str, $length) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Makes directory
+ * 新建目录
  * @link http://php.net/manual/zh/function.mkdir.php
  * @param string $pathname <p>
- * The directory path.
+ * 目录的路径
  * </p>
  * @param int $mode [optional] <p>
- * The mode is 0777 by default, which means the widest possible
- * access. For more information on modes, read the details
- * on the <b>chmod</b> page.
+ * 默认的mode是0777，意味着最大可能的访问权
  * </p>
  * <p>
- * <i>mode</i> is ignored on Windows.
+ * <i>mode</i>在Windows下被忽略
  * </p>
  * <p>
  * Note that you probably want to specify the mode as an octal number,
@@ -6706,8 +6701,7 @@ function fputs ($fp, $str, $length) {}
  * <b>umask</b>.
  * </p>
  * @param bool $recursive [optional] <p>
- * Allows the creation of nested directories specified in the
- * <i>pathname</i>.
+ * 递归创建目录
  * </p>
  * @param resource $context [optional] Context support was added
  * with PHP 5.0.0. For a description of contexts, refer to
@@ -8098,7 +8092,7 @@ function pfsockopen ($hostname, $port = -1, &$errno = null, &$errstr = null, $ti
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Pack data into binary string
+ * 把数据装入一个二进制字符串
  * @link http://php.net/manual/zh/function.pack.php
  * @param string $format <p>
  * The <i>format</i> string consists of format codes
@@ -8209,7 +8203,7 @@ function pack ($format, $args = null, $_ = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Unpack data from binary string
+ * 从二进制字符串对数据进行解包
  * @link http://php.net/manual/zh/function.unpack.php
  * @param string $format <p>
  * See <b>pack</b> for an explanation of the format codes.
@@ -8458,12 +8452,12 @@ function filegroup ($filename) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Gets file inode
+ * 取得文件的inode
  * @link http://php.net/manual/zh/function.fileinode.php
  * @param string $filename <p>
- * Path to the file.
+ * 文件的路径
  * </p>
- * @return int the inode number of the file, or <b>FALSE</b> on failure.
+ * @return int 返回文件的inode节点号，或者在失败时返回FALSE
  */
 function fileinode ($filename) {}
 
@@ -8656,7 +8650,7 @@ function is_link ($filename) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * G给出文件的信息
+ * 给出文件的信息
  * @link http://php.net/manual/zh/function.stat.php
  * @param string $filename <p>
  * 文件路径
@@ -9386,37 +9380,33 @@ function ob_end_flush () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Clean (erase) the output buffer and turn off output buffering
+ * 清空（擦除）缓冲区并关闭输出缓冲
  * @link http://php.net/manual/zh/function.ob-end-clean.php
- * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure. Reasons for failure are first that you called the
- * function without an active buffer or that for some reason a buffer could
- * not be deleted (possible for special buffer).
+ * @return bool 成功时返回TRUE，或者在失败时返回FALSE。错误的原因首先是，在调用时没有一个起作用的缓冲区，或者是因为某些原因缓冲区不能被删除（可能对特殊缓冲区而言）。
  */
 function ob_end_clean () {}
 
 /**
  * (PHP 4 &gt;= 4.3.0, PHP 5)<br/>
- * Flush the output buffer, return it as a string and turn off output buffering
+ * 刷出（送出）缓冲区内容，以字符串形式返回内容，并关闭输出缓冲区
  * @link http://php.net/manual/zh/function.ob-get-flush.php
- * @return string the output buffer or <b>FALSE</b> if no buffering is active.
+ * @return string 返回输出缓冲区的内容；或者是，如果没有起作用的输出缓冲区，返回FALSE
  */
 function ob_get_flush () {}
 
 /**
  * (PHP 4 &gt;= 4.3.0, PHP 5)<br/>
- * Get current buffer contents and delete current output buffer
+ * 得到当前缓冲区的内容并删除当前输出缓
  * @link http://php.net/manual/zh/function.ob-get-clean.php
- * @return string the contents of the output buffer and end output buffering.
- * If output buffering isn't active then <b>FALSE</b> is returned.
+ * @return string 返回输出缓冲区的内容，并结束输出缓冲区。如果输出缓冲区不是活跃的，即返回FALSE
  */
 function ob_get_clean () {}
 
 /**
  * (PHP 4 &gt;= 4.0.2, PHP 5)<br/>
- * Return the length of the output buffer
+ * 返回输出缓冲区内容的长度
  * @link http://php.net/manual/zh/function.ob-get-length.php
- * @return int the length of the output buffer contents or <b>FALSE</b> if no
- * buffering is active.
+ * @return int 返回输出缓冲区内容的长度；或者返回FALSE——如果没有起作用的缓冲区
  */
 function ob_get_length () {}
 
@@ -9511,12 +9501,13 @@ function ob_get_contents () {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Turn implicit flush on/off
+ * 打开/关闭绝对刷送
+ * <br /><i>绝对（隐式）刷送将导致在每次输出调用后有一次刷送操作，以便不再需要对flush()的显式调用。</i>
  * @link http://php.net/manual/zh/function.ob-implicit-flush.php
  * @param int $flag [optional] <p>
- * <b>TRUE</b> to turn implicit flushing on, <b>FALSE</b> otherwise.
+ * 设为TRUE打开绝对刷送，反之是FALSE
  * </p>
- * @return void No value is returned.
+ * @return void 没有返回值
  */
 function ob_implicit_flush ($flag = true) {}
 

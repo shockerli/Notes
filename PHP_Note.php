@@ -1641,6 +1641,7 @@ iconv_substr($str, $offset [,$len [,$charset]]) //截取子串
 
 
 /* 【字符串函数】*/
+levenshtein($str1, $str2) //计算两个字符串之间的编辑距离
 addslashes($str)    //使用反斜线转移字符串
 stripcslashes($str) //反引用一个使用addcslashes转义的字符串
 stripslashes($str)  //反引用一个引用字符串
@@ -2028,6 +2029,16 @@ DateTime::setTimezone($timezone) //设置时区
     eg: $date->setTimezone(new DateTimeZone('PRC'));
 DateTime::format($format) //格式化时间戳，格式化字符串形式同date()函数
 
+/* YAML */
+yaml_emit($data [,$encoding = YAML_ANY_ENCODING [,$linebreak = YAML_ANY_BREAK [,$callbacks]]]) //返回YAML格式数据
+    $data：除资源类型外的所有类型
+yaml_emit_file($filename, $data [,$encoding = YAML_ANY_ENCODING [,$linebreak = YAML_ANY_BREAK [,$callbacks]]]) //生成YAML格式数据并写入文件
+yaml_parse($input [,$pos = 0 [,&$ndocs [,$callbacks]]]) //转换YAML数据为PHP变量
+yaml_parse_file($filename [,$pos = 0 [,&$ndocs [,$callbacks]]]) //转换YAML文件数据为PHP变量
+yaml_parse_url($url [,$pos = 0 [,&$ndocs [,$callbacks]]]) //从URL资源转换YAML数据为PHP变量
+
+
+
 
 /* $_SERVER */
 //示例URL：http://desktop/dir/demo.php?a=aaa&b=bbb
@@ -2228,13 +2239,17 @@ uniqid([$prefix])   //获取一个带前缀、基于当前时间微秒数的唯�
 highlight_string($str [,$return])   //字符串的语法高亮
     $return：设置为TRUE，高亮后的代码不会被打印输出，而是以字符串的形式返回。高亮成功返回TRUE，否则返回FALSE。
 highlight_file($file [,$return])    //语法高亮一个文件
+php_strip_whitespace($file) //返回删除注释和空格后的PHP源码
 __halt_compiler     //中断编译器的执行
 get_browser     //获取浏览器具有的功能
     get_browser ([ string $user_agent [, bool $return_array = false ]] )
-    如果设置为 TRUE，该函数会返回一个 array，而不是 object
+    如果设置为TRUE，该函数会返回一个array，而不是object
 eval($code) //把字符串作为PHP代码执行
 gzcompress($str [,$level=-1])   //压缩字符串
 gzuncompress($str)  //解压缩字符串
 gzencode($str [,$level=-1])   //压缩字符串
 gzdecode($str)  //解压缩字符串
 ignore_user_abort($bool) //设置客户端断开连接时是否中断脚本的执行
+php_check_syntax($file [,&$error_message]) //检查PHP的语法（并执行）指定的文件
+pack($format [,$args [,$...]]) //把数据装入一个二进制字符串
+unpack($format, $data) //从二进制字符串对数据进行解包

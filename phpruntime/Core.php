@@ -989,7 +989,7 @@ function user_error ($message, $error_type) {}
 
 /**
  * (PHP 4 &gt;= 4.0.1, PHP 5)<br/>
- * Sets a user-defined error handler function
+ * 设置一个用户定义的错误处理函数
  * @link http://php.net/manual/en/function.set-error-handler.php
  * @param callable $error_handler <p>
  * A callback with the following signature.
@@ -1022,7 +1022,7 @@ function set_error_handler (callable $error_handler, $error_types = 'E_ALL | E_S
 
 /**
  * (PHP 4 &gt;= 4.0.1, PHP 5)<br/>
- * Restores the previous error handler function
+ * 还原之前的错误处理函数
  * @link http://php.net/manual/en/function.restore-error-handler.php
  * @return bool This function always returns <b>TRUE</b>.
  */
@@ -1053,7 +1053,7 @@ function set_exception_handler (callable $exception_handler) {}
 
 /**
  * (PHP 5)<br/>
- * Restores the previously defined exception handler function
+ * 恢复之前定义过的异常处理函数
  * @link http://php.net/manual/en/function.restore-exception-handler.php
  * @return bool This function always returns <b>TRUE</b>.
  */

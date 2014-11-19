@@ -57,6 +57,8 @@ SHOW VARIABLES -- 显示系统变量信息
         InnoDB表文件含义：.frm表定义，表空间数据和日志文件
         SHOW ENGINES -- 显示存储引擎的状态信息
         SHOW ENGINE 引擎名 {LOGS|STATUS} -- 显示存储引擎的日志或状态信息
+    -- 自增起始数
+    	AUTO_INCREMENT = 行数
     -- 数据文件目录
         DATA DIRECTORY = '目录'
     -- 索引文件目录
@@ -580,7 +582,7 @@ TRUNCATE [TABLE] tbl_name
 4. 导出一个库 
 　　mysqldump -u用户名 -p密码 -B 库名 > 文件名(D:/a.sql)
 
-可以-w携带备份条件
+可以-w携带WHERE条件
 
 -- 导入
 1. 在登录mysql的情况下：
@@ -720,7 +722,8 @@ DROP TRIGGER [schema_name.]trigger_name
 
 
 -- 字符连接函数
-concat(str1[, str2,...])
+concat(str1,str2,...])
+concat_ws(separator,str1,str2,...)
 
 -- 分支语句
 if 条件 then

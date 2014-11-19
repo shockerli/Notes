@@ -83,7 +83,7 @@ function apc_store ($key, $var, $ttl = 0) {}
 
 /**
  * (PECL apc &gt;= 3.0.0)<br/>
- * Fetch a stored variable from the cache
+ * 从缓存中取出存储的变量
  * @link http://php.net/manual/en/function.apc-fetch.php
  * @param mixed $key <p>
  * The <i>key</i> used to store the value (with
