@@ -123,4 +123,67 @@ class Util {
         $var = $tmp;
         return $name;
     }
+
+    /**
+     * 文件下载
+     * 此方法不适合大文件，内存大小限制
+     * 可用Web服务器的X-Sendfile模块直接下载文件
+     *
+     * @param string $file 需要下载的文件路径
+     * @param string &$msg 提示信息
+     * @param string $fileName 下载文件名
+     */
+    public function fileDownload($file, &$msg, $fileName = '') {
+        $pathInfo = pathinfo($file);
+        $filename = $fileName ? $fileName . '.' . $pathInfo['extension'] : $pathInfo['basename']);
+        //处理中文文件名
+        $ua = $_SERVER["HTTP_USER_AGENT"];
+        $encoded_filename = rawurlencode($filename);
+        if (preg_match("/MSIE/", $ua)) {
+            header('Content-Disposition: attachment; filename="' . $encoded_filename . '"');
+        } else if (preg_match("/Firefox/", $ua)) {
+            header("Content-Disposition: attachment; filename*=\"utf8''" . $filename . '"');
+        } else {
+            header('Content-Disposition: attachment; filename="' . $filename . '"');
+        }
+
+        if (!file_exists($file)) {//判断文件是否存在
+            $msg = '文件不存在';
+            return false;
+        }
+        
+        $fileSize = filesize($file); //判断文件大小
+        //函数filesize()的结果会被缓存
+        if ($fileSize === false) {
+            $msg = '文件过大或获取文件大小出错';
+            return false;
+        }
+        
+        $fp = fopen($file, 'rb'); //下载文件必须先要将文件打开，写入内存
+        if ($fp === false) {
+            $msg = '文件打开失败';
+            return false;
+        }
+
+        header('Content-Description: File Transfer');
+        header('Content-Type: application/octet-stream');
+        header('Content-Disposition: attachment; filename=' . $fileName);
+        header('Content-Transfer-Encoding: binary');
+        header('Expires: 0');
+        header('Cache-Control: must-revalidate');
+        header('Pragma: public');
+        header('Content-Length: ' . filesize($file));
+
+        //防止服务器瞬时压力增大，分段读取
+        $buffer = 1024;
+        //如果传递的文件指针无效可能会陷入无限循环中
+        while (!feof($fp)) {
+            $file_data = fread($fp, $buffer);
+            echo $file_data;
+        }
+
+        //关闭文件
+        fclose($fp);
+    }
+    
 }

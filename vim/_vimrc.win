@@ -63,7 +63,8 @@ set ambiwidth=double
 
 "配色方案
 colors desert
-"gvim字体设置
+"colorscheme desert
+"字体设置
 set guifont=Consolas:h11
 "默认窗口大小
 set lines=30 columns=100
@@ -77,6 +78,9 @@ set noswapfile
 syntax on
 "设置语法高亮度
 "set syn=cpp
+
+"启用鼠标
+set mouse=a
 
 "高亮显示匹配的括号
 set showmatch
@@ -112,6 +116,9 @@ set sw=4
 set tabstop=4
 "使得按退格键时可以一次删掉 4 个空格（不足 4 个时删掉所有剩下的空格）
 set softtabstop=4
+
+"重命名当前文件
+:command! -nargs=1 Rename let tpname = expand('%:t') | saveas <args> | edit <args> | call delete(expand(tpname))
 
 "设置自动缩进
 set autoindent
@@ -153,3 +160,22 @@ endfunction
 
 "设置文件默认保存目录
 cd C:\Users\Administrator\Desktop
+
+" 配置多语言环境，解决中文乱码问题
+if has("multi_byte")
+    " UTF-8 编码
+    set encoding=utf-8
+    set termencoding=utf-8
+    set formatoptions+=mM
+    set fencs=utf-8,gbk
+    if v:lang =~? '^/(zh/)/|/(ja/)/|/(ko/)'
+        set ambiwidth=double
+    endif
+    if has("win32")
+        source $VIMRUNTIME/delmenu.vim
+        source $VIMRUNTIME/menu.vim
+        language messages zh_CN.utf-8
+    endif
+else
+    echoerr "Sorry, this version of (g)vim was not compiled with +multi_byte"
+endif

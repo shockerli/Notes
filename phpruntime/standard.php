@@ -697,16 +697,15 @@ function md5 ($str, $raw_output = false) {}
 
 /**
  * (PHP 4 &gt;= 4.2.0, PHP 5)<br/>
- * Calculates the md5 hash of a given file
+ * 计算指定文件的MD5散列值
  * @link http://php.net/manual/zh/function.md5-file.php
  * @param string $filename <p>
- * The filename
+ * 文件名
  * </p>
  * @param bool $raw_output [optional] <p>
- * When <b>TRUE</b>, returns the digest in raw binary format with a length of
- * 16.
+ * 如果被设置为TRUE，那么报文摘要将以原始的16位二进制格式返回
  * </p>
- * @return string a string on success, <b>FALSE</b> otherwise.
+ * @return string 成功返回字符串，否则返回FALSE
  */
 function md5_file ($filename, $raw_output = false) {}
 
@@ -1147,7 +1146,7 @@ function php_uname ($mode = "a") {}
 
 /**
  * (PHP 4 &gt;= 4.3.0, PHP 5)<br/>
- * Return a list of .ini files parsed from the additional ini dir
+ * 返回从额外ini目录里解析的.ini文件列表
  * @link http://php.net/manual/zh/function.php-ini-scanned-files.php
  * @return string a comma-separated string of .ini files on success. Each comma is
  * followed by a newline. If the directive --with-config-file-scan-dir wasn't set,
@@ -1161,9 +1160,9 @@ function php_ini_scanned_files () {}
 
 /**
  * (PHP 5 &gt;= 5.2.4)<br/>
- * Retrieve a path to the loaded php.ini file
+ * 取得已加载的php.ini文件的路径
  * @link http://php.net/manual/zh/function.php-ini-loaded-file.php
- * @return string The loaded <i>php.ini</i> path, or <b>FALSE</b> if one is not loaded.
+ * @return string 已加载的php.ini路径，或在没有时返回FALSE
  */
 function php_ini_loaded_file () {}
 
@@ -1203,30 +1202,27 @@ function strnatcasecmp ($str1, $str2) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Count the number of substring occurrences
+ * 计算字串出现的次数
  * @link http://php.net/manual/zh/function.substr-count.php
  * @param string $haystack <p>
- * The string to search in
+ * 在此字符串中进行搜索
  * </p>
  * @param string $needle <p>
- * The substring to search for
+ * 要搜索的字符串
  * </p>
  * @param int $offset [optional] <p>
- * The offset where to start counting
+ * 开始计数的偏移位置
  * </p>
  * @param int $length [optional] <p>
- * The maximum length after the specified offset to search for the
- * substring. It outputs a warning if the offset plus the length is
- * greater than the <i>haystack</i> length.
+ * 指定偏移位置之后的最大搜索长度。如果偏移量加上这个长度的和大于haystack的总长度，则打印警告信息
  * </p>
- * @return int This function returns an integer.
+ * @return int 该函数返回整型
  */
 function substr_count ($haystack, $needle, $offset = 0, $length = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Finds the length of the initial segment of a string consisting
-entirely of characters contained within a given mask.
+ * 计算字符串中全部字符都存在于指定字符集合中的第一段子串的长度
  * @link http://php.net/manual/zh/function.strspn.php
  * @param string $subject <p>
  * The string to examine.
@@ -1278,7 +1274,7 @@ function strspn ($subject, $mask, $start = null, $length = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Find length of initial segment not matching mask
+ * 获取不匹配遮罩的起始子字符串的长度
  * @link http://php.net/manual/zh/function.strcspn.php
  * @param string $str1 <p>
  * The first string.
@@ -1298,37 +1294,37 @@ function strcspn ($str1, $str2, $start = null, $length = null) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Tokenize string
+ * 标记分割字符串
  * @link http://php.net/manual/zh/function.strtok.php
  * @param string $str <p>
- * The string being split up into smaller strings (tokens).
+ * 被分成若干子字符串的原始字符串
  * </p>
  * @param string $token <p>
- * The delimiter used when splitting up <i>str</i>.
+ * 分割$str时使用的分界字符
  * </p>
- * @return string A string token.
+ * @return string 标记后的字符串
  */
 function strtok ($str, $token) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Make a string uppercase
+ * 将字符串转化为大写
  * @link http://php.net/manual/zh/function.strtoupper.php
  * @param string $string <p>
- * The input string.
+ * 输入字符串
  * </p>
- * @return string the uppercased string.
+ * @return string 返回转换后的大写字符串
  */
 function strtoupper ($string) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Make a string lowercase
+ * 将字符串转化为小写
  * @link http://php.net/manual/zh/function.strtolower.php
  * @param string $str <p>
- * The input string.
+ * 输入字符串
  * </p>
- * @return string the lowercased string.
+ * @return string 返回转换后的小写字符串
  */
 function strtolower ($str) {}
 
@@ -1775,10 +1771,10 @@ function money_format ($format, $number) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return part of a string
+ * 返回字符串的子串
  * @link http://php.net/manual/zh/function.substr.php
  * @param string $string <p>
- * The input string. Must be one character or longer.
+ * 输入字符串
  * </p>
  * @param int $start <p>
  * If <i>start</i> is non-negative, the returned string
@@ -1836,8 +1832,7 @@ function money_format ($format, $number) {}
  * $rest = substr("abcdef", 4, -4); // returns false
  * $rest = substr("abcdef", -3, -1); // returns "de"
  * </code>
- * @return string the extracted part of string; or <b>FALSE</b> on failure, or
- * an empty <i>string</i>.
+ * @return string 返回提取的子字符串，或者在失败时返回FALSE
  */
 function substr ($string, $start, $length = null) {}
 
@@ -3698,16 +3693,12 @@ function abs ($number) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Round fractions up
+ * 进一法取整
  * @link http://php.net/manual/zh/function.ceil.php
  * @param float $value <p>
- * The value to round
+ * 要进一法取整的值
  * </p>
- * @return float <i>value</i> rounded up to the next highest
- * integer.
- * The return value of <b>ceil</b> is still of type
- * float as the value range of float is
- * usually bigger than that of integer.
+ * @return float 返回不小于value的下一个整数。ceil()返回的类型仍然是float，因为float值的范围通常比integer要大
  */
 function ceil ($value) {}
 
@@ -5578,18 +5569,15 @@ function dns_check_record ($host, $type) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Check DNS records corresponding to a given Internet host name or IP address
+ * 给指定的主机（域名）或者IP地址做DNS通信检查
  * @link http://php.net/manual/zh/function.checkdnsrr.php
  * @param string $host <p>
- * <i>host</i> may either be the IP address in
- * dotted-quad notation or the host name.
+ * 主机可以是一个IP地址也可以是域名
  * </p>
  * @param string $type [optional] <p>
- * <i>type</i> may be any one of: A, MX, NS, SOA,
- * PTR, CNAME, AAAA, A6, SRV, NAPTR, TXT or ANY.
+ * 解析记录类型可能是下面这些类型中的任何一个：A，MX，NS，SOA，PTR，CNAME，AAAA，A6，SRV，NAPTR，TXT或者ANY
  * </p>
- * @return bool <b>TRUE</b> if any records are found; returns <b>FALSE</b> if no records
- * were found or if an error occurred.
+ * @return bool 如果记录能找到，就返回TRUE；如果查找不到该DNS记录或者发生了错误，就返回FALSE
  */
 function checkdnsrr ($host, $type = "MX") {}
 
@@ -9577,33 +9565,29 @@ function natcasesort (array &$array) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Sort an array and maintain index association
+ * 对数组进行排序并保持索引关系
  * @link http://php.net/manual/zh/function.asort.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组
  * </p>
  * @param int $sort_flags [optional] <p>
- * You may modify the behavior of the sort using the optional
- * parameter <i>sort_flags</i>, for details
- * see <b>sort</b>.
+ * 可以用可选的参数sort_flags改变排序的行为，详情见sort()
  * </p>
- * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
+ * @return bool 成功时返回TRUE，或者在失败时返回FALSE
  */
 function asort (array &$array, $sort_flags = 'SORT_REGULAR') {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Sort an array in reverse order and maintain index association
+ * 对数组进行逆向排序并保持索引关系
  * @link http://php.net/manual/zh/function.arsort.php
  * @param array $array <p>
- * The input array.
+ * 输入的数组
  * </p>
  * @param int $sort_flags [optional] <p>
- * You may modify the behavior of the sort using the optional parameter
- * <i>sort_flags</i>, for details see
- * <b>sort</b>.
+ * 可以用可选的参数sort_flags改变排序的行为，详情见sort()
  * </p>
- * @return bool <b>TRUE</b> on success or <b>FALSE</b> on failure.
+ * @return bool 成功时返回TRUE，或者在失败时返回FALSE
  */
 function arsort (array &$array, $sort_flags = 'SORT_REGULAR') {}
 
@@ -9811,15 +9795,12 @@ function count ($array_or_countable, $mode = 'COUNT_NORMAL') {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Set the internal pointer of an array to its last element
+ * 将数组的内部指针指向最后一个单元
  * @link http://php.net/manual/zh/function.end.php
  * @param array $array <p>
- * The array. This array is passed by reference because it is modified by
- * the function. This means you must pass it a real variable and not
- * a function returning an array because only actual variables may be
- * passed by reference.
+ * 该数组是通过引用传递的，因为它会被这个函数修改。这意味着你必须传入一个真正的变量，而不是函数返回的数组，因为只有真正的变量才能以引用传递。
  * </p>
- * @return mixed the value of the last element or <b>FALSE</b> for empty array.
+ * @return mixed 返回最后一个元素的值，或者如果是空数组则返回FALSE
  */
 function end (array &$array) {}
 
@@ -9862,16 +9843,12 @@ function reset (array &$array) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Return the current element in an array
+ * 返回数组中的当前单元
  * @link http://php.net/manual/zh/function.current.php
  * @param array $array <p>
- * The array.
+ * 数组
  * </p>
- * @return mixed The <b>current</b> function simply returns the
- * value of the array element that's currently being pointed to by the
- * internal pointer. It does not move the pointer in any way. If the
- * internal pointer points beyond the end of the elements list or the array is
- * empty, <b>current</b> returns <b>FALSE</b>.
+ * @return mixed 返回当前被内部指针指向的数组单元的值，并不移动指针。如果内部指针指向超出了单元列表的末端，返回FALSE
  */
 function current (array &$array) {}
 

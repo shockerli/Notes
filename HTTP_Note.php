@@ -171,6 +171,9 @@ header('Content-Type: ' . $mime); //设置当前文件的MIME类型
 header('Content-Disposition: attachment; filename=' . basename($file)); //设置附件下载及文件名
 readfile($file); //读取文件内容并输出
 
+可用Web服务器的X-Sendfile直接下载文件
+http://www.laruence.com/2012/05/02/2613.html
+
 
 //控制浏览器缓存
 header('Expires: ' . gmdate('D, d M Y H:i:s', time()-1) . ' GMT');

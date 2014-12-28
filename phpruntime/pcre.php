@@ -4,106 +4,40 @@
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Perform a regular expression match
- * @link http://php.net/manual/en/function.preg-match.php
+ * 执行一个正则表达式匹配
+ * @link http://php.net/manual/zh/function.preg-match.php
  * @param string $pattern <p>
- * The pattern to search for, as a string.
+ * 要搜索的模式，字符串类型
  * </p>
  * @param string $subject <p>
- * The input string.
+ * 输入字符串
  * </p>
  * @param array $matches [optional] <p>
- * If <i>matches</i> is provided, then it is filled with
- * the results of search. $matches[0] will contain the
- * text that matched the full pattern, $matches[1]
- * will have the text that matched the first captured parenthesized
- * subpattern, and so on.
+ * 如果提供了参数matches，它将被填充为搜索结果。$matches[0]将包含完整模式匹配到的文本，$matches[1]将包含第一个捕获子组匹配到的文本，以此类推。
  * </p>
  * @param int $flags [optional] <p>
- * <i>flags</i> can be the following flag:
- * <b>PREG_OFFSET_CAPTURE</b>
- * If this flag is passed, for every occurring match the appendant string
- * offset will also be returned. Note that this changes the value of
- * <i>matches</i> into an array where every element is an
- * array consisting of the matched string at offset 0
- * and its string offset into <i>subject</i> at offset
- * 1.
+ * flags可以被设置为以下标记值：
+ * <br /><b>PREG_OFFSET_CAPTURE</b><br />
+ * 如果传递了这个标记，对于每一个出现的匹配返回时会附加字符串偏移量(相对于目标字符串的)。 注意：这会改变填充到matches参数的数组，使其每个元素成为一个由 第0个元素是匹配到的字符串，第1个元素是该匹配字符串 在目标字符串subject中的偏移量。
  * @param int $offset [optional] <p>
- * Normally, the search starts from the beginning of the subject string.
- * The optional parameter <i>offset</i> can be used to
- * specify the alternate place from which to start the search (in bytes).
+ * 通常，搜索从目标字符串的开始位置开始。可选参数offset用于指定从目标字符串的某个未知开始搜索(单位是字节)。
  * </p>
- * <p>
- * Using <i>offset</i> is not equivalent to passing
- * substr($subject, $offset) to
- * <b>preg_match</b> in place of the subject string,
- * because <i>pattern</i> can contain assertions such as
- * ^, $ or
- * (?&lt;=x). Compare:
- * <code>
- * $subject = "abcdef";
- * $pattern = '/^def/';
- * preg_match($pattern, $subject, $matches, PREG_OFFSET_CAPTURE, 3);
- * print_r($matches);
- * </code>
- * The above example will output:</p>
- * <pre>
- * Array
- * (
- * )
- * </pre>
- * <p>
- * while this example
- * </p>
- * <code>
- * $subject = "abcdef";
- * $pattern = '/^def/';
- * preg_match($pattern, substr($subject,3), $matches, PREG_OFFSET_CAPTURE);
- * print_r($matches);
- * </code>
- * <p>
- * will produce
- * </p>
- * <pre>
- * Array
- * (
- * [0] => Array
- * (
- * [0] => def
- * [1] => 0
- * )
- * )
- * </pre>
- * </p>
- * @return int <b>preg_match</b> returns 1 if the <i>pattern</i>
- * matches given <i>subject</i>, 0 if it does not, or <b>FALSE</b>
- * if an error occurred.
+ * @return int 返回匹配次数。它的值将是0次（不匹配）或1次，因为在第一次匹配后将会停止搜索。如果发生错误，返回FALSE。
  */
 function preg_match ($pattern, $subject, array &$matches = null, $flags = 0, $offset = 0) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
- * Perform a global regular expression match
- * @link http://php.net/manual/en/function.preg-match-all.php
+ * 执行一个全局正则表达式匹配
+ * @link http://php.net/manual/zh/function.preg-match-all.php
  * @param string $pattern <p>
- * The pattern to search for, as a string.
+ * 要搜索的模式，字符串形式
  * </p>
  * @param string $subject <p>
- * The input string.
+ * 输入字符串
  * </p>
  * @param array $matches [optional] <p>
- * Normally, the search starts from the beginning of the subject string.
- * The optional parameter <i>offset</i> can be used to
- * specify the alternate place from which to start the search (in bytes).
- * </p>
- * <p>
- * Using <i>offset</i> is not equivalent to passing
- * substr($subject, $offset) to
- * <b>preg_match_all</b> in place of the subject string,
- * because <i>pattern</i> can contain assertions such as
- * ^, $ or
- * (?&lt;=x). See <b>preg_match</b>
- * for examples.
+ * 多维数组，作为输出参数输出所有匹配结果, 数组排序通过flags指定
  * </p>
  * @param int $flags [optional] <p>
  * Can be a combination of the following flags (note that it doesn't make
@@ -134,15 +68,14 @@ function preg_match ($pattern, $subject, array &$matches = null, $flags = 0, $of
  * </p>
  * </p>
  * @param int $offset [optional]
- * @return int the number of full pattern matches (which might be zero),
- * or <b>FALSE</b> if an error occurred.
+ * @return int 返回完整匹配次数（可能是0），或者如果发生错误返回FALSE
  */
 function preg_match_all ($pattern, $subject, array &$matches = null, $flags = 'PREG_PATTERN_ORDER', $offset = 0) {}
 
 /**
  * (PHP 4, PHP 5)<br/>
  * Perform a regular expression search and replace
- * @link http://php.net/manual/en/function.preg-replace.php
+ * @link http://php.net/manual/zh/function.preg-replace.php
  * @param mixed $pattern <p>
  * The pattern to search for. It can be either a string or an array with
  * strings.
@@ -231,7 +164,7 @@ function preg_replace ($pattern, $replacement, $subject, $limit = -1, &$count = 
 /**
  * (PHP 4 &gt;= 4.0.5, PHP 5)<br/>
  * Perform a regular expression search and replace using a callback
- * @link http://php.net/manual/en/function.preg-replace-callback.php
+ * @link http://php.net/manual/zh/function.preg-replace-callback.php
  * @param mixed $pattern <p>
  * The pattern to search for. It can be either a string or an array with
  * strings.
@@ -302,7 +235,7 @@ function preg_replace_callback ($pattern, callable $callback, $subject, $limit =
 /**
  * (PHP 5 &gt;= 5.3.0)<br/>
  * Perform a regular expression search and replace
- * @link http://php.net/manual/en/function.preg-filter.php
+ * @link http://php.net/manual/zh/function.preg-filter.php
  * @param mixed $pattern
  * @param mixed $replacement
  * @param mixed $subject
@@ -321,7 +254,7 @@ function preg_filter ($pattern, $replacement, $subject, $limit = -1, &$count = n
 /**
  * (PHP 4, PHP 5)<br/>
  * Split string by a regular expression
- * @link http://php.net/manual/en/function.preg-split.php
+ * @link http://php.net/manual/zh/function.preg-split.php
  * @param string $pattern <p>
  * The pattern to search for, as a string.
  * </p>
@@ -349,7 +282,7 @@ function preg_split ($pattern, $subject, $limit = -1, $flags = 0) {}
 /**
  * (PHP 4, PHP 5)<br/>
  * Quote regular expression characters
- * @link http://php.net/manual/en/function.preg-quote.php
+ * @link http://php.net/manual/zh/function.preg-quote.php
  * @param string $str <p>
  * The input string.
  * </p>
@@ -366,7 +299,7 @@ function preg_quote ($str, $delimiter = null) {}
 /**
  * (PHP 4, PHP 5)<br/>
  * Return array entries that match the pattern
- * @link http://php.net/manual/en/function.preg-grep.php
+ * @link http://php.net/manual/zh/function.preg-grep.php
  * @param string $pattern <p>
  * The pattern to search for, as a string.
  * </p>
@@ -386,7 +319,7 @@ function preg_grep ($pattern, array $input, $flags = 0) {}
 /**
  * (PHP 5 &gt;= 5.2.0)<br/>
  * Returns the error code of the last PCRE regex execution
- * @link http://php.net/manual/en/function.preg-last-error.php
+ * @link http://php.net/manual/zh/function.preg-last-error.php
  * @return int one of the following constants (explained on their own page):
  * <b>PREG_NO_ERROR</b>
  * <b>PREG_INTERNAL_ERROR</b>
@@ -403,7 +336,7 @@ function preg_last_error () {}
  * matches, $matches[1] is an array of strings matched by the first
  * parenthesized subpattern, and so on. This flag is only used with
  * <b>preg_match_all</b>.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_PATTERN_ORDER', 1);
 
@@ -411,28 +344,28 @@ define ('PREG_PATTERN_ORDER', 1);
  * Orders results so that $matches[0] is an array of first set of
  * matches, $matches[1] is an array of second set of matches, and so
  * on. This flag is only used with <b>preg_match_all</b>.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_SET_ORDER', 2);
 
 /**
  * See the description of
  * <b>PREG_SPLIT_OFFSET_CAPTURE</b>.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_OFFSET_CAPTURE', 256);
 
 /**
  * This flag tells <b>preg_split</b> to return only non-empty
  * pieces.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_SPLIT_NO_EMPTY', 1);
 
 /**
  * This flag tells <b>preg_split</b> to capture
  * parenthesized expression in the delimiter pattern as well.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_SPLIT_DELIM_CAPTURE', 2);
 
@@ -442,7 +375,7 @@ define ('PREG_SPLIT_DELIM_CAPTURE', 2);
  * values in an array where every element is an array consisting of the
  * matched string at offset 0 and its string offset within subject at
  * offset 1. This flag is only used for <b>preg_split</b>.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_SPLIT_OFFSET_CAPTURE', 4);
 define ('PREG_GREP_INVERT', 1);
@@ -450,33 +383,33 @@ define ('PREG_GREP_INVERT', 1);
 /**
  * Returned by <b>preg_last_error</b> if there were no
  * errors.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_NO_ERROR', 0);
 
 /**
  * Returned by <b>preg_last_error</b> if there was an
  * internal PCRE error.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_INTERNAL_ERROR', 1);
 
 /**
  * Returned by <b>preg_last_error</b> if backtrack limit was exhausted.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_BACKTRACK_LIMIT_ERROR', 2);
 
 /**
  * Returned by <b>preg_last_error</b> if recursion limit was exhausted.
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_RECURSION_LIMIT_ERROR', 3);
 
 /**
  * Returned by <b>preg_last_error</b> if the last error was
  * caused by malformed UTF-8 data (only when running a regex in UTF-8 mode).
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_BAD_UTF8_ERROR', 4);
 
@@ -485,13 +418,13 @@ define ('PREG_BAD_UTF8_ERROR', 4);
  * correspond to the begin of a valid UTF-8 code point (only when running
  * a regex in UTF-8
  * mode).
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PREG_BAD_UTF8_OFFSET_ERROR', 5);
 
 /**
  * PCRE version and release date (e.g. "7.0 18-Dec-2006").
- * @link http://php.net/manual/en/pcre.constants.php
+ * @link http://php.net/manual/zh/pcre.constants.php
  */
 define ('PCRE_VERSION', "8.31 2012-07-06");
 
