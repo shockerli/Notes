@@ -45,7 +45,7 @@ Tags：Mac
     添加/编辑你工作目录的$GIT_DIR/info/exclude，例如你的working copy目录是`~/src/project1`，则路径为`~/src/project1/.git/info/exclude`
 3. 系统全局过滤
     创建一个ignore文件，名字随意起，比如我的放在~/.gitglobalignore ，然后配置git：
-    ```$ git config —global core.excludesfile = ~/.gitglobalignore```
+    ```$ git config --global core.excludesfile = ~/.gitglobalignore```
 
 - **忽略.DS_Store：添加.DS_Store到.gitignore文件即可**
 

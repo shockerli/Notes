@@ -82,16 +82,15 @@ SHOW VARIABLES -- 显示系统变量信息
         RENAME TABLE 原表名 TO 新表名
         RENAME TABLE 原表名 TO 库名.表名 （可将表移动到另一个数据库）
         -- RENAME可以交换两个表名
-    -- 修改表的字段机构
+    -- 修改表的字段机构（13.1.2. ALTER TABLE语法）
         ALTER TABLE 表名 操作名
         -- 操作名
-            ADD[ COLUMN] 字段名       -- 增加字段
+            ADD[ COLUMN] 字段定义       -- 增加字段
                 AFTER 字段名          -- 表示增加在该字段名后面
                 FIRST               -- 表示增加在第一个
             ADD PRIMARY KEY(字段名)   -- 创建主键
             ADD UNIQUE [索引名] (字段名)-- 创建唯一索引
             ADD INDEX [索引名] (字段名) -- 创建普通索引
-            ADD 
             DROP[ COLUMN] 字段名      -- 删除字段
             MODIFY[ COLUMN] 字段名 字段属性     -- 支持对字段属性进行修改，不能修改字段名(所有原有属性也需写上)
             CHANGE[ COLUMN] 原字段名 新字段名 字段属性      -- 支持对字段名修改
