@@ -4739,15 +4739,15 @@ function call_user_func (callable $callback, $parameter = null, $_ = null) {}
 
 /**
  * (PHP 4 &gt;= 4.0.4, PHP 5)<br/>
- * Call a callback with an array of parameters
+ * 调用回调函数，并把一个数组参数作为回调函数的参数
  * @link http://php.net/manual/zh/function.call-user-func-array.php
  * @param callable $callback <p>
- * The callable to be called.
+ * 被调用的回调函数
  * </p>
  * @param array $param_arr <p>
- * The parameters to be passed to the callback, as an indexed array.
+ * 要被传入回调函数的数组，这个数组得是索引数组
  * </p>
- * @return mixed the return value of the callback, or <b>FALSE</b> on error.
+ * @return mixed 返回回调函数的结果。如果出错的话就返回FALSE
  */
 function call_user_func_array (callable $callback, array $param_arr) {}
 
@@ -10234,36 +10234,35 @@ function array_merge_recursive (array $array1, array $_ = null) {}
 
 /**
  * (PHP 5 &gt;= 5.3.0)<br/>
- * Replaces elements from passed arrays into the first array
+ * 使用传递的数组替换第一个数组的元素
  * @link http://php.net/manual/zh/function.array-replace.php
  * @param array $array1 <p>
- * The array in which elements are replaced.
+ * 替换该数组的值
  * </p>
  * @param array $array2 <p>
- * The array from which elements will be extracted.
+ * 从此数组中提取替换值
  * </p>
  * @param array $_ [optional] <p>
- * More arrays from which elements will be extracted.
- * Values from later arrays overwrite the previous values.
+ * 包含要提取元素的更多数组。 后面的数组里的值会覆盖前面的值。
  * </p>
- * @return array an array, or <b>NULL</b> if an error occurs.
+ * @return array 返回一个数组。如果发生错误，将返回NULL。
  */
 function array_replace (array $array1, array $array2, array $_ = null) {}
 
 /**
  * (PHP 5 &gt;= 5.3.0)<br/>
- * Replaces elements from passed arrays into the first array recursively
+ * 使用传递的数组递归替换第一个数组的元素
  * @link http://php.net/manual/zh/function.array-replace-recursive.php
  * @param array $array1 <p>
- * The array in which elements are replaced.
+ * 替换该数组的值
  * </p>
  * @param array $array2 <p>
- * The array from which elements will be extracted.
+ * 从此数组中提取替换值
  * </p>
  * @param array $_ [optional] <p>
- * Optional. More arrays from which elements will be extracted.
+ * 可选项。更多包含要提取元素的数组。
  * </p>
- * @return array an array, or <b>NULL</b> if an error occurs.
+ * @return array 返回一个数组。如果发生错误，将返回NULL。
  */
 function array_replace_recursive (array $array1, array $array2, array $_ = null) {}
 
