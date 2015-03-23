@@ -2274,3 +2274,15 @@ gc_collect_cycles() //强制收集所有现存的垃圾循环周期
 
 
 Windows扩展索引站点 http://windows.php.net/downloads/pecl/releases/
+
+
+识别是否为PHP网站：
+http://hr.tencent.com/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000
+http://hr.tencent.com/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42
+http://hr.tencent.com/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42
+http://hr.tencent.com/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42
+
+#define PHP_LOGO_GUID       "PHPE9568F34-D428-11d2-A769-00AA001ACF42"
+#define PHP_EGG_LOGO_GUID   "PHPE9568F36-D428-11d2-A769-00AA001ACF42"
+#define ZEND_LOGO_GUID      "PHPE9568F35-D428-11d2-A769-00AA001ACF42"
+#define PHP_CREDITS_GUID    "PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000"
