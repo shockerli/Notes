@@ -7,6 +7,36 @@
 class Util {
 
     /**
+     * 生成唯一编号
+     * 可用于生成订单号、支付号等
+     *
+     * @param integer $member_id
+     * @return string
+     */
+    public function getUniqid($member_id) {
+        $microtime = microtime();
+        $micro = explode('.', explode(' ', $microtime)[0])[1];
+        $time = date('YmdHis', explode(' ', $microtime)[1]);
+
+        $md5_str = md5($time . $member_id . $micro);
+        $mem_str = md5($member_id);
+
+        $key = '0123456789abcdefghijklmnopqrstuvwxyz';
+
+        $res1 = '';
+        for ($i = 0; $i < 32; ++$i) {
+            $res1 .= strpos($key, $md5_str[$i]);
+        }
+
+        $res2 = '';
+        for ($i = 0; $i < 4; ++$i) {
+            $res2 .= strpos($key, $mem_str[$i]);
+        }
+
+        return date('s') + 15 . substr($res1, 0, 9) . substr($res2, 0, 4);
+    }
+
+    /**
      * 根据指定字段名整理多维数组
      *
      * @param array $data 需整理的多维数组
