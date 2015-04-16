@@ -1,19 +1,25 @@
 # 各种网络资源
+
+---
+
+##值得关注的站点
+- [网易1元夺宝](http://1.163.com)
+- [1元云购](http://www.1yyg.com)
+- [折800](http://www.zhe800.com)
+- [心意盒子](http://www.xinyihezi.com)
+
+
 ---
 ##**优秀网站**
 ---
 ###**资源类**
 - [Emerson Kent](http://www.emersonkent.com) - 世界历史地图集
-- [亿品元素](http://www.epinv.com) - 设计资源网站
-- [Font Awesome](http://fontawesome.io) - 图标字体与CSS工具包
 - [Readfree](http://readfree.me) - 免费电子书分享平台
-- [花瓣网](http://huaban.com) - 优质图片聚合网站
-- [Eput](http://eput.com) - 高品质图片分享与售卖平台
-- [500px](https://500px.com) - 照片分享网站
 - [星际译王词库](http://abloz.com/huzheng/stardict-dic) - 海量词库（英语、汉语及其他语言等上百种词库）
 - [广告最好看](http://zhk8.com) - 影视TVC创意广告（付费）
 - [创意广告网站导航](http://ymqworks.gotoip4.com/okgg/sites)
 - [果壳任意门](http://gate.guokr.com)
+- [国外网站推荐](http://www.egouz.com)
 
 ###**教育类**
 - [慕课网](http://www.imooc.com)
@@ -23,14 +29,24 @@
 - [缘创派](http://www.ycpai.com) - 帮助互联网创业者找合伙人的平台
 - [创业导航](http://chuang.pro/startup-guide) - 创业资源导航网站
 - [IT桔子](http://itjuzi.com) - IT互联网公司产品数据库
+- [DEMO8](http://www.demo8.com) - 发现最新的好产品
 - [17Startup](http://17startup.com)
 - [NEXT](http://next.36kr.com)
+
+###**设计类**
+- [亿品元素](http://www.epinv.com) - 设计资源网站
+- [设计师导航](http://www.289w.com)
+- [Font Awesome](http://fontawesome.io) - 图标字体与CSS工具包
+- [花瓣网](http://huaban.com) - 优质图片聚合网站
+- [Eput](http://eput.com) - 高品质图片分享与售卖平台
+- [500px](https://500px.com) - 照片分享网站
 
 ###**文学类**
 - [古诗文网](http://www.gushiwen.org)
 - [主题阅读网](http://www.eywedu.org)
 
 ###**工具类**
+- **[高效TuDo](http://www.ezdo.cn)**
 - [番茄土豆](https://pomotodo.com) - 番茄（番茄工作法）与土豆（To-do List）相结合的在线工具
 - [ideone](http://ideone.com) - 支持多语言的在线编译与调试工具
 - [书法迷](http://www.shufami.com) - 在线书法生成工具
@@ -39,10 +55,11 @@
 - [JSON Editor Online](http://www.jsoneditoronline.org) - JSON在线编辑与格式化工具
 - [草料二维码生成器](http://cli.im)
 - [图片压缩](https://tinypng.com)
-- [Cmd Markdown编辑阅读器](https://www.zybuluo.com/mdeditor)
 - [koala](http://koala-app.com) - 前端预处理器语言图形编译工具
 - [Jekyll](http://jekyllcn.com) - 免费的Blog生成工具
 - [摩客](https://www.mockplus.cn) - 原型图设计工具
+- [Vxplo](http://www.vxplo.cn) - 在线交互设计工具
+- [Worktitle](https://worktile.com) - 团队协同工具
 - [ProcessOn](https://www.processon.com) - 在线作图工具
 - [百度脑图](http://naotu.baidu.com)
 
@@ -51,10 +68,11 @@
 
 
 ###**软件类**
-####精品软件
+####***精品软件***
 - [FeHelper](http://www.baidufe.com/fehelper) - Chrome前端助手插件
 - [DictUnifier](https://code.google.com/p/mac-dictionary-kit) - 可以自动转换安装星际译王(StarDict)格式字典，自动添加到Mac自带字典程序。
-####下载资源
+
+####***下载资源***
 - [大眼仔旭](http://www.dayanzai.me) - 免费、破解、汉化软件下载
 - [精品绿色便携软件](http://www.portablesoft.org)
 - [独木成林](http://www.guofs.com)
@@ -72,6 +90,7 @@
 - [ED2000](http://www.ed2000.com)
 - [KickassTorrents](http://kickass.to) - Torrents资源站
 - [BT库](http://btku.org)
+- [BTbook](http://www.btbook.net) - 磁力搜索
 
 
 ###**资讯/社区类**
@@ -107,13 +126,19 @@
 - [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw)
 - [SitePoint](http://www.sitepoint.com) - 技术文章集（EN）
 - [Snipplr](http://snipplr.com) - 代码片段
+- [代码片段](http://www.codesnippet.cn)
 - [OverAPI](http://overapi.com) - 技术速查表集合站
+- [Cheat Sheet](http://www.cheat-sheets.org)
 
 ####**资源类**
 - [梦想天空](http://www.cnblogs.com/lhb25) - 分享网页设计资源
 - [MSDN, 我告诉你](http://msdn.itellyou.cn)
 - [百度静态资源公共库](http://cdn.code.baidu.com) - 前端静态资源公共库加速服务
 - [API Store](http://apistore.baidu.com) - API资源集合
+
+####**源码类**
+- [好东西分享](http://www.17558.net)
+- [好站长资源](http://www.haoid.cn)
 
 ####**素材类**
 - [素材家园](http://www.sucaijiayuan.com)
@@ -149,10 +174,14 @@
     + [AngularJS API中文手册](https://gitcafe.com/Angularjs/Angularjs-API-Document)
     + 使用 PHP、MySQL、AngularJS 和 Nutritionix API 构建一个移动友好的卡路里计数器并将它部署在 IBM Bluemix 上
 http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs/
+- **React Native**
+    + [官网](https://facebook.github.io/react/) | [GitHub](https://github.com/facebook/react)
+    + [React-Native学习指南](http://www.w3ctech.com/topic/909)
 - [Bootstrap](http://www.bootcss.com) - 前端开发框架
 - [Zepto.js](http://zeptojs.com) - 轻量级的针对现代高级浏览器的JavaScript库
 - [Clouda](http://clouda.baidu.com) - 移动web应用开发整体解决方案
 - [Ace ](https://github.com/ajaxorg/ace) - 代码编辑器
+- [JSHint](http://jshint.com) - JavaScript代码质量检查工具
 
 
 ####**安全类**
@@ -168,11 +197,20 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 
 ####**开源软件**
 - [SSDB](http://ssdb.io) - 高性能的支持丰富数据结构的NoSQL数据库
+- **[apiDoc](http://apidocjs.com)** - RESTful API文档生成器
 - [Swagger](http://swagger.io) - 在线API生成工具
     * [Swagger-PHP](http://zircote.com/swagger-php)
     * [Swagger Editor](http://editor.swagger.io)
         + GitHub https://github.com/swagger-api/swagger-editor
 - [Nikto](http://www.cirt.net/nikto2)[[GitHub](https://github.com/sullo/nikto)] - 网页服务器扫描器
+- [Disconf](https://github.com/knightliao/disconf) - 分布式配置管理平台
+
+#####Markdown
+- [Markdown Plus](https://tylingsoft.com/mdp)
+- **[leanote](http://leanote.org)** - 开源在线笔记
+- [Editor.md](https://pandao.github.io/editor.md/)
+- [EpicEditor](http://epiceditor.com)
+- [Cmd Markdown编辑阅读器](https://www.zybuluo.com/mdeditor)
 
 ---
 ##**PHP资源**
@@ -205,8 +243,15 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
     + GitHub https://github.com/doctrine
 * [ApiGen](http://www.apigen.org) - 项目文档生成器
     + GitHub https://github.com/ApiGen/ApiGen
+* **OAuth**
+    + [PHP搭建OAuth2.0](http://www.zyuns.com/?page_id=188)
+    + [OAuth2-PHP](http://code.google.com/p/oauth2-php/)
+* [hook](https://github.com/doubleleft/hook) - BaaS软件
+* [KodExplorer](http://www.kalcaddle.com) [*[GitHub](https://github.com/kalcaddle/KODExplorer)*] - 基于Web的在线文件管理、代码编辑器
+* [ICEcoder](https://icecoder.net) [*[GitHub](https://github.com/mattpass/ICEcoder)*] - Web IDE（基于Web的代码编辑器）
 ####**PHP工具类库**
 * [PHP Sitemap Generator](https://github.com/pawelantczak/php-sitemap-generator) - 网站地图生成类
+* [PHPExcel](http://phpexcel.codeplex.com) [*[GitHub*](https://github.com/PHPOffice/PHPExcel)]
 * [PHPMailer](https://github.com/PHPMailer/PHPMailer)
 * [PHPWord](http://phpword.codeplex.com)
 * [PHPPowerPoint](http://phppowerpoint.codeplex.com)
@@ -235,6 +280,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
     + 中文站 http://www.phpcomposer.com
     + 包仓库 https://packagist.org
 * [PHP Benchmark](http://www.phpbench.com) - PHP性能测试工具
+* [Thrift for PHP](https://github.com/apache/thrift/tree/master/lib/php)
 
 
 ---
@@ -271,6 +317,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Josh Lockhart](https://joshlockhart.com) - PHP之道、Slim框架、Modern PHP（书籍）作者
 
 ###4. 个人博客（普通）
+- [斯人](http://www.imsiren.com) - Linux、C、PHP、WEB架构底层服务开发
 - [WorldHello](http://www.worldhello.net) - 《Git权威指南》作者
 - [PHPer Note](http://www.phpernote.com) - PHP工作生活笔记
 - [黑夜路人](http://blog.csdn.net/heiyeshuwu) - 黑夜路人的开源世界
@@ -294,6 +341,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [CodeCloud](http://codecloud.net) - 程序员的资料库
 - [微度网络](http://www.widuu.com) - Web技术博客
 - [Fising's Blog](http://www.fising.cn) - Web技术博客
+- [葡萄儿web技术笔记](http://www.putaor.com)
 
 ### **公共接口**
 - 根据IP地址获取地理位置 
@@ -304,7 +352,17 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 
 ---
 ## **博文收藏**
+###**技术架构**
 - [HTTP服务七层架构技术探讨](http://kb.cnblogs.com/page/158568/)
+- [构建高并发高可用的电商平台架构实践](http://blog.csdn.net/yangbutao/article/details/12242441)
+- [鏖战双11，电商架构大起底](http://www.csdn.net/article/2014-11-11/2822572)
+- [给公司部门设计的SOA架构](http://www.cnblogs.com/mushroom/p/4298461.html)
+- [SOA相关资料整理分享](http://www.cnblogs.com/mushroom/p/4369032.html)
+- [《博客园精华集》SOA分类筛选结果](http://www.cnblogs.com/KnightsWarrior/articles/1742159.html)
+- [重新诠释SOA](http://www.cnblogs.com/teddyma/archive/2005/11/21/281271.html)
+- [关于大型网站技术演进的思考（一）--存储的瓶颈（1）](http://www.cnblogs.com/sharpxiajun/p/4237704.html) - 该文为系列文章之一
+
+###**未归档**
 - [PHP中return和exit、break和contiue的区别](http://de.cel.blog.163.com/blog/static/514512362011613114956388/)
 - [base64:URL背景图片与web页面性能优化](http://www.zhangxinxu.com/wordpress/?p=2341)
 - [mootools教程](http://fdream.net/blog/article/605.aspx)
@@ -318,9 +376,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [windows下安装memcached](http://www.rootop.org/pages/2768.html)
 - [Android推送通知指南](http://blog.csdn.net/joshua_yu/article/details/6563587)
 - [Python in NetBeans IDE 8.0.2](https://blogs.oracle.com/geertjan/entry/python_in_netbeans_ide_81)
-- [构建高并发高可用的电商平台架构实践](http://blog.csdn.net/yangbutao/article/details/12242441)
-- [鏖战双11，电商架构大起底](http://www.csdn.net/article/2014-11-11/2822572)
-- [给公司部门设计的SOA架构](http://www.cnblogs.com/mushroom/p/4298461.html)
+- [基于Sphinx构建准实时更新的分布式通用搜索引擎平台](http://zyan.cc/sphinx_search)
 
 
 ---
@@ -388,6 +444,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Apache Cordova API Documentation](http://cordova.apache.org/docs/zh/3.1.0/index.html)
 - [协议森林](http://www.cnblogs.com/vamei/archive/2012/12/05/2802811.html)
 - [RESTful API设计思想](https://restful-api-design.readthedocs.org)
+- [HTTP API设计指南](https://github.com/ZhangBohan/http-api-design-ZH_CN)
 
 
 ## 非技术类教程、书籍
