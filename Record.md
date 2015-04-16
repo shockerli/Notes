@@ -1,15 +1,6 @@
 # 各种网络资源
 
 ---
-
-##值得关注的站点
-- [网易1元夺宝](http://1.163.com)
-- [1元云购](http://www.1yyg.com)
-- [折800](http://www.zhe800.com)
-- [心意盒子](http://www.xinyihezi.com)
-
-
----
 ##**优秀网站**
 ---
 ###**资源类**
@@ -456,6 +447,3 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - 优秀网站集 http://www.awwwards.com
 - http://adayinbigdata.com
 - http://sidigital.co
-
-
-
