@@ -572,13 +572,18 @@ TRUNCATE [TABLE] tbl_name
 利用 mysqldump 指令完成。
 
 -- 导出
+mysqldump [options] db_name [tables]
+mysqldump [options] ---database DB1 [DB2 DB3...]
+mysqldump [options] --all--database
+
+
 1. 导出一张表
 　　mysqldump -u用户名 -p密码 库名 表名 > 文件名(D:/a.sql)
 2. 导出多张表
 　　mysqldump -u用户名 -p密码 库名 表1 表2 表3 > 文件名(D:/a.sql)
 3. 导出所有表
 　　mysqldump -u用户名 -p密码 库名 > 文件名(D:/a.sql)
-4. 导出一个库 
+4. 导出一个库
 　　mysqldump -u用户名 -p密码 -B 库名 > 文件名(D:/a.sql)
 
 可以-w携带WHERE条件
