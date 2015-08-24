@@ -967,6 +967,7 @@ GRANT 权限列表 ON 表名 TO 用户名 [IDENTIFIED BY [PASSWORD] 'password']
     - all privileges 表示所有权限
     - *.* 表示所有库的所有表
     - 库名.表名 表示某库下面的某表
+    GRANT ALL PRIVILEGES ON `pms`.* TO 'pms'@'%' IDENTIFIED BY 'pms0817'
 -- 查看权限
 SHOW GRANTS FOR 用户名
     -- 查看当前用户权限

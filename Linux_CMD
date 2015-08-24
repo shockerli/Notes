@@ -23,6 +23,9 @@ hdparm -i /dev/hda                  # 查看磁盘参数(仅适用于IDE设备)
 dmesg | grep IDE                    # 查看启动时IDE设备检测状况 网络
 ifconfig                            # 查看所有网络接口的属性
 iptables -L                         # 查看防火墙设置
+/etc/init.d/iptables status			# 端口设置状态
+/etc/init.d/iptables stop|start|restart		#停止、启动、重启防火墙
+chkconfig --level 35 iptables off /etc/init.d/iptables stop iptables -P INPUT DROP		# 永久性关闭防火墙
 route -n                            # 查看路由表
 netstat -lntp                       # 查看所有监听端口
 netstat -antp                       # 查看所有已经建立的连接
@@ -36,5 +39,7 @@ cut -d: -f1 /etc/passwd             # 查看系统所有用户
 cut -d: -f1 /etc/group              # 查看系统所有组
 crontab -l                          # 查看当前用户的计划任务 服务
 chkconfig --list                    # 列出所有系统服务
-chkconfig --list | grep on          # 列出所有启动的系统服务 程序
+chkconfig --list | grep on          # 列出所有启动的系统服务
 rpm -qa                             # 查看所有安装的软件包
+vim /etc/rc.d/rc.local				# 设置开机启动
+lsb_release -a						# 查看系统版本
