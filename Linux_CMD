@@ -43,3 +43,18 @@ chkconfig --list | grep on          # 列出所有启动的系统服务
 rpm -qa                             # 查看所有安装的软件包
 vim /etc/rc.d/rc.local				# 设置开机启动
 lsb_release -a						# 查看系统版本
+cat /proc/meminfo					# 查看内存信息
+strace
+tcpdump								# 监听网络数据包
+iftop -i eth0 -n -P					# 实时流量监控工具
+zip -r mydata.zip mydata 			# 压缩mydata目录为mydata.zip文件
+upzip mydata.zip					# 解压mydata.zip到当前目录
+unzip mydata.zip -d mydatabak		# 解压mydata.zip到mydatabak目录
+/etc/rc.d/rc.local					# 开机启动脚本设置文件
+ntsysv								# 开机启动设置（界面）
+ps -ef | grep 名称 | grep -v grep | cut -c 9-15 | xargs kill -s 9    # 杀死查找出的所有进程
+wc -l                               # 统计行数
+ps -ef | grep defunct               # 查看僵尸进程
+ps -ef | grep defunct | grep -v grep | wc -l    # 统计僵尸进程数量
+ps -e -o ppid,stat | grep Z | cut -d " " -f2 | xargs kill -9    # 杀死所有僵尸进程
+

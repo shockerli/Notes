@@ -582,6 +582,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [LAMP技术博客](http://lampblog.org)
 - [沈逸](http://www.hishenyi.com)
 - [曾健生的专栏](http://blog.csdn.net/newjueqi)
+- [始终不够](http://www.huyanping.cn) - PHP技术博客
 
 ### **公共接口**
 - 根据IP地址获取地理位置 

@@ -584,7 +584,7 @@ mysqldump [options] --all--database
 3. 导出所有表
 　　mysqldump -u用户名 -p密码 库名 > 文件名(D:/a.sql)
 4. 导出一个库
-　　mysqldump -u用户名 -p密码 -B 库名 > 文件名(D:/a.sql)
+　　mysqldump -u用户名 -p密码 --lock-all-tables -B 库名 > 文件名(D:/a.sql)
 
 可以-w携带WHERE条件
 
@@ -945,6 +945,13 @@ END
 
 
 /* 用户和权限管理 */ ------------------
+-- root密码重置
+1. 停止MySQL服务
+2. /usr/local/mysql/bin/safe_mysqld --skip-grant-tables &
+3. use mysql;
+4. UPDATE `user` SET PASSWORD=PASSWORD("密码") WHERE `user` = "root";
+5. FLUSH PRIVILEGES;
+
 用户信息表：mysql.user
 -- 刷新权限
 FLUSH PRIVILEGES
