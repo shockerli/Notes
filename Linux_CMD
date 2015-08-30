@@ -1,6 +1,7 @@
 常用Linux命令
 ------------
 
+ls -ahl                             # 易读、列表方式显示列表详情
 uname -a                            # 查看内核/操作系统/CPU信息
 head -n 1 /etc/issue                # 查看操作系统版本
 cat /proc/cpuinfo                   # 查看CPU信息
@@ -31,7 +32,9 @@ netstat -lntp                       # 查看所有监听端口
 netstat -antp                       # 查看所有已经建立的连接
 netstat -s                          # 查看网络统计信息 进程
 ps -ef                              # 查看所有进程
-top                                 # 实时显示进程状态 用户
+top                                 # 实时显示进程状态
+htop                                # 更详细的系统进程信息（yum install htop）
+vmstat -s                           # 查看系统性能数据
 w                                   # 查看活动用户
 id                                  # 查看指定用户信息
 last                                # 查看用户登录日志
@@ -57,4 +60,19 @@ wc -l                               # 统计行数
 ps -ef | grep defunct               # 查看僵尸进程
 ps -ef | grep defunct | grep -v grep | wc -l    # 统计僵尸进程数量
 ps -e -o ppid,stat | grep Z | cut -d " " -f2 | xargs kill -9    # 杀死所有僵尸进程
-
+tree 目录                            # 树形结构显示目录结构（yum install tree进行安装）
+pstree                              # 以树状图显示正在运行中的进程
+pkill php                           # 杀死包含php的所有进程
+pgrep php                           # 列出包含php的所有进程信息
+pmap -x 1232                        # 查看进程的内存映像信息
+yum update package_name             # 更新指定程序
+yum update                          # 更新全部程序
+yum check-update                    # 检查可更新程序
+yum list package_name               # 查看指定程序安装情况
+yum clean packages                  # 清除缓存目录下的软件包
+yum clean headers                   # 清除缓存目录下的headers
+yum clean oldheaders                # 清除缓存目录下旧的headers
+yum clean all                       # (= yum clean packages; yum clean oldheaders
+youtube-dl url                      # 下载Youtube视频
+rpm -qa | grep rsync                # 查看是否存在某程序包
+whereis php                         # 查看程序执行文件所在位置

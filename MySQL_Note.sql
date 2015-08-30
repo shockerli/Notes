@@ -7,11 +7,6 @@
 /* 连接与断开服务器 */
 mysql -h 地址 -P 端口 -u 用户名 -p 密码
 
-/* 跳过权限验证登录MySQL */
-mysqld --skip-grant-tables
--- 修改root密码
-密码加密函数password()
-UPDATE mysql.user SET password=PASSWORD('root');
 
 SHOW PROCESSLIST -- 显示哪些线程正在运行
 SHOW VARIABLES -- 显示系统变量信息
@@ -947,7 +942,8 @@ END
 /* 用户和权限管理 */ ------------------
 -- root密码重置
 1. 停止MySQL服务
-2. /usr/local/mysql/bin/safe_mysqld --skip-grant-tables &
+2.  [Linux] /usr/local/mysql/bin/safe_mysqld --skip-grant-tables &
+    [Windows] mysqld --skip-grant-tables
 3. use mysql;
 4. UPDATE `user` SET PASSWORD=PASSWORD("密码") WHERE `user` = "root";
 5. FLUSH PRIVILEGES;
