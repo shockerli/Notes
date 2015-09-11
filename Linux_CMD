@@ -24,9 +24,9 @@ hdparm -i /dev/hda                  # 查看磁盘参数(仅适用于IDE设备)
 dmesg | grep IDE                    # 查看启动时IDE设备检测状况 网络
 ifconfig                            # 查看所有网络接口的属性
 iptables -L                         # 查看防火墙设置
-/etc/init.d/iptables status			# 端口设置状态
-/etc/init.d/iptables stop|start|restart		#停止、启动、重启防火墙
-chkconfig --level 35 iptables off /etc/init.d/iptables stop iptables -P INPUT DROP		# 永久性关闭防火墙
+/etc/sysconfig/iptables             # 防火墙配置文件
+/etc/init.d/iptables status|stop|start|restart|reload       #防火墙：状态、停止、启动、重启、重新加载配置
+chkconfig --level 35 iptables off /etc/init.d/iptables stop iptables -P INPUT DROP      # 永久性关闭防火墙
 route -n                            # 查看路由表
 netstat -lntp                       # 查看所有监听端口
 netstat -antp                       # 查看所有已经建立的连接
@@ -44,17 +44,17 @@ crontab -l                          # 查看当前用户的计划任务 服务
 chkconfig --list                    # 列出所有系统服务
 chkconfig --list | grep on          # 列出所有启动的系统服务
 rpm -qa                             # 查看所有安装的软件包
-vim /etc/rc.d/rc.local				# 设置开机启动
-lsb_release -a						# 查看系统版本
-cat /proc/meminfo					# 查看内存信息
+vim /etc/rc.d/rc.local              # 设置开机启动
+lsb_release -a                      # 查看系统版本
+cat /proc/meminfo                   # 查看内存信息
 strace
-tcpdump								# 监听网络数据包
-iftop -i eth0 -n -P					# 实时流量监控工具
-zip -r mydata.zip mydata 			# 压缩mydata目录为mydata.zip文件
-upzip mydata.zip					# 解压mydata.zip到当前目录
-unzip mydata.zip -d mydatabak		# 解压mydata.zip到mydatabak目录
-/etc/rc.d/rc.local					# 开机启动脚本设置文件
-ntsysv								# 开机启动设置（界面）
+tcpdump                             # 监听网络数据包
+iftop -i eth0 -n -P                 # 实时流量监控工具
+zip -r mydata.zip mydata            # 压缩mydata目录为mydata.zip文件
+upzip mydata.zip                    # 解压mydata.zip到当前目录
+unzip mydata.zip -d mydatabak       # 解压mydata.zip到mydatabak目录
+/etc/rc.d/rc.local                  # 开机启动脚本设置文件
+ntsysv                              # 开机启动设置（界面）
 ps -ef | grep 名称 | grep -v grep | cut -c 9-15 | xargs kill -s 9    # 杀死查找出的所有进程
 wc -l                               # 统计行数
 ps -ef | grep defunct               # 查看僵尸进程
@@ -76,3 +76,7 @@ yum clean all                       # (= yum clean packages; yum clean oldheader
 youtube-dl url                      # 下载Youtube视频
 rpm -qa | grep rsync                # 查看是否存在某程序包
 whereis php                         # 查看程序执行文件所在位置
+ip addr | grep eth1 | grep inet     # 查看自身IP
+rm -- -test_file                    # 删除文件名含特殊字符的文件
+/bin/sh -n ./file.sh                # 文件shell语法检查
+
