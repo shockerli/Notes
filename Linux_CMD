@@ -12,7 +12,7 @@ lsmod                               # 列出加载的内核模块
 env                                 # 查看环境变量 资源
 free -m                             # 查看内存使用量和交换区使用量
 df -h                               # 查看各分区使用情况
-du -sh                              # 查看指定目录的大小
+du -h file_path                     # 查看文件大小
 grep MemTotal /proc/meminfo         # 查看内存总量
 grep MemFree /proc/meminfo          # 查看空闲内存量
 uptime                              # 查看系统运行时间、用户数、负载
@@ -55,12 +55,21 @@ upzip mydata.zip                    # 解压mydata.zip到当前目录
 unzip mydata.zip -d mydatabak       # 解压mydata.zip到mydatabak目录
 /etc/rc.d/rc.local                  # 开机启动脚本设置文件
 ntsysv                              # 开机启动设置（界面）
+wc [FILE]                           # 统计
+    -l 统计行数
+    -w 统计词数
+    -m 统计字符数
+    -c 统计字节数
 ps -ef | grep 名称 | grep -v grep | cut -c 9-15 | xargs kill -s 9    # 杀死查找出的所有进程
-wc -l                               # 统计行数
 ps -ef | grep defunct               # 查看僵尸进程
 ps -ef | grep defunct | grep -v grep | wc -l    # 统计僵尸进程数量
 ps -e -o ppid,stat | grep Z | cut -d " " -f2 | xargs kill -9    # 杀死所有僵尸进程
-tree 目录                            # 树形结构显示目录结构（yum install tree进行安装）
+tree                                # 树形结构显示目录结构（yum install tree进行安装）
+    -d 只显示目录
+    -f 显示完整路径
+    -h 友好的文件大小显示
+    -L 显示指定层级
+    -o file_name 输出显示结果到指定文件
 pstree                              # 以树状图显示正在运行中的进程
 pkill php                           # 杀死包含php的所有进程
 pgrep php                           # 列出包含php的所有进程信息
@@ -79,4 +88,12 @@ whereis php                         # 查看程序执行文件所在位置
 ip addr | grep eth1 | grep inet     # 查看自身IP
 rm -- -test_file                    # 删除文件名含特殊字符的文件
 /bin/sh -n ./file.sh                # 文件shell语法检查
+find path_name -name file_pattern   # 根据文件名查找
+wget                                # 文件下载
+    -b 后台静默下载
+    -c 断点续传
+    -O new_file_name 下载后保存的文件名
+    -P path_name 下载后保存的路径
+    --no-check-certificate 不进行权限验证
+
 
