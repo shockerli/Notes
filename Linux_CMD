@@ -44,7 +44,6 @@ crontab -l                          # 查看当前用户的计划任务 服务
 chkconfig --list                    # 列出所有系统服务
 chkconfig --list | grep on          # 列出所有启动的系统服务
 rpm -qa                             # 查看所有安装的软件包
-vim /etc/rc.d/rc.local              # 设置开机启动
 lsb_release -a                      # 查看系统版本
 cat /proc/meminfo                   # 查看内存信息
 strace
@@ -53,7 +52,7 @@ iftop -i eth0 -n -P                 # 实时流量监控工具
 zip -r mydata.zip mydata            # 压缩mydata目录为mydata.zip文件
 upzip mydata.zip                    # 解压mydata.zip到当前目录
 unzip mydata.zip -d mydatabak       # 解压mydata.zip到mydatabak目录
-/etc/rc.d/rc.local                  # 开机启动脚本设置文件
+/etc/rc.d/rc.local                  # 开机启动脚本设置文件（/etc/rc.local一样）
 ntsysv                              # 开机启动设置（界面）
 wc [FILE]                           # 统计
     -l 统计行数
@@ -95,5 +94,5 @@ wget                                # 文件下载
     -O new_file_name 下载后保存的文件名
     -P path_name 下载后保存的路径
     --no-check-certificate 不进行权限验证
-
+chattr -i file_name                 # 取消文件不可被删除/修改的属性
 
