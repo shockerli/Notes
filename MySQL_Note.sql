@@ -579,7 +579,7 @@ mysqldump [options] --all--database
 3. 导出所有表
 　　mysqldump -u用户名 -p密码 库名 > 文件名(D:/a.sql)
 4. 导出一个库
-　　mysqldump -u用户名 -p密码 --lock-all-tables -B 库名 > 文件名(D:/a.sql)
+　　mysqldump -u用户名 -p密码 --lock-all-tables --database 库名 > 文件名(D:/a.sql)
 
 可以-w携带WHERE条件
 

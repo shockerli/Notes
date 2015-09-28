@@ -1,6 +1,32 @@
 常用Linux命令
-------------
+------------------------------------------------------------------------
 
+#压缩
+zip -r mydata.zip mydata file1 file2        # 压缩mydata目录和file1,file2到mydata.zip文件
+upzip mydata.zip                    # 解压mydata.zip到当前目录
+unzip mydata.zip -d mydatabak       # 解压mydata.zip到mydatabak目录
+gzip -c filename > file.gz          # 将文件filename压缩到file.gz
+gunzip file.gz                      # 解压缩file.gz文件
+tar                                 # tar压缩/解压
+    -c: 建立新的存档
+    -x: 从存档展开文件
+    -f: 指定存档或设备
+    -v: 详细显示处理的文件
+    -z: 用gzip对存档压缩或解压
+tar -zcvf file.tar file1 file2      # 创建tar归档，并压缩
+tar -zxvf file.tar.gz               # 解压并释放tar归档
+
+------------------------------------------------------------------------
+
+env                                 # 查看/设置/删除环境变量
+    env: 查看
+    env -u var_name: 删除
+    env var_name=var_value: 设置
+history                             # 显示在当前shell下命令历史
+su                                  # 切换账号（默认切换到root）
+sudo                                # 切换账号并执行命令（默认以root账号执行命令）
+passwd                              # 修改密码
+who                                 # 显示当前登陆用户
 ls -ahl                             # 易读、列表方式显示列表详情
 uname -a                            # 查看内核/操作系统/CPU信息
 head -n 1 /etc/issue                # 查看操作系统版本
@@ -19,6 +45,8 @@ uptime                              # 查看系统运行时间、用户数、负
 cat /proc/loadavg                   # 查看系统负载 磁盘和分区
 mount | column -t                   # 查看挂接的分区状态
 fdisk -l                            # 查看所有分区
+mkfs.ext3 /dev/xvdb                 # 格式化分区
+mount /dev/xvdb /mnt                # 挂载分区
 swapon -s                           # 查看所有交换分区
 hdparm -i /dev/hda                  # 查看磁盘参数(仅适用于IDE设备)
 dmesg | grep IDE                    # 查看启动时IDE设备检测状况 网络
@@ -27,7 +55,7 @@ iptables -L                         # 查看防火墙设置
 /etc/sysconfig/iptables             # 防火墙配置文件
 /etc/init.d/iptables status|stop|start|restart|reload       #防火墙：状态、停止、启动、重启、重新加载配置
 chkconfig --level 35 iptables off /etc/init.d/iptables stop iptables -P INPUT DROP      # 永久性关闭防火墙
-route -n                            # 查看路由表
+ -n                            # 查看路由表
 netstat -lntp                       # 查看所有监听端口
 netstat -antp                       # 查看所有已经建立的连接
 netstat -s                          # 查看网络统计信息 进程
@@ -49,9 +77,6 @@ cat /proc/meminfo                   # 查看内存信息
 strace
 tcpdump                             # 监听网络数据包
 iftop -i eth0 -n -P                 # 实时流量监控工具
-zip -r mydata.zip mydata            # 压缩mydata目录为mydata.zip文件
-upzip mydata.zip                    # 解压mydata.zip到当前目录
-unzip mydata.zip -d mydatabak       # 解压mydata.zip到mydatabak目录
 /etc/rc.d/rc.local                  # 开机启动脚本设置文件（/etc/rc.local一样）
 ntsysv                              # 开机启动设置（界面）
 wc [FILE]                           # 统计
@@ -95,4 +120,20 @@ wget                                # 文件下载
     -P path_name 下载后保存的路径
     --no-check-certificate 不进行权限验证
 chattr -i file_name                 # 取消文件不可被删除/修改的属性
-
+locate str                          # 查找/统计包含某字符串的路径
+ln -s filename path                 # 为文件filename在path位置创建软链接
+file file_name                      # 文件filename的类型描述
+mkdir -p path_name                  # 递归创建目录
+diff file1 file2                    # 显示两文件的差别
+head                                # 显示文件前几行/大小的内容
+tail                                # 显示文件后几行/大小的内容
+ifup eth0                           # 开启eth0端口
+ifdown eth0                         # 关闭eth0端口
+iwconfig                            # 显示无线网络接口
+traceroute ip_addr                  # 探测前往地址IP的路由路径
+host domain_addr                    # 寻找域名domain对应的IP
+host ip_addr                        # 寻找IP对应的域名（反向DNS查询）
+scp localpath username@host:path    # 将本地localpath指向的文件上传到远程主机的path路径
+ssh username@host                   # ssh登陆远程服务器host
+sftp username@host                  # 登陆服务器host（用于文件传输）
+lpr filename                        # 打印文件
