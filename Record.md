@@ -28,7 +28,7 @@
 
 ###**创业类**
 - [缘创派](http://www.ycpai.com) - 帮助互联网创业者找合伙人的平台
-- [创业导航](http://chuang.pro/startup-guide) - 创业资源导航网站
+- [创之网](http://chuang.pro)
 - [IT桔子](http://itjuzi.com) - IT互联网公司产品数据库
 - [DEMO8](http://www.demo8.com) - 发现最新的好产品
 - [17Startup](http://17startup.com)
@@ -53,24 +53,28 @@
 - [主题阅读网](http://www.eywedu.org)
 
 ###**工具类**
-####*项目/效率*
+####*协作/效率*
 - [**高效TuDo**](http://www.gxtodo.com)
 - [番茄土豆](https://pomotodo.com) - 番茄（番茄工作法）与土豆（To-do List）相结合的在线工具
 - [Worktitle](https://worktile.com) - 团队协同工具
 - [Teambition](https://www.teambition.com) - 项目协作平台
 - [DOCQ](http://docq.cn) - 在线的办公协作软件
-- [百度脑图](http://naotu.baidu.com)
+- [石墨](https://shimo.im) - 在线协作文档工具
+- [明道](http://www.mingdao.com) - 企业协作应用
+- [纷云](https://lesschat.com) - 团队沟通协作平台
 ####*文学/字体*
 - [书法迷](http://www.shufami.com) - 在线书法生成工具
 - [求字体](http://www.qiuziti.com) - 在线字体查找工具
+- [Hack](https://github.com/chrissimpkins/Hack) - A typeface designed for source code
 ####*技术/编程*
 - [Jekyll](http://jekyllcn.com) - 免费的Blog生成工具
+- [**Hexo**](https://hexo.io/zh-cn/) [[*GitHub*](https://github.com/hexojs/hexo)] - 快速、简洁且高效的博客框架
 - [ideone](http://ideone.com) - 支持多语言的在线编译与调试工具
 - [phpCodeBeautifier](http://www.waterproof.fr/products/phpCodeBeautifier) - PHP格式化工具
 - [JS格式化](http://jsbeautifier.org)
 - [**JSON Editor Online**](http://www.jsoneditoronline.org) - JSON在线编辑与格式化工具
 - [apache2nginx](http://www.anilcetin.com/convert-apache-htaccess-to-nginx/) - 在线转换apache配置为nginx配置
-- [GitBook](https://www.gitbook.com)
+- [**GitBook**](https://www.gitbook.com)
 - [bootstrap可视化布局](http://www.hishenyi.com/bootstrap)
 - **NetBeans插件**
     + Show path in titlebar - 显示当前文件路径
@@ -81,16 +85,19 @@
 - [ClippingMagic](https://clippingmagic.com) - 在线抠图神器
 - [Preloaders](http://preloaders.net) - 在线LOADING动画生成工具
 ####*设计/交互*
-- [Vxplo](http://www.vxplo.cn) - 在线交互设计神器
 - [白板](https://bearyboard.com) - 设计文件实时讨论工具
-- [ProcessOn](https://www.processon.com) - 在线作图工具（交互原型工具）
+- [百度脑图](http://naotu.baidu.com)
+- [**ProcessOn**](https://www.processon.com) - 在线作图工具
 - [Silk](http://weavesilk.com) - 在线炫光制作工具
+- [Sketch](http://www.bohemiancoding.com/sketch) - 矢量绘图应用
 ####*H5/创作*
 - [哈吉网](http://www.hajea.com) - 专业创作：文档、手册、教程
-- [易企秀](http://eqxiu.com) -H5页面制作工具
+- [易企秀](http://eqxiu.com) - H5页面制作工具
 - [兔展](http://www.rabbitpre.com) - H5页面制作工具
 - [MAKA](http://www.maka.im) - HTML5创作工具与创意平台
 - [八音盒轻故事](http://www.wedfairy.com) - 通过H5来轻松制作和分享自己的故事
+- [70度](http://www.70c.com) - 微场景和h5页面的制作平台
+- [iH5](http://www.ih5.cn) - H5制作工具
 
 ###**生活类**
 - [知性](http://sex.guokr.com) - 专业两性交流社区
@@ -144,9 +151,11 @@
 - [5sing](http://5sing.kugou.com) - 中国原创音乐基地
 - [神曲音乐论坛](http://www.o2v3.imotor.com)
 ####*影视*
+- [YYeTs字幕组](http://www.zimuzu.tv)
 - [电影天堂](http://www.dy2018.com)
 - [飘花电影](http://www.piaohua.com)
 - [无极电影](http://bbs.btwuji.com)
+- [搬运工](http://banyungong.net)
 ####*下载*
 - [ED2000](http://www.ed2000.com)
 - [KickassTorrents](http://kickass.to) - Torrents资源站
@@ -194,8 +203,12 @@
 - [人人都是产品经理](http://www.woshipm.com)
 - [产品100](http://www.chanpin100.com)
 - [产品经理导航](http://dh.woshipm.com)
+- [PMcaff](http://www.pmcaff.com) - 产品经理社区
 ###**工具/资源**
-- [摩客|Mockplus](https://www.mockplus.cn) - 原型图设计工具
+- [**摩客|Mockplus**](https://www.mockplus.cn) - 原型图设计工具
+- [**墨刀|MockingBot**](https://modao.cc) - 免费的移动应用原型与线框图工具
+- [Balsamiq Mockups](https://balsamiq.com) - 手绘效果的原型设计工具
+- [Justinmind](http://www.justinmind.com) - 原型制作工具
 - [iAxure](http://www.iaxure.com) - Axure原创教程网
 - [Axure中文网](http://www.axure.us)
 - [Justinmind•学习站](http://www.jmstu.com)
@@ -224,7 +237,7 @@
 
 ###**教程类**
 - [W3School](http://www.w3school.com.cn) - 中文Web技术教程
-- [W3School菜鸟教程](http://www.w3cschool.cc) - Web技术基础教程
+- [菜鸟教程](http://www.runoob.com) - Web技术基础教程
 - [微学苑](http://www.weixueyuan.net) - 编程语言教程（C/C++/Java/MySQL/单片机/Linux/Swift）
 - [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw)
 - [SitePoint](http://www.sitepoint.com) - 技术文章集（EN）
@@ -237,10 +250,10 @@
 ###**资源类**
 - [GitHub](https://github.com)
 - [Git Hunt](https://githunt.io)
+- [**GitHub awesome **](https://github.com/sindresorhus/awesome) - 优质开源技术项目列表
 - [Open Hub](https://www.openhub.net)
 - [**梦想天空**](http://www.cnblogs.com/lhb25) - 分享网页设计资源
 - [MSDN, 我告诉你](http://msdn.itellyou.cn)
-- [百度静态资源公共库](http://cdn.code.baidu.com) - 前端静态资源公共库加速服务
 - [API Store](http://apistore.baidu.com) - API资源集合
 
 ###**源码类**
@@ -260,11 +273,14 @@
 - [500px](https://500px.com) - 照片分享网站
 - [黄蜂网](http://woofeng.cn)
 - [1001FreeDownloads.com](http://www.1001freedownloads.com)
+- [lorempixel](http://lorempixel.com) - 在线网页占位符生成工具
 
 ###**前端资源**
+- [**Javascript资源列表**](https://github.com/sorrycc/awesome-javascript)
 - [**前端网站集合**](http://get-set.cn/front-end-chart)
 - [**前端资源导航**](http://www.f2enav.com)
 - [**前端网址导航**](http://www.whycss.com)
+- [**百度静态资源公共库**](http://cdn.code.baidu.com) - 前端静态资源公共库加速服务
 - [**BootCDN**](http://www.bootcdn.cn) - 开源项目CDN服务
 - [前端里](http://www.yyyweb.com)
 - [唯艾迪主题模板](http://www.weidea.net)
@@ -276,6 +292,22 @@
     + [WP中文论坛](http://wordpress.org.cn)
     + [WPChina](http://wpchina.org)
     + [WordPress主题库](http://www.toptheme.org)
+
+###**APP/Desktop**
+####Desktop
+- [Electron](https://github.com/atom/electron) - 跨平台桌面程序构建工具
+- [NW.js](https://github.com/nwjs/nw.js) - 跨平台桌面程序构建工具
+
+####Hybrid
+- [ionic](http://www.ionicframework.com) [[*GitHub*](https://github.com/driftyco/ionic/)]
+- [Cordova](http://cordova.apache.org)
+- [PhoneGap](http://phonegap.com)
+- [CrossApp](http://crossapp.9miao.com)
+- [React Native](https://facebook.github.io/react-native/)
+
+####IOS
+- [**Github-iOS备忘**](http://github.ibireme.com/github/list/ios/)
+- [BeeFramework](https://github.com/gavinkwoe/BeeFramework) - IOS开发框架
 
 ###**JavaScript**
 - [JavaScript Code Snippets](http://jssnips.com)
@@ -316,6 +348,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Clouda](http://clouda.baidu.com) - 移动web应用开发整体解决方案
 - [Ace ](https://github.com/ajaxorg/ace) - 代码编辑器
 - [JSHint](http://jshint.com) - JavaScript代码质量检查工具
+- [store.js](https://github.com/marcuswestin/store.js)
 - [browser-storage](https://github.com/zxlie/browser-storage) - 浏览器本地存储组件
 - [three.js](http://threejs.org) - 开源WebGL库
 - [Nuclear](https://github.com/AlloyTeam/Nuclear) - 一款形似React的超轻量级框架
@@ -327,7 +360,17 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Intro.js](https://github.com/usablica/intro.js) - 网站新特性介绍和详细用户教程制作框架
 - [Space.js](http://www.slashie.org/space.js) [[*GitHub*](https://github.com/gopatrik/space.js)] - HTML驱动的页面3D滚动效果
 - [DataTables](https://datatables.net) [[中文网](http://dt.thxopen.com)] - jquery表格插件
-
+- [Socket.IO](http://socket.io) [[*GitHub*](https://github.com/socketio/socket.io)] - Realtime application framework (Node.JS server)
+- [JSDoc](http://usejsdoc.org) [[*GitHub*](https://github.com/jsdoc3/jsdoc)] - JavaScript API文档生成工具
+- [artTemplate](https://github.com/aui/artTemplate) - JavaScript模板引擎
+- [mustache.js](https://github.com/janl/mustache.js)
+- [Detect.js](https://github.com/darcyclarke/Detect.js)
+- [json2.js](https://github.com/douglascrockford/JSON-js)
+- [HTML5绘画板](https://github.com/xuanfeng/draw)
+- [html5-canvas-drawing-app](https://github.com/krisrak/html5-canvas-drawing-app)
+- [JavaScript-MD5](https://github.com/blueimp/JavaScript-MD5) - JS实现MD5加密
+####**工具**
+- [F2etest](https://github.com/alibaba/f2etest) - 面向前端、测试、产品等岗位的多浏览器兼容性测试整体解决方案
 
 ###**MySQL**
 ####**开源软件**
@@ -345,17 +388,22 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [爱软客](http://www.bokeboke.net)
 
 ###**开源软件**
-####未归档
-- [SSDB](http://ssdb.io) - 高性能的支持丰富数据结构的NoSQL数据库
+####**未归档**
+- [wxWidgets](https://www.wxwidgets.org) - 跨平台的GUI库
+- [mustache](http://mustache.github.io) - 模板引擎，支持多种语言
 - [**apiDoc**](http://apidocjs.com) - RESTful API文档生成器
 - [Swagger](http://swagger.io) - 在线API生成工具
     * [Swagger-PHP](http://zircote.com/swagger-php)
     * [Swagger Editor](http://editor.swagger.io)
         + GitHub https://github.com/swagger-api/swagger-editor
 - [Nikto](http://www.cirt.net/nikto2) *[[GitHub](https://github.com/sullo/nikto)]* - 网页服务器扫描器
-- [Disconf](https://github.com/knightliao/disconf) - 分布式配置管理平台
 
-####Markdown
+####**Linux/运维工具**
+- [Lsyncd](https://github.com/axkibe/lsyncd) - 实时批量同步文件工具
+- [Disconf](https://github.com/knightliao/disconf) - 分布式配置管理平台
+- [SSDB](http://ssdb.io) - 高性能的支持丰富数据结构的NoSQL数据库
+
+####**Markdown**
 - [Markdown Plus](https://tylingsoft.com/mdp)
 - [**leanote**](http://leanote.org) - 开源在线笔记
 - [Editor.md](https://pandao.github.io/editor.md/)
@@ -378,6 +426,16 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - 文档收集
     + [利用ElasticSearch和Redis检索和存储十亿信息](http://www.csdn.net/article/2014-01-16/2818165-how-hipchat-stores-and-indexes-billions-of-messages)
 
+###**GitHub**
+- [PHP League](https://github.com/thephpleague) - The League of Extraordinary Packages
+- [walkor](https://github.com/walkor)
+- [Josh Lockhart](https://github.com/codeguy)
+- [Xinchen Hui](https://github.com/laruence)
+- [小鱼](https://github.com/sofish)
+- [ideawu](https://github.com/ideawu)
+- [Vamei](https://github.com/Vamei)
+- [muan](https://github.com/muan)
+
 ---
 ##**PHP资源**
 - **PHP 代码规范** http://pear.php.net/manual/en/standards.php
@@ -392,6 +450,8 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 ###**PHP资源站**
 - [PHP Code Snippets](http://phpsnips.com)
 - [PHP Weekly](http://www.phpweekly.com)
+- [CodeVisually](http://codevisually.com)
+- [PHP League](http://thephpleague.com)
 
 ###**PHP框架**
 - [**Slim**](http://www.slimframework.com)
@@ -399,7 +459,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
     + Slim中文文档 http://minimee.org/php/slim
 - [Flight](http://flightphp.com) [*[GitHub](https://github.com/mikecao/flight)*] - An extensible micro-framework for PHP
 - [Bullet PHP](http://bulletphp.com)  [*[GitHub](http://github.com/vlucas/bulletphp)*] - A micro framework for building REST APIs
-- [Aura](http://auraphp.com)
+- [Aura](http://auraphp.com) - 包含许多组件
 - [Kohana](https://kohanaframework.org) - HMVC框架
 - [Guzzle](http://guzzlephp.org) - PHP HTTP client and webservice framework
 - [**Workerman**](http://www.workerman.net) - PHP Socket服务器框架
@@ -416,6 +476,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [APIx](https://github.com/frqnck/apix)
 - [Go!](http://go.aopphp.com) [*[GitHub](https://github.com/lisachenko/go-aop-php)*] - PHP AOP框架
 ###**PHP开源软件**
+- [Walle](https://github.com/meolu/walle-web) - Web部署系统工具
 - [Piwik](http://piwik.org) - 开源Web统计软件
     + [Piwik.la](http://piwik.la) - 基于Piwik的数据统计、分析服务云平台
 - [ApiGen](http://www.apigen.org) [*[GitHub](https://github.com/ApiGen/ApiGen)*] - 项目文档生成器
@@ -428,7 +489,6 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [hook](https://github.com/doubleleft/hook) - BaaS软件
 - [KodExplorer](http://www.kalcaddle.com) [*[GitHub](https://github.com/kalcaddle/KODExplorer)*] - 基于Web的在线文件管理、代码编辑器
 - [ICEcoder](https://icecoder.net) [*[GitHub](https://github.com/mattpass/ICEcoder)*] - Web IDE（基于Web的代码编辑器）
-- [Barcode](http://www.barcodephp.com) - Barcode生成工具
 - [PHP-Parser](https://github.com/nikic/PHP-Parser) - PHP解析器
 - [PHPMD](http://phpmd.org) [*[GitHub](https://github.com/phpmd/phpmd)*] - PHP Mess Detector（PHP问题探测器）
 - [PHPSandbox](https://github.com/fieryprophet/php-sandbox) - 将运行PHP作为独立进程的一种方式
@@ -439,15 +499,20 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [PhalApi](http://www.phalapi.net) - PHP接口开发框架
 - [Minify](https://github.com/mrclay/minify) - JS和CSS优化工具
 - [Polr](https://project.polr.me) [*[GitHub](https://github.com/Cydrobolt/polr)*] - 开源短链工具
+- [Phproject](http://www.phproject.org) - 项目管理系统
+- [php-mirroring](https://github.com/ekino/php-mirroring) - Packagist and Github mirroring
 - **数据库**
     + [Doctine](http://www.doctrine-project.org) [*[GitHub](https://github.com/doctrine)*] - PHP数据库ORM（该组织还有其他优秀的开源项目）
-    + [Phinx](http://phinx.org) [*[GitHub](https://github.com/robmorgan/phinx)*] - 数据库迁移
+    + [RedBeanPHP](http://www.redbeanphp.com) [*[GitHub](https://github.com/gabordemooij/redbean)*] - ORM映射框架
+    + [Phinx](http://phinx.org) [*[GitHub](https://github.com/robmorgan/phinx)*] - 数据库迁移工具
     + [Adminer](http://www.adminer.org) [*[GitHub](https://github.com/vrana/adminer)*] - 单文件MySQL管理客户端
     + [Medoo](http://medoo.in) - 最轻量级的PHP数据库框架
         - 中文文档 http://medoo.lvtao.net
 * **微信项目**
     + [overtrue Wechat](https://github.com/overtrue/wechat)
 ###**PHP工具类库**
+- [Monolog](https://github.com/Seldaek/monolog)
+- [Hoa](http://hoa-project.net) - An extensible set of PHP libraries
 - [Munee](http://mun.ee) - 一体化库
 - [Belt](https://github.com/ilya-dev/belt) - 工具函数库
 - [PHP Sitemap Generator](https://github.com/pawelantczak/php-sitemap-generator) - 网站地图生成类
@@ -455,25 +520,51 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [XML2Array](http://www.lalit.org/lab/convert-xml-to-array-in-php-xml2array/)
 - [pChart](http://www.pchart.net) - 图表生成库
 - [Easybook](http://easybook-project.org)
-- [phpFastCache](http://www.phpfastcache.com) - 缓存操作类
+- [Boris](https://github.com/borisrepl/boris) - A tiny, but robust REPL for PHP
 - [hashids](http://hashids.org/php/) - 根据整数生成唯一、不连续的短ID
 - [php-resque](https://github.com/chrisboulton/php-resque) - PHP版Resque(基于Redis的后台任务组件)
 - [Pinyin](http://overtrue.me/pinyin/) - 基于词库的中文转拼音优质解决方案
-- [Ratchet](http://codevisually.com/ratchet-websocket-for-php/) - 创建实时、双向客户端服务器WebSockets应用
+- [Ratchet](http://socketo.me/) [[*GitHub*](https://github.com/ratchetphp/Ratchet/)] - 创建实时、双向客户端服务器WebSockets应用
+- [JsonMapper](https://github.com/netresearch/jsonmapper) - 将内嵌JSON结构映射为PHP类的库
 - [Macaw](https://github.com/NoahBuscher/Macaw) - PHP路由类
 - [Pimple](https://github.com/silexphp/Pimple) - 依赖注入容器
-- [phpLive](http://phplive.org) - PHP应用快速开发类
+- [PHP-DI](http://php-di.org) [[*GitHub*](https://github.com/PHP-DI/PHP-DI)]
 - [Detector](http://detector.dmolsen.com) - 浏览器环境检测类
+- [phpsh](http://www.phpsh.org) [[*GitHub*](https://github.com/facebookarchive/phpsh)]
+- [Task](https://github.com/taskphp/task) - 一个灵感来源于Grunt和Gulp的纯PHP任务运行器
+- [PHP Cron Expression Parser](https://github.com/mtdowling/cron-expression) - crontab格式解析
+- **缓存**
+    + [Doctrine Cache](https://github.com/doctrine/cache)
+    + [phpFastCache](http://www.phpfastcache.com) - 缓存操作类
+    + [Stash](http://www.stashphp.com) [[*GitHub*](https://github.com/tedious/Stash)]
+    + [Predis](https://github.com/nrk/predis)
+
+- **Markdown**
+    + [PHP Markdown](https://github.com/michelf/php-markdown)
+    + [HyperDown](https://github.com/SegmentFault/HyperDown)
+    + [Parsedown](http://parsedown.org) [[*GitHub*](https://github.com/erusev/parsedown)] - Markdown解析类
+    + [CommonMark](https://github.com/thephpleague/commonmark)
+
 - **邮件**
     + [Swift Mailer](http://swiftmailer.org) - PHP邮件库
     + [PHPMailer](https://github.com/PHPMailer/PHPMailer)
+
 - **Office**
     + [PHPWord](http://phpword.codeplex.com)
     + [PHPExcel](http://phpexcel.codeplex.com) [*[GitHub*](https://github.com/PHPOffice/PHPExcel)]
     + [PHPPowerPoint](http://phppowerpoint.codeplex.com)
+
+- **PDF/条形码**
+    + [Barcode](http://www.barcodephp.com) - Barcode生成工具
+    + [Snappy](https://github.com/KnpLabs/snappy) - PDF生成工具
+    + [TCPDF](http://www.tcpdf.org) [*[GitHub](https://github.com/tecnickcom/TCPDF)*] - 使用官方PDF类生成PDF文档和条形码生成工具
+    + [FPDF](http://www.fpdf.org) [[*GitHub*](https://github.com/lsolesen/fpdf)] - 利用纯PHP代码生成PDF文件
+    + [PDFParser]() [[*GitHub*](http://www.pdfparser.org)] - PDF文档解析库
+
 - **HTTP**
     + [Requests for PHP](http://requests.ryanmccue.info) [*[GitHub](https://github.com/rmccue/Requests)*] - HTTP库
     + [Unirest](http://unirest.io) [*[GitHub](https://github.com/Mashape/unirest-php)*] - HTTP开发库
+
 - **图像处理**
     + [Imagine](https://github.com/avalanche123/Imagine) - 图片操作类
     + [Image Cache](https://github.com/nielse63/php-image-cache) - 图片压缩、缓存类
@@ -491,6 +582,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Yaconf](https://github.com/laruence/yaconf) - 高性能的配置管理扩展
 
 ###**PHP相关软件**
+- [wxPHP](http://wxphp.org) [[*GitHub*](https://github.com/wxphp/wxphp)] - 用PHP开发桌面应用
 - [UPUPW](http://www.upupw.net) - PHP环境集成包
 - [Composer](https://getcomposer.org)
     + 中文站 http://www.phpcomposer.com
@@ -535,7 +627,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [aehyok](http://www.aehyok.com) - 技术博客
 - [Demon's Blog](http://demon.tw) - 技术博客
 - [简果网](http://www.simapple.com) - 专注IT技术和互联网
-- [Vamei](http://www.cnblogs.com/vamei) - 编程，数学，设计
+- [**Vamei**](http://www.cnblogs.com/vamei) - 编程，数学，设计
 - [胖胖的空间](http://www.phppan.com) - PHP源码阅读，PHP设计模式
 - [Austin Liu's Fashion](http://www.cnblogs.com/lzhdim)
 - [韩天峰(Rango)](http://rango.swoole.com) - Swoole框架作者
@@ -583,6 +675,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [沈逸](http://www.hishenyi.com)
 - [曾健生的专栏](http://blog.csdn.net/newjueqi)
 - [始终不够](http://www.huyanping.cn) - PHP技术博客
+- [伽蓝之堂](http://blog.ibireme.com) - IOS开发
 
 ### **公共接口**
 - 根据IP地址获取地理位置 
@@ -604,6 +697,8 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [《博客园精华集》SOA分类筛选结果](http://www.cnblogs.com/KnightsWarrior/articles/1742159.html)
 - [关于大型网站技术演进的思考（一）--存储的瓶颈（1）](http://www.cnblogs.com/sharpxiajun/p/4237704.html) - 该文为系列文章之一
 - [Windows平台网站图片服务器架构的演进](http://www.infoq.com/cn/articles/windows-web-pic-server-architect/)
+- [58同城数据库架构设计思路](http://www.uml.org.cn/zjjs/201505132.asp)
+- [MySQL性能调优与架构设计-架构篇](http://www.uml.org.cn/sjjm/20114062.asp)
 
 ###**MySQL**
 - [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
@@ -629,6 +724,13 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 ####**SVN**
 - [SVN Can't connect to host问题](http://www.tuicool.com/articles/2eq22u)
 - [Linux(centOS6.5)下SVN的安装、配置及开机启动](http://www.blogjava.net/rockblue1988/archive/2014/11/19/420246.aspx)
+- [CentOS下通过yum安装svn及配置](http://www.cnblogs.com/davidgu/archive/2013/02/01/2889457.html)
+
+###**运维**
+- [Linux常用命令](http://www.cnblogs.com/vamei/archive/2013/03/03/2871198.html)
+- [Nginx+Keepalived实现站点高可用](http://segmentfault.com/a/1190000002881132)
+- [nginx做负载均衡器以及proxy缓存配置](http://segmentfault.com/a/1190000002873747)
+- [lsyncd实时同步搭建指南——取代rsync+inotify](http://segmentfault.com/a/1190000002737213)
 - [CentOS下通过yum安装svn及配置](http://www.cnblogs.com/davidgu/archive/2013/02/01/2889457.html)
 
 ###**未归档**
@@ -674,9 +776,11 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Web前端资源](https://github.com/iamjoel/be-grace-front-end-developer)
 - [前端技能汇总](https://github.com/JacksonTian/fks)
 - [前端工具推荐](https://github.com/codylindley/frontend-tools)
+- [Three.js入门指南](http://www.ituring.com.cn/minibook/792)
 
 ###**Linux**
 - [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw)
+- [Linux的概念与体系](http://www.cnblogs.com/vamei/archive/2012/10/10/2718229.html)
 
 ###**Python**
 - [Python入门指南](http://www.pythondoc.com/pythontutorial27/index.html)
@@ -720,6 +824,12 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
     + [HTML 编码规范](https://github.com/fex-team/styleguide/blob/master/html.md)
     + [Markdown 编写规范](https://github.com/fex-team/styleguide/blob/master/markdown.md)
 
+###**Android**
+- [Android官方培训课程中文版](http://hukai.me/android-training-course-in-chinese/) [[*GitHub*](https://github.com/kesenhoo/android-training-course-in-chinese)]
+- [写给Android 初学者的入门教程](http://www.jianshu.com/p/7cab238d878b)
+- [Android学习之路](http://www.stormzhang.com/android/2014/07/07/learn-android-from-rookie/)
+- [我是如何自学Android，资料分享](http://www.jianshu.com/p/2ee0e74abbdf)
+
 ###**其他**
 - [**HTTP API设计指南**](https://github.com/ZhangBohan/http-api-design-ZH_CN)
 - [HTTP 接口设计指北](https://github.com/bolasblack/http-api-guide)
@@ -740,6 +850,9 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Rust编程语言 电子书](http://doc.rust-lang.org/book/) [[中文版](http://git.oschina.net/hainuo/rust-ebook)]
 - [Elasticsearch 权威指南（中文版）](http://es.xiaoleilu.com) [*[GitHub](https://github.com/looly/elasticsearch-definitive-guide-cn)*]
 - [APP后端设计](http://blog.csdn.net/newjueqi/article/details/19003775)
+- [Java快速教程](http://www.cnblogs.com/vamei/archive/2013/03/31/2991531.html)
+- [**纸上谈兵: 算法与数据结构**](http://www.cnblogs.com/vamei/archive/2013/03/22/2974052.html)
+- [**Netkiller 系列 手札**](http://netkiller.github.io) - 一套免费系列电子书
 
 
 ## 非技术类教程、书籍
