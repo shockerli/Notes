@@ -84,6 +84,7 @@
 - [koala](http://koala-app.com) - 前端预处理器语言图形编译工具
 - [ClippingMagic](https://clippingmagic.com) - 在线抠图神器
 - [Preloaders](http://preloaders.net) - 在线LOADING动画生成工具
+- [Smallpdf](http://smallpdf.com/cn) - 针对PDF问题的免费解决方案
 ####*设计/交互*
 - [白板](https://bearyboard.com) - 设计文件实时讨论工具
 - [百度脑图](http://naotu.baidu.com)
@@ -132,6 +133,8 @@
 - [ADSafe](http://www.ad-safe.com) - 强大的智能广告拦截软件
 - [HelpNDoc](http://www.helpndoc.com) - 免费的帮助文件和电子书制作工具
 - [Lantern](https://www.getlantern.org) - 免费翻墙软件
+- [维棠](http://www.vidown.cn) - 最专业flv视频下载软件
+- [硕鼠/FLVCD](http://www.flvcd.com) - 提供FLV在线视频下载服务
 
 ####***下载资源***
 - [大眼仔旭](http://www.dayanzai.me) - 免费、破解、汉化软件下载
@@ -151,7 +154,6 @@
 - [5sing](http://5sing.kugou.com) - 中国原创音乐基地
 - [神曲音乐论坛](http://www.o2v3.imotor.com)
 ####*影视*
-- [YYeTs字幕组](http://www.zimuzu.tv)
 - [电影天堂](http://www.dy2018.com)
 - [飘花电影](http://www.piaohua.com)
 - [无极电影](http://bbs.btwuji.com)
