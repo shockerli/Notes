@@ -1726,7 +1726,7 @@ crc32($str) //计算一个字符串的crc32多项式
 
 /* mbstring(多字节字符串) */
 //需开启mbstring扩展
-mb_strimwidth($str, $start, $width [,$trim [,$encoding]])   //保留指定的子串(并补充)
+mb_strimwidth($str, $start, $width [,$trim [,$encoding]])   //获取按指定宽度截断的字符串
 mb_stripos($str, $needle [,$offset [,$encoding]])   //查找子串首次出现的位置(忽略大小写)
 mb_strpos($str, $needle [,$offset [,$encoding]])   //查找子串首次出现的位置
 mb_strripos($str, $needle [,$offset [,$encoding]])   //查找子串最后一次出现的位置(忽略大小写)
