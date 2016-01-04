@@ -18,6 +18,22 @@ tar -zxvf file.tar.gz               # 解压并释放tar归档
 
 ------------------------------------------------------------------------
 
+#下载
+wget                                # 文件下载
+    -b 后台静默下载
+    -c 断点续传
+    -r 递归下载
+    -p 获取HTML页面中所需展示的资源（CSS/IMG/JS...）
+    -k 转换非相对链接为相对链接
+    -np 不要追溯到父目录
+    -O new_file_name 下载后保存的文件名
+    -P path_name 下载后保存的路径
+    --no-check-certificate 不进行权限验证
+
+wget -r -p -np -k HTTP_URL          #下载整站资源
+
+------------------------------------------------------------------------
+
 env                                 # 查看/设置/删除环境变量
     env: 查看
     env -u var_name: 删除
@@ -113,12 +129,6 @@ ip addr | grep eth1 | grep inet     # 查看自身IP
 rm -- -test_file                    # 删除文件名含特殊字符的文件
 /bin/sh -n ./file.sh                # 文件shell语法检查
 find path_name -name file_pattern   # 根据文件名查找
-wget                                # 文件下载
-    -b 后台静默下载
-    -c 断点续传
-    -O new_file_name 下载后保存的文件名
-    -P path_name 下载后保存的路径
-    --no-check-certificate 不进行权限验证
 chattr -i file_name                 # 取消文件不可被删除/修改的属性
 locate str                          # 查找/统计包含某字符串的路径
 ln -s filename path                 # 为文件filename在path位置创建软链接
