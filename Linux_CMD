@@ -144,6 +144,7 @@ traceroute ip_addr                  # 探测前往地址IP的路由路径
 host domain_addr                    # 寻找域名domain对应的IP
 host ip_addr                        # 寻找IP对应的域名（反向DNS查询）
 scp localpath username@host:path    # 将本地localpath指向的文件上传到远程主机的path路径
+    scp -r ./file.zip  root@10.44.216.220:/home/wwwroot/default #将本机的文件传输到远程的default目录下
 ssh username@host                   # ssh登陆远程服务器host
 sftp username@host                  # 登陆服务器host（用于文件传输）
 lpr filename                        # 打印文件

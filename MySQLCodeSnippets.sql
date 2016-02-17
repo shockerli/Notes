@@ -13,4 +13,10 @@ UPDATE categories
 WHERE id IN (1,2,3)
 -- mysql批量更新与批量更新多条记录的不同值实现方法 http://www.jb51.net/article/41852.htm
 
+
 INSERT INTO test_tbl (id,dr) VALUES (1,'2'),(2,'3'),...(x,'y') ON DUPLICATE KEY UPDATE dr=VALUES(dr);
+
+
+-- 若要在i ≤ R ≤ j 这个范围得到一个随机整数R ，需要用到表达式：FLOOR(i + RAND() * (j - i + 1))
+UPDATE `tablename` SET `field` = `field` + FLOOR(10 + RAND() * (100 - 10 + 1)) WHERE `id` IN (1, 2, 3);
+

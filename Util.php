@@ -297,5 +297,45 @@ class Util {
             return $str;
         }
     }
+
+    /**
+     * 等宽截取字符串（按汉字宽度）
+     *
+     * @param string $str
+     * @param string $len
+     * @param string $encode
+     * @param string $start
+     * @link http://www.cnblogs.com/picaso/archive/2012/07/31/2616674.html
+     */
+    public function mbSubstring($str, $len, $encode = 'UTF-8', $start = 0) {
+        if (strtoupper($encode) != 'UTF-8') {
+            $str = mb_convert_encoding($str, 'UTF-8', $encode);
+        }
+        $osLen = mb_strlen($str);
+        if ($osLen <= $len) {
+            return $str;
+        }
+        $string = mb_substr($str, $start, $len, 'UTF-8');
+        $sLen = mb_strlen($string, 'UTF-8');
+        $bLen = strlen($string);
+        $sCharCount = (3 * $sLen - $bLen) / 2;
+        if ($osLen <= $sCharCount + $len) {
+            $arr = preg_split('/(?<!^)(?!$)/u', mb_substr($str, $len + 1, $osLen, 'UTF-8'));//将中英混合字符串分割成数组（UTF8下有效）
+        } else {
+            $arr = preg_split('/(?<!^)(?!$)/u', mb_substr($str, $len + 1, $sCharCount, 'UTF-8'));
+        }
+        foreach ($arr as $value) {
+            if (ord($value) < 128 && ord($value) > 0) {
+                $sCharCount = $sCharCount - 1;
+            } else {
+                $sCharCount = $sCharCount - 2;
+            }
+            if ($sCharCount <= 0) {
+                break;
+            }
+            $string .= $value;
+        }
+        return $string;
+    }
     
 }
