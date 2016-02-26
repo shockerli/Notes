@@ -16,6 +16,18 @@ WHERE id IN (1,2,3)
 
 INSERT INTO test_tbl (id,dr) VALUES (1,'2'),(2,'3'),...(x,'y') ON DUPLICATE KEY UPDATE dr=VALUES(dr);
 
+INSERT INTO test_tbl 
+    (`license_id`, `serial`, `username`, `time`) 
+VALUES 
+    ('SDOHFOEI305', 'No.16NOVBJ005', 'A', 'November 19, 2016'),
+    ('SDOHFOEI308', 'No.16NOVBJ008', 'B', 'November 19, 2016'),
+    ('SDOHFOEI318', 'No.16NOVBJ018', 'C', 'November 19, 2016') 
+ON DUPLICATE KEY UPDATE 
+    serial=VALUES(serial), 
+    username=VALUES(username), 
+    time=VALUES(time)
+
+
 
 -- 若要在i ≤ R ≤ j 这个范围得到一个随机整数R ，需要用到表达式：FLOOR(i + RAND() * (j - i + 1))
 UPDATE `tablename` SET `field` = `field` + FLOOR(10 + RAND() * (100 - 10 + 1)) WHERE `id` IN (1, 2, 3);
