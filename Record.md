@@ -24,19 +24,30 @@
 ###**教育类**
 - [慕课网](http://www.imooc.com)
 - [计蒜客](http://www.jisuanke.com)
+- [Free Code Camp](http://www.freecodecamp.com)
 - [网易云课堂](http://study.163.com)
 - [极客学院](http://www.jikexueyuan.com)
 - [在线教育导航](http://123.paomianba.com)
+- [猿团教育](http://edu.yuantuan.com)
+- [麦子学院](http://www.maiziedu.com)
+- [瓢城Web俱乐部](http://www.ycku.com)
+- [馒头商学院](http://www.mtedu.com)
 
 ###**创业类**
-- [缘创派](http://www.ycpai.com) - 帮助互联网创业者找合伙人的平台
+- [缘创派](http://www.ycpai.com)
 - [创之网](http://chuang.pro)
 - [IT桔子](http://itjuzi.com) - IT互联网公司产品数据库
 - [DEMO8](http://www.demo8.com) - 发现最新的好产品
 - [17Startup](http://17startup.com)
 - [NEXT](http://next.36kr.com)
+- [MindStore](http://mindstore.io)
+- [Product Hunt](https://www.producthunt.com)
+
+###**公司**
+- [公司宝](http://www.gongsibao.com)
 
 ###**设计类**
+- [UEDfans](http://uedfans.cn) - 用户体验设计导航
 - [优设](http://www.uisdc.com)
 - [亿品元素](http://www.epinv.com) - 设计资源网站
 - [设计师导航](http://www.289w.com)
@@ -49,6 +60,7 @@
 - [设计工具](http://ui63.com/html/tool/)
 - [腾讯设计导航](http://idesign.qq.com)
 - [设计达人](http://www.shejidaren.com)
+- [UI设计师网址导航](http://so.uigreat.com)
 
 ###**文学类**
 - [古诗文网](http://www.gushiwen.org)
@@ -66,6 +78,7 @@
 - [纷云](https://lesschat.com) - 团队沟通协作平台
 - [看云](http://www.kancloud.cn) - 专注于文档在线创作、协作、分享和托管
 ####*文学/字体*
+- [字乐网](http://shouxieke.net/zile/index.asp) - 免费提供手写文字的网站
 - [书法迷](http://www.shufami.com) - 在线书法生成工具
 - [求字体](http://www.qiuziti.com) - 在线字体查找工具
 - [Hack](https://github.com/chrissimpkins/Hack) - A typeface designed for source code
@@ -78,12 +91,14 @@
 - [**JSON Editor Online**](http://www.jsoneditoronline.org) - JSON在线编辑与格式化工具
 - [apache2nginx](http://www.anilcetin.com/convert-apache-htaccess-to-nginx/) - 在线转换apache配置为nginx配置
 - [**GitBook**](https://www.gitbook.com)
+- [Browsershots](http://browsershots.org) - 浏览器兼容性在线测试
 - [bootstrap可视化布局](http://www.hishenyi.com/bootstrap)
 - **NetBeans插件**
     + Show path in titlebar - 显示当前文件路径
 ####*图像/视频*
 - [**cli.im**](http://cli.im) - 草料二维码生成器
 - [TinyPNG](https://tinypng.com) - PNG在线压缩工具
+- [Page2Images](http://www.page2images.com) - 根据URL将网页转换成图片
 - [koala](http://koala-app.com) - 前端预处理器语言图形编译工具
 - [ClippingMagic](https://clippingmagic.com) - 在线抠图神器
 - [Preloaders](http://preloaders.net) - 在线LOADING动画生成工具
@@ -94,7 +109,10 @@
 - [**ProcessOn**](https://www.processon.com) - 在线作图工具
 - [Silk](http://weavesilk.com) - 在线炫光制作工具
 - [Sketch](http://www.bohemiancoding.com/sketch) - 矢量绘图应用
+- [创客贴](http://www.chuangkit.com) - 在线平面设计工具
+- [百度 · 图说](http://tushuo.baidu.com)
 ####*H5/创作*
+- [秀米](http://xiumi.us)
 - [哈吉网](http://www.hajea.com) - 专业创作：文档、手册、教程
 - [易企秀](http://eqxiu.com) - H5页面制作工具
 - [兔展](http://www.rabbitpre.com) - H5页面制作工具
@@ -139,12 +157,12 @@
 - [Charles](http://www.charlesproxy.com) - 网络抓包分析工具
 
 ####***精品软件***
-- [f.lux](https://justgetflux.com) - 保护眼睛健康的软件
+- [**f.lux**](https://justgetflux.com) - 保护眼睛健康的软件
 - [DictUnifier](https://code.google.com/p/mac-dictionary-kit) - 可以自动转换安装星际译王(StarDict)格式字典，自动添加到Mac自带字典程序。
 - [Sigil](http://sigil-ebook.com) - 开源的电子书编辑器
 - [calibre](http://calibre-ebook.com/) - 电子书制作/管理工具
 - [人生日历](http://rili.160.com)
-- Beyond Compare - 文件夹和文件对比工具
+- **Beyond Compare** - 文件夹和文件对比工具
 - P2PSearchers - P2P搜索工具
 - 自由门 - 翻墙神器
 - Dev-C++ - C开源IDE
@@ -154,11 +172,12 @@
 - [ADSafe](http://www.ad-safe.com) - 强大的智能广告拦截软件
 - [广告净化器](http://www.yiclear.com)
 - [HelpNDoc](http://www.helpndoc.com) - 免费的帮助文件和电子书制作工具
-- [Lantern](https://www.getlantern.org) [[*GitHub*](https://github.com/getlantern/lantern)] - 免费翻墙软件
+- [**Lantern**](https://www.getlantern.org) [[*GitHub*](https://github.com/getlantern/lantern)] - 免费翻墙软件
 - [维棠](http://www.vidown.cn) - 最专业flv视频下载软件
 - [硕鼠/FLVCD](http://www.flvcd.com) - 提供FLV在线视频下载服务
+- [GifCam](http://blog.bahraniapps.com/gifcam) - GIF动画录制软件
 
-####***下载资源***
+####***软件下载***
 - [大眼仔旭](http://www.dayanzai.me) - 免费、破解、汉化软件下载
 - [精品绿色便携软件](http://www.portablesoft.org)
 - [独木成林](http://www.guofs.com)
@@ -166,6 +185,7 @@
 - [软矿](https://www.x-berry.com)
 - [异次元软件](http://www.iplaysoft.com)
 - [善用佳软](http://xbeta.info)
+- [zd423](http://www.zdfans.com) - 软件分享平台
 
 ####**Chrome扩展**
 - Postman - Web API & HTTP 请求调试
@@ -182,18 +202,23 @@
 - [TT OST 听听原声](http://www.ttost.com)
 - [5sing](http://5sing.kugou.com) - 中国原创音乐基地
 - [神曲音乐论坛](http://www.o2v3.imotor.com)
+- [落网](http://www.luoo.net)
 ####*影视*
 - [电影天堂](http://www.dy2018.com)
 - [飘花电影](http://www.piaohua.com)
 - [无极电影](http://bbs.btwuji.com)
 - [搬运工](http://banyungong.net)
+- [迅影网](http://www.xunyingwang.com)
+- [蓝影网](http://www.lanyingwang.com)
+- [电影FM](http://dianying.fm)
+- [V电影](http://www.vmovier.com)
 ####*下载*
 - [ED2000](http://www.ed2000.com)
-- [KickassTorrents](http://kickass.to) - Torrents资源站
 - [BTbook](http://www.btbook.net) - 磁力搜索
 - [btspread](http://www.btspread.com)
 - [iCiLi](http://www.icili.com) - 电驴下载站
 - [搜百度盘](http://www.sobaidupan.com)
+- [BTKitty](http://btkitty.org) - 老牌，资源多
 
 
 ###**资讯/社区类**
@@ -217,6 +242,8 @@
 - [左岸读书](http://www.zreading.cn)
 - [敲敲门](http://www.qiaoqiaomen.com)
 - [褪墨・时间管理](http://www.mifengtd.cn)
+- [好讀](http://www.haodoo.net)
+- [书格](https://shuge.org) - 有品格的数字古籍图书馆
 
 ###**历史**
 - [共识网](http://www.21ccom.net)
@@ -225,7 +252,14 @@
 - [历史上的今天](http://www.lssdjt.com)
 - [求历史](http://www.qiulishi.com)
 
-##**产品资源**
+###**实用**
+- [REG007](http://www.reg007.com) - 检测你注册过哪些网站
+- [全人网](http://www.quanren.com) - 员工背景调查和尽职调查系统
+- [SimilarSiteSearch](http://www.similarsitesearch.com) - 类似网站搜索
+- [I Just Made Love](http://ijustmadelove.com) - 做爱信息标记查看
+- [10分钟邮箱](http://10minutemail.com) - 不用注册、自动分配的临时邮箱
+
+##**产品/运营**
 ###**博客/站点**
 - [苏杰](http://iamsujie.com) - 《人人都是产品经理》作者
 - [PM唐杰](http://tangjie.me)
@@ -255,7 +289,7 @@
 ##**技术资源**
 ###**IDC**
 - [Quad IX](http://quadix.co) - 便宜高配置服务器
-
+- [VPS侦探](http://vpser.net)
 
 ###**资讯类**
 - [码农网](http://www.codeceo.com) - 程序员编程资料和编程经验分享平台
@@ -290,6 +324,7 @@
 - **CentOS RPM软件源**
     + [IUS](https://ius.io)
     + [hop5.in](http://www.hop5.in)
+    + http://tecadmin.net/install-epel-and-remi-repository-on-centos-and-redhat/
 
 ###**源码类**
 - [好东西分享](http://www.17558.net)
@@ -310,25 +345,30 @@
 - [1001FreeDownloads.com](http://www.1001freedownloads.com)
 - [lorempixel](http://lorempixel.com) - 在线网页占位符生成工具
 
+###**公共CDN**
+- [百度静态资源公共库](http://cdn.code.baidu.com) - 前端静态资源公共库加速服务
+- [360前端CDN](http://libs.useso.com) - 和谐使用Google公共库&字体库的调用方法
+- [BootCDN](http://www.bootcdn.cn) - 开源项目CDN服务
+- [中科大库](https://servers.ustclug.org/2014/06/blog-googlefonts-speedup/) - 支持https，完全GoogleAPIs镜像
+- [cdnjs.net](http://www.cdnjs.net) - 支持Google免费字体库
+
 ###**前端资源**
 - [**Javascript资源列表**](https://github.com/sorrycc/awesome-javascript)
 - [**Awesomes**](http://www.awesomes.cn) - 前端资源的集合
 - [**前端网站集合**](http://get-set.cn/front-end-chart)
 - [**前端资源导航**](http://www.f2enav.com)
 - [**前端网址导航**](http://www.whycss.com)
-- [**百度静态资源公共库**](http://cdn.code.baidu.com) - 前端静态资源公共库加速服务
-- [360前端CDN](http://libs.useso.com) - 和谐使用Google公共库&字体库的调用方法
-- [**BootCDN**](http://www.bootcdn.cn) - 开源项目CDN服务
-- [前端里](http://www.yyyweb.com)
-- [唯艾迪主题模板](http://www.weidea.net)
-- [ThemeForest](http://themeforest.net)
-    (Angulr, Minovate, Clip-Two, [Bootstrap+Angular模板搜索](http://themeforest.net/category/site-templates/admin-templates?compatible_with=AngularJS))
-- [BootstrapHunter](http://bootstraphunter.com)
+- [**唯艾迪主题模板**](http://www.weidea.net)
+- [**Full Template Downloads**](http://fulltemplatedownloads.com)
+- [**themelock**](http://www.themelock.com)
 - **WordPress**
     + [WordPress中文站](http://cn.wordpress.org)
     + [WP中文论坛](http://wordpress.org.cn)
     + [WPChina](http://wpchina.org)
     + [WordPress主题库](http://www.toptheme.org)
+
+- **UI模板**
+    + [Flat-UI](https://github.com/designmodo/Flat-UI)
 
 ###**APP/Desktop**
 ####Desktop
@@ -341,11 +381,23 @@
 ####Hybrid
 - [HBuilder](http://www.dcloud.io)
 - [APICloud](http://www.apicloud.com) - APP开发工具
+- [WeX5](http://wex5.com/cn/wex5/)
 - [ionic](http://www.ionicframework.com) [[*GitHub*](https://github.com/driftyco/ionic/)]
+    + [ionic中文教程](http://www.haomou.net/2014/10/06/2014_ionic_learn/)
+    + [ionic 教程](http://www.runoob.com/ionic/ionic-tutorial.html)
+    + [Ionic-wechat项目边开发边学](http://www.cnblogs.com/Frogmarch/category/756501.html)
+    + [Ionichina](http://ionichina.com) - 里面有开源案例
+    + [Ionic教程](http://www.ionic.wang)
+    + **案例**
+        * [咕咕监控](https://github.com/ParryQiu/GuGuJianKong)
+        * [GHOST博客](https://github.com/ghost-client/ghost-ionic)
+        * [CNode社区](https://github.com/lanceli/cnodejs-ionic)
+        * [Ioniclub](https://github.com/IonicChina/ioniclub)
 - [Cordova](http://cordova.apache.org)
 - [PhoneGap](http://phonegap.com)
 - [CrossApp](http://crossapp.9miao.com)
 - [React Native](https://facebook.github.io/react-native/)
+- [DeviceOne](http://www.deviceone.net)
 
 ####IOS
 - [**Github-iOS备忘**](http://github.ibireme.com/github/list/ios/)
@@ -368,7 +420,8 @@
 - [CNode](https://cnodejs.org)
 - [JavaScript Weekly](http://javascriptweekly.com) - A free, once–weekly e-mail round-up of JavaScript news and articles.
 
-####**JS类库/开源软件**
+####**JS类库**
+- [**jQuery Plugins**](http://xdsoft.net) - jQuery插件集
 - [Highcharts](http://www.hcharts.cn)
 - [JSLite](http://jslite.io) - JQuery精简版
 - [SUI PC](http://sui.taobao.org) - 阿里UI库（PC版）
@@ -378,6 +431,7 @@
 - [layer](http://layer.layui.com) - web弹层组件
 - [layDate](http://laydate.layui.com) - 日期控件
 - [layPage](http://laypage.layui.com) - js分页组件
+- [bootstrap-datetimepicker](https://github.com/smalot/bootstrap-datetimepicker)
 - [laytpl](http://laytpl.layui.com) - JavaScript模板引擎
 - [layim](http://sentsin.com/layui/layim/) - WebIM在线聊天
 - [artDialog](http://lab.seaning.com) [[*GitHub*](https://github.com/aui/artDialog)] - 对话框组件
@@ -396,6 +450,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
     + [React-Native学习指南](http://www.w3ctech.com/topic/909)
 - [Bootstrap](http://www.bootcss.com) - 前端开发框架
 - [Zepto.js](http://zeptojs.com) - 轻量级的针对现代高级浏览器的JavaScript库
+- [GMU](http://gmu.baidu.com) - 基于zepto的mobile UI组件库
 - [Clouda](http://clouda.baidu.com) - 移动web应用开发整体解决方案
 - [Ace ](https://github.com/ajaxorg/ace) - 代码编辑器
 - [JSHint](http://jshint.com) - JavaScript代码质量检查工具
@@ -425,6 +480,15 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [slick](https://github.com/kenwheeler/slick/) - 你所需要的最后一个**轮播插件**
 - [Cropper](https://github.com/fengyuanchen/cropper) - jQuery图片裁剪插件
 - [pjax](https://github.com/defunkt/jquery-pjax) - 无刷新ajax加载
+- [ZUI](http://zui.sexy) - 开源HTML5跨屏框架
+- [HTML5 Shiv](https://github.com/aFarkas/html5shiv) - 让老版本浏览器支持HTML5新元素
+- [Kity](https://github.com/fex-team/kity) - 基于SVG的矢量图形库
+- [Kity Formula](http://gongshi.baidu.com) [[*GitHub*](https://github.com/fex-team/kityformula)] - 前端数理化公式解决方案
+- [KityMinder Editor](https://github.com/fex-team/kityminder-editor) - 脑图编辑工具
+
+- **表单**
+    + [FormValidation](http://formvalidation.io)
+    + [Validform](http://validform.rjboy.cn) - 一行代码搞定整站的表单验证！
 
 - **表格**
     + [Handsontable](https://github.com/handsontable/handsontable) - jQuery类EXCEL的表格编辑插件
@@ -465,6 +529,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
     * [Swagger Editor](http://editor.swagger.io)
         + GitHub https://github.com/swagger-api/swagger-editor
 - [Nikto](http://www.cirt.net/nikto2) *[[GitHub](https://github.com/sullo/nikto)]* - 网页服务器扫描器
+- [wkhtmltopdf](http://wkhtmltopdf.org) - 根据URL或HTML文件生成缩略图或PDF
 
 ####**Linux/运维工具**
 - [Lsyncd](https://github.com/axkibe/lsyncd) - 实时批量同步文件工具
@@ -490,10 +555,12 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 
 ####**ELK**(ElasticSearch/Logstash/Kibana)
 - [官网](http://www.elasticsearch.org)
+- [elasticsearch-jdbc](https://github.com/jprante/elasticsearch-jdbc) - 数据同步插件
 - [Elasticsearch权威指南（中文版）](http://es.xiaoleilu.com) [*[GitHub](https://github.com/looly/elasticsearch-definitive-guide-cn)*]
 - [ELKstack中文指南](http://kibana.logstash.es)
 - 文档收集
     + [利用ElasticSearch和Redis检索和存储十亿信息](http://www.csdn.net/article/2014-01-16/2818165-how-hipchat-stores-and-indexes-billions-of-messages)
+    + [Elasticsearch权威指南翻译目录](http://blog.csdn.net/dm_vincent/article/details/46994535)
 
 ####**Docker**
 - 站点
@@ -531,6 +598,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [PHP Weekly](http://www.phpweekly.com)
 - [CodeVisually](http://codevisually.com)
 - [PHP League](http://thephpleague.com)
+- [KnpLabs](http://knplabs.com)
 
 ###**PHP框架**
 - [**Slim**](http://www.slimframework.com)
@@ -559,6 +627,10 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 ###**软件/类库**
 - **微信项目**
     + [overtrue Wechat](https://github.com/overtrue/wechat)
+    + [Wechat-PHP-SDK](https://github.com/dodgepudding/wechat-php-sdk)
+    + [LaneWeChat](https://github.com/lixuancn/LaneWeChat)
+    + [WeiPHP](http://www.weiphp.cn)
+    + [微擎](http://www.we7.cc)
 
 - [Monolog](https://github.com/Seldaek/monolog)
 - [Hoa](http://hoa-project.net) - An extensible set of PHP libraries
@@ -568,6 +640,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Array2XML](http://www.lalit.org/lab/convert-php-array-to-xml-with-attributes)
 - [XML2Array](http://www.lalit.org/lab/convert-xml-to-array-in-php-xml2array/)
 - [pChart](http://www.pchart.net) - 图表生成库
+- [PHP QR Code](http://phpqrcode.sourceforge.net) - 二维码生成
 - [Easybook](http://easybook-project.org)
 - [hashids](http://hashids.org/php/) - 根据整数生成唯一、不连续的短ID
 - [Pinyin](http://overtrue.me/pinyin/) - 基于词库的中文转拼音优质解决方案
@@ -577,7 +650,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [FastRoute](https://github.com/nikic/FastRoute) - PHP路由类
 - [Pimple](https://github.com/silexphp/Pimple) - 依赖注入容器
 - [PHP-DI](http://php-di.org) [[*GitHub*](https://github.com/PHP-DI/PHP-DI)] - 依赖注入容器
-- [Detector](http://detector.dmolsen.com) - 浏览器环境检测类
+- [Detector](https://github.com/serbanghita/Mobile-Detect) - 浏览器环境检测类
 - [PHP Cron Expression Parser](https://github.com/mtdowling/cron-expression) - crontab格式解析
 - [Box](https://github.com/box-project/box2) - Phar构建工具
 - [whoops](https://github.com/filp/whoops) - 异常/错误处理类
@@ -607,6 +680,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [Polr](https://project.polr.me) [*[GitHub](https://github.com/Cydrobolt/polr)*] - 开源短链工具
 - [Phproject](http://www.phproject.org) - 项目管理系统
 - [php-mirroring](https://github.com/ekino/php-mirroring) - Packagist and Github mirroring
+- [**SocketLog**](https://github.com/luofei614/SocketLog) - 微信调试、API调试和AJAX的调试的工具，能将日志通过WebSocket输出到Chrome浏览器的console中
 - **数据库**
     + [Doctine](http://www.doctrine-project.org) [*[GitHub](https://github.com/doctrine)*] - PHP数据库ORM（该组织还有其他优秀的开源项目）
     + [RedBeanPHP](http://www.redbeanphp.com) [*[GitHub](https://github.com/gabordemooij/redbean)*] - ORM映射框架
@@ -655,10 +729,10 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 
 - **PDF/条形码**
     + [Barcode](http://www.barcodephp.com) - Barcode生成工具
-    + [Snappy](https://github.com/KnpLabs/snappy) - PDF生成工具
+    + [**Snappy**](https://github.com/KnpLabs/snappy) - 根据URL或HTML页面生成图片或PDF格式的缩略图
     + [TCPDF](http://www.tcpdf.org) [*[GitHub](https://github.com/tecnickcom/TCPDF)*] - 使用官方PDF类生成PDF文档和条形码生成工具
     + [FPDF](http://www.fpdf.org) [[*GitHub*](https://github.com/lsolesen/fpdf)] - 利用纯PHP代码生成PDF文件
-    + [PDFParser]() [[*GitHub*](http://www.pdfparser.org)] - PDF文档解析库
+    + [PDFParser](http://www.pdfparser.org) [[*GitHub*](https://github.com/smalot/pdfparser)] - PDF文档解析库
 
 - **HTTP**
     + [Requests for PHP](http://requests.ryanmccue.info) [*[GitHub](https://github.com/rmccue/Requests)*] - HTTP库
@@ -692,6 +766,10 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
     + [Wideimage](http://wideimage.sourceforge.net) - 图像处理库
     + [Material Design Avatars](https://github.com/lincanbin/Material-Design-Avatars) - PHP头像生成类
     + [ShearPhoto](http://www.shearphoto.com) - 截图工具
+
+- **CMS**
+    + [DuxCms](http://www.duxcms.com)
+    + [五指CMS](https://github.com/wuzhicms/wuzhicms)
 
 ###**PHP扩展**
 - [**pickle**](https://github.com/FriendsOfPHP/pickle) - PHP扩展安装器
@@ -729,11 +807,22 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 ####PHP
 - [风雪之隅](http://www.laruence.com) - 鸟哥的博客，PHP开发组成员
 - [技术行者](http://hansionxu.blog.163.com)
+
 ####MySQL
 - [InsideMySQL](http://www.innomysql.net)
+
 ####前端
 - [MOOCSS](http://blog.moocss.com) - 关注Web前端技术
 - [w3ctech](http://www.w3ctech.com) - 前端技术社区
+- [皓眸大前端](http://www.haomou.net)
+- [张鑫旭](http://www.zhangxinxu.com) - Web前端技术、知识及资源
+- [WEB前端开发](http://www.css88.com)
+- [大前端](http://www.daqianduan.com)
+
+####架构
+- [ITFLY8架构师之家](http://www.cnblogs.com/itfly8/)
+- [微服务框架](http://www.cnblogs.com/skyblog/)
+
 ####没法归类
 - [平民软件](http://www.onexsoft.com)
     + OneSQL高并发&限流方案
@@ -743,7 +832,6 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [金步国作品集](http://works.jinbuguo.com) - 众多原创/翻译技术文章
 - [阮一峰的网络日志](http://www.ruanyifeng.com)
 - [廖雪峰](http://www.liaoxuefeng.com) - 廖雪峰的个人博客
-- [张鑫旭](http://www.zhangxinxu.com) - Web前端技术、知识及资源
 - [Matrix67](http://www.matrix67.com) - 一个女体验设计师的博客（数学相关）
 - [张宴的博客](http://zyan.cc) - Web系统架构与底层研发
 - [aehyok](http://www.aehyok.com) - 技术博客
@@ -799,6 +887,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [始终不够](http://www.huyanping.cn) - PHP技术博客
 - [伽蓝之堂](http://blog.ibireme.com) - IOS开发
 - [搜索技术博客－淘宝](http://www.searchtb.com)
+- [白树](http://www.cnblogs.com/PeunZhang)
 
 ### **公共接口**
 - 根据IP地址获取地理位置 
@@ -824,6 +913,15 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [58同城数据库架构设计思路](http://www.uml.org.cn/zjjs/201505132.asp)
 - [MySQL性能调优与架构设计-架构篇](http://www.uml.org.cn/sjjm/20114062.asp)
 - [BigPipe学习研究](http://www.searchtb.com/2011/04/an-introduction-to-bigpipe.html)
+- [LBS推荐系统的设计方法](http://www.csdn.net/article/2015-12-24/2826554)
+- [推荐系统的应用案例剖析](http://www.csdn.net/article/2015-12-23/2826545)
+- [大型分布式网站架构技术总结](http://www.cnblogs.com/itfly8/p/4967966.html)
+- [大型网站架构系列：分布式消息队列（一）](http://www.cnblogs.com/itfly8/p/5155983.html) - 该文为系列文章之一
+- [大型网站架构系列：20本技术书籍推荐](http://www.cnblogs.com/itfly8/p/5128025.html)
+- [大型网站架构系列：负载均衡详解（1）](http://www.cnblogs.com/itfly8/p/5043435.html) - 该文为系列文章之一
+- [大型网站架构系列：电商网站架构案例(1)](http://www.cnblogs.com/itfly8/p/5006197.html) - 该文为系列文章之一
+- [亿级用户下的新浪微博平台架构](http://www.infoq.com/cn/articles/weibo-platform-archieture)
+- [微服务实战（一）：微服务架构的优势与不足](http://dockone.io/article/394) - 该文为系列文章之一
 
 ###**MySQL**
 - [MySQL索引背后的数据结构及算法原理](http://blog.codinglabs.org/articles/theory-of-mysql-index.html)
@@ -834,12 +932,13 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - **资源链接**
     + [分析和解析PHP代码的7大工具](http://www.admin10000.com/document/6257.html)
 - [如何使用PHP编写daemon process](http://blog.codinglabs.org/articles/write-daemon-with-php.html)
+- [用PHP构建高性能的TCP/UDP服务器](http://blog.csdn.net/tuantuanls/article/details/41205779)
+- [Socket深度探究4PHP](http://blog.csdn.net/shagoo/article/details/6396089)
 - [PHP压缩CSS文件](http://www.catswhocode.com/blog/3-ways-to-compress-css-files-using-php)
-- [PHP Socket通信的基础知识](http://purpen.iteye.com/blog/770787)
-- [PHP Socket编程实例详解](http://purpen.iteye.com/blog/770712)
 - [理解PHP 依赖注入|Laravel IoC容器](http://www.yuansir-web.com/2014/03/20/%E7%90%86%E8%A7%A3php-%E4%BE%9D%E8%B5%96%E6%B3%A8%E5%85%A5laravel-ioc%E5%AE%B9%E5%99%A8/)
 - [PHP程序员如何理解依赖注入容器](http://segmentfault.com/a/1190000002424023)
 - [PHP程序员如何理解IoC/DI](http://segmentfault.com/a/1190000002411255)
+- [linux下用PHP做网页截图](http://blog.linuxphp.org/archives/1309/)
 
 - **AOP**
     + [PHP系列学习之AOP](http://www.cnblogs.com/baochuan/archive/2012/08/22/2644529.html)
@@ -889,6 +988,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [PHP扩展开发及内核应用](http://www.walu.cc/phpbook/)
 - [Yii 1.1应用程序开发实例](http://yiibook.com/book/yii1.1_application_development_cookbook)
 - [PHP开发者实践](https://github.com/zacao/php-developer-prepares)
+- [PHP扩展开发入门](https://github.com/andot/bped)
 
 ###**MySQL**
 - [MySQL Utilities教程](http://www.ttlsa.com/mysql/mysql-manager-tools-mysql-utilities-tutorial/)
@@ -907,6 +1007,7 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [前端技能汇总](https://github.com/JacksonTian/fks)
 - [前端工具推荐](https://github.com/codylindley/frontend-tools)
 - [Three.js入门指南](http://www.ituring.com.cn/minibook/792)
+- [Material Design 中文版](https://github.com/1sters/material_design_zh_2)
 
 ###**Linux**
 - [鸟哥的Linux私房菜](http://vbird.dic.ksu.edu.tw)
@@ -981,13 +1082,13 @@ http://www.ibm.com/developerworks/cn/mobile/mo-bluemix-php-nutritionix-angularjs
 - [协议森林](http://www.cnblogs.com/vamei/archive/2012/12/05/2802811.html)
 - [RESTful API设计思想](https://restful-api-design.readthedocs.org)
 - [Rust编程语言 电子书](http://doc.rust-lang.org/book/) [[中文版](http://git.oschina.net/hainuo/rust-ebook)]
-- [Elasticsearch 权威指南（中文版）](http://es.xiaoleilu.com) [*[GitHub](https://github.com/looly/elasticsearch-definitive-guide-cn)*]
 - [APP后端设计](http://blog.csdn.net/newjueqi/article/details/19003775)
 - [Java快速教程](http://www.cnblogs.com/vamei/archive/2013/03/31/2991531.html)
 - [**纸上谈兵: 算法与数据结构**](http://www.cnblogs.com/vamei/archive/2013/03/22/2974052.html)
 - [**Netkiller 系列 手札**](http://netkiller.github.io) - 一套免费系列电子书
 - [OWASP安全指南](https://www.owasp.org/index.php/Guide_Table_of_Contents) - 包含了已知安全问题和防御方式的全面的清单
 - [Gitbook 简易入门](http://dockerpool.com/static/books/gitbook_cn/index.html)
+- [读书总结](https://github.com/mzkmzk/Read)
 
 
 ## 非技术类教程、书籍
