@@ -1,17 +1,11 @@
-常用Linux命令
---------------------------------
+# 常用Linux命令
 
-#压缩
-zip
-	-r: 递归处理，将指定目录下的所有文件和子目录一并处理
-	-x: 压缩时排除符合条件的文件
-	-S: 包含系统和隐藏文件
-	-q: 不显示指令执行过程
-	-d: 从压缩文件内删除指定的文件
-zip -r mydata.zip mydata file1 file2        # 压缩mydata目录和file1,file2到mydata.zip文件
+---
+# 压缩
+```
+zip -r zipFile.zip /path/to/data file1 file2        # 压缩/path/to/data目录和file1,file2到zipFile.zip文件
 upzip mydata.zip                    # 解压mydata.zip到当前目录
 unzip mydata.zip -d mydatabak       # 解压mydata.zip到mydatabak目录
-
 gzip -c filename > file.gz          # 将文件filename压缩到file.gz
 gunzip file.gz                      # 解压缩file.gz文件
 tar                                 # tar压缩/解压
@@ -23,9 +17,13 @@ tar                                 # tar压缩/解压
 tar -zcvf file.tar file1 file2      # 创建tar归档，并压缩
 tar -zxvf file.tar.gz               # 解压并释放tar归档
 
---------------------------------
+```
 
-#下载
+
+---
+# 下载
+
+```
 wget                                # 文件下载
     -b 后台静默下载
     -c 断点续传
@@ -36,11 +34,24 @@ wget                                # 文件下载
     -O new_file_name 下载后保存的文件名
     -P path_name 下载后保存的路径
     --no-check-certificate 不进行权限验证
+    --header="Cookie: XXX"     携带cookie
 
-wget -r -p -np -k HTTP_URL          #下载整站资源
+wget -m -p -E -k -K -v HTTP_URL #下载整站资源
+```
 
---------------------------------
 
+---
+# 日志
+```
+last            # 用户最近登录信息
+    last -10 root   # 显示root账号最近10条登录信息
+```
+
+
+---
+# 其他
+
+```
 env                                 # 查看/设置/删除环境变量
     env: 查看
     env -u var_name: 删除
@@ -61,10 +72,11 @@ lsmod                               # 列出加载的内核模块
 env                                 # 查看环境变量 资源
 free -m                             # 查看内存使用量和交换区使用量
 df -h                               # 查看各分区使用情况
-du -sh file_path                    # 查看文件大小
+du -sh file_path                    # 查看文件/目录大小
     du -sh --exclude=.svn dir_path  # 忽略匹配.svn的文件夹总大小
     -h  格式化显示
     -s  仅总大小
+    --max-depth=N 统计目录层级
     ---exclude=PATTERN  忽略的文件规则
 grep MemTotal /proc/meminfo         # 查看内存总量
 grep MemFree /proc/meminfo          # 查看空闲内存量
@@ -92,7 +104,6 @@ htop                                # 更详细的系统进程信息（yum insta
 vmstat -s                           # 查看系统性能数据
 w                                   # 查看活动用户
 id                                  # 查看指定用户信息
-last                                # 查看用户登录日志
 cut -d: -f1 /etc/passwd             # 查看系统所有用户
 cut -d: -f1 /etc/group              # 查看系统所有组
 crontab -l                          # 查看当前用户的计划任务 服务
@@ -162,3 +173,4 @@ lpr filename                        # 打印文件
 rz                                  # 上传文件（需安装lrzsz）
 sz                                  # 下载文件（需安装lrzsz）
 
+```

@@ -30,7 +30,16 @@ ON DUPLICATE KEY UPDATE
     time=VALUES(time)
 
 
-
 -- 若要在i ≤ R ≤ j 这个范围得到一个随机整数R ，需要用到表达式：FLOOR(i + RAND() * (j - i + 1))
 UPDATE `tablename` SET `field` = `field` + FLOOR(10 + RAND() * (100 - 10 + 1)) WHERE `id` IN (1, 2, 3);
 
+
+-- 查询表占用的数据和索引空间
+SELECT CONCAT(ROUND(SUM(`data_length` / 1024 / 1024), 2), 'MB') AS data_length_MB,
+       CONCAT(ROUND(SUM(`index_length` / 1024 / 1024), 2), 'MB') AS index_length_MB
+FROM `information_schema`.`tables`
+WHERE `TABLE_SCHEMA` = 'dbname' AND `TABLE_NAME` = 'tablename';
+
+-- 在A表却不在B表的数据
+SELECT A.ID FROM A LEFT JOIN B ON A.ID=B.ID WHERE B.ID IS NULL;
+SELECT * FROM B WHERE (SELECT COUNT(1) AS NUM FROM A WHERE A.ID = B.ID) = 0;

@@ -44,7 +44,7 @@ SHOW VARIABLES -- 显示系统变量信息
         CHARSET = charset_name
         如果表没有设定，则使用数据库字符集
     -- 存储引擎
-        ENGINE = engine_name    
+        ENGINE = engine_name
         表在管理数据时采用的不同的数据结构，结构不同会导致处理方式、提供的特性操作等不同
         常见的引擎：InnoDB MyISAM Memory/Heap BDB Merge Example CSV MaxDB Archive
         不同的引擎在保存表的结构和数据时采用不同的方式
@@ -220,7 +220,7 @@ SET NAMES GBK;  -- 相当于完成以上三个设置
     timestamp   4字节    时间戳        19700101000000 到 2038-01-19 03:14:07
     time        3字节    时间         -838:59:59 到 838:59:59
     year        1字节    年份         1901 - 2155
-    
+
 datetime    YYYY-MM-DD hh:mm:ss
 timestamp   YY-MM-DD hh:mm:ss
             YYYYMMDDhhmmss
@@ -274,7 +274,7 @@ set(val1, val2, val3...)
     2) MySQL函数转换(无符号整型，UNSIGNED)
         INET_ATON('127.0.0.1') 将IP转为整型
         INET_NTOA(2130706433) 将整型转为IP
-        
+
 
 
 
@@ -292,7 +292,7 @@ set(val1, val2, val3...)
 
 2. UNIQUE 唯一索引（唯一约束）
     使得某字段的值也不能重复。
-    
+
 3. NULL 约束
     null不是数据类型，是列的一个属性。
     表示当前列是否可以为null，表示什么都没有。
@@ -300,7 +300,7 @@ set(val1, val2, val3...)
     not null, 不允许为空。
     insert into tab values (null, 'val');
         -- 此时表示将第一个字段的值设为null, 取决于该字段是否允许为null
-    
+
 4. DEFAULT 默认值属性
     当前字段的默认值。
     insert into tab values (default, 'val');    -- 此时表示强制使用默认值。
@@ -386,7 +386,7 @@ c. WHERE 子句
     -- 表达式由运算符和运算数组成。
         -- 运算数：变量（字段）、值、函数返回值
         -- 运算符：
-            =, <=>, <>, !=, <=, <, >=, >, !, &&, ||, 
+            =, <=>, <>, !=, <=, <, >=, >, !, &&, ||,
             in (not) null, (not) like, (not) in, (not) between and, is (not), and, or, not, xor
             is/is not 加上ture/false/unknown，检验某个值的真假
             <=>与<>功能相同，<=>可用于null比较
@@ -394,7 +394,7 @@ c. WHERE 子句
 d. GROUP BY 子句, 分组子句
     GROUP BY 字段/别名 [排序方式]
     分组后会进行排序。升序：ASC，降序：DESC
-    
+
     以下[合计函数]需配合 GROUP BY 使用：
     count 返回不同的非NULL值数目  count(*)、count(字段)
     sum 求和
@@ -516,7 +516,7 @@ fields  控制字段格式
 lines   控制行格式
 默认：lines terminated by '\n'
     terminated by 'string'  -- 终止
-    
+
 /* INSERT */ ------------------
 select语句获得的数据可以用insert插入。
 
@@ -605,7 +605,7 @@ CREATE [OR REPLACE] [ALGORITHM = {UNDEFINED | MERGE | TEMPTABLE}] VIEW view_name
     - column_list如果存在，则数目必须等于SELECT语句检索的列数
 
 -- 查看结构
-    SHOW CREATE VIEW view_name 
+    SHOW CREATE VIEW view_name
 
 -- 删除视图
     - 删除视图后，数据依然存在。
@@ -630,7 +630,7 @@ CREATE [OR REPLACE] [ALGORITHM = {UNDEFINED | MERGE | TEMPTABLE}] VIEW view_name
 
 
 /* 事务(transaction) */ ------------------
-事务是指逻辑上的一组操作，组成这组操作的各个单元，要不全成功要不全失败。 
+事务是指逻辑上的一组操作，组成这组操作的各个单元，要不全成功要不全失败。
     - 支持连续SQL的集体成功或集体撤销。
     - 事务是数据库在数据晚自习方面的一个功能。
     - 需要利用 InnoDB 或 BDB 存储引擎，对自动提交的特性支持完成。
@@ -758,8 +758,8 @@ end
 
 --// 局部变量 ----------
 -- 变量声明
-    declare var_name[,...] type [default value] 
-    这个语句被用来声明局部变量。要给变量提供一个默认值，请包含一个default子句。值可以被指定为一个表达式，不需要为一个常数。如果没有default子句，初始值为null。 
+    declare var_name[,...] type [default value]
+    这个语句被用来声明局部变量。要给变量提供一个默认值，请包含一个default子句。值可以被指定为一个表达式，不需要为一个常数。如果没有default子句，初始值为null。
 
 -- 赋值
     使用 set 和 select into 语句为变量赋值。
@@ -789,8 +789,8 @@ select into 可以将表中查询获得的数据赋给变量。
 
 --// 控制结构 ----------
 -- if语句
-if search_condition then 
-    statement_list    
+if search_condition then
+    statement_list   
 [elseif search_condition then
     statement_list]
 ...
@@ -950,7 +950,7 @@ END
 
 用户信息表：mysql.user
 -- 刷新权限
-FLUSH PRIVILEGES
+FLUSH PRIVILEGES;
 -- 增加用户
 CREATE USER 用户名 IDENTIFIED BY [PASSWORD] 密码(字符串)
     - 必须拥有mysql数据库的全局CREATE USER权限，或拥有INSERT权限。
@@ -970,7 +970,7 @@ GRANT 权限列表 ON 表名 TO 用户名 [IDENTIFIED BY [PASSWORD] 'password']
     - all privileges 表示所有权限
     - *.* 表示所有库的所有表
     - 库名.表名 表示某库下面的某表
-    GRANT ALL PRIVILEGES ON `pms`.* TO 'pms'@'%' IDENTIFIED BY 'pms0817'
+    GRANT ALL PRIVILEGES ON `pms`.* TO 'pms'@'%' IDENTIFIED BY 'pms0817';
 -- 查看权限
 SHOW GRANTS FOR 用户名
     -- 查看当前用户权限
@@ -1043,5 +1043,3 @@ OPTIMIZE [LOCAL | NO_WRITE_TO_BINLOG] TABLE tbl_name [, tbl_name] ...
 5. CMD命令行内的语句结束符可以为 ";", "\G", "\g"，仅影响显示结果。其他地方还是用分号结束。delimiter 可修改当前对话的语句结束符。
 6. SQL对大小写不敏感
 7. 清除已有语句：\c
-
-

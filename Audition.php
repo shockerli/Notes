@@ -170,12 +170,7 @@ function sdir($dir) {
 }
 
 //获取URL扩展名
-function getExt($url) {
-    $arr = parse_url($url);
-    $file = basename($arr['path']);
-    $ext = explode($file);
-    return $ext[count($ext) - 1];
-}
+pathinfo($url, PATHINFO_EXTENSION);
 
 //多进程同时写入同一个文件
 function writeFile($file, $content) {
@@ -186,9 +181,6 @@ function writeFile($file, $content) {
     }
     fclose($fp);
 }
-
-//创建多级目录
-mkdir($path, 0777, true);
 
 //计算$p2相对$p1的路径
 function relPath($p1, $p2) {
@@ -210,12 +202,9 @@ function relPath($p1, $p2) {
 
 //获取全路径脚本文件扩展名
 $path = str_replace('\\', '/', __FILE__);
-1. strrchr($path, '.');
-2. substr($path, strrpos($path, '.'));
-3. $p = pathinfo($path); $p['extension'];
-4. $arr = explode('.', $path); $arr[count($arr)-1];
-5. preg_replace('/^[^\.]+\.([\w]+)$/', '${1}', basename($path));
-
-
-
+strrchr($path, '.');
+substr($path, strrpos($path, '.'));
+$p = pathinfo($path); $p['extension'];
+$arr = explode('.', $path); $arr[count($arr)-1];
+preg_replace('/^[^\.]+\.([\w]+)$/', '${1}', basename($path));
 
